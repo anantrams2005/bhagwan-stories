@@ -1,0 +1,25 @@
+{
+  "id": "krishna_flute_001",
+  "title": "The Flute in Vrindavan",
+  "category": "radha_krishna",
+  "format": "vertical_cinematic_short",
+  "duration_target": 18,
+  "characters": [
+    {"id": "krishna", "description": "Cinematic 3D devotional Krishna: youthful serene face, blue skin, peacock-feather crown, yellow pitambar, ornate traditional jewelry."},
+    {"id": "radha", "description": "Cinematic 3D devotional Radha: graceful youthful appearance, traditional Vrindavan attire, delicate jewelry, expressive eyes."}
+  ],
+  "locations": [
+    {"id": "vrindavan_yamuna", "description": "Moonlit Vrindavan beside the Yamuna, kadamba trees, flowers, soft mist, fireflies and reflective water."}
+  ],
+  "scenes": [
+    {"id":"scene_01","purpose":"Establish the mysterious flute call.","shots":[
+      {"id":"shot_01","duration":3,"image_prompt":"Cinematic 3D devotional film still, Krishna beside the Yamuna in moonlit Vrindavan, flute in hand, peacock feather, flowering kadamba trees, fireflies, soft mist, detailed Indian ornaments and fabrics, realistic cinematic rendering, vertical 9:16, no text.","negative_prompt":"cartoon, western fantasy armor, modern clothing, text, watermark, logo, orange color cast, oversaturated glow","video_prompt":"Subtle natural motion: Krishna gently raises the flute, peacock feather and silk fabric move in a soft breeze, fireflies drift, water ripples, slow cinematic push-in, preserve face, hands and costume."},
+      {"id":"shot_02","duration":3,"image_prompt":"Cinematic 3D devotional film still, Radha walking through a moonlit flowering path in Vrindavan, hearing a distant flute, she pauses and turns toward the sound, flowing veil, soft mist, fireflies, detailed Indian jewelry and traditional attire, realistic cinematic rendering, vertical 9:16, no text.","negative_prompt":"cartoon, modern clothing, text, watermark, logo, distorted hands, extra fingers, orange color cast","video_prompt":"Radha slowly stops and turns toward the distant flute, veil and flowers move gently, subtle breathing, slow lateral camera movement, preserve anatomy and facial identity."}
+    ]},
+    {"id":"scene_02","purpose":"Bring Radha and Krishna together for the emotional payoff.","shots":[
+      {"id":"shot_03","duration":4,"image_prompt":"Cinematic 3D devotional film still, Radha approaching Krishna beside the Yamuna under moonlight, Krishna looking toward her with a gentle smile, flowering trees, drifting petals, reflective water, intimate devotional composition, detailed Indian clothing and jewelry, realistic cinematic rendering, vertical 9:16, no text.","negative_prompt":"cartoon, western fantasy, modern clothing, text, watermark, logo, orange color cast, distorted anatomy","video_prompt":"Radha takes one slow graceful step toward Krishna, Krishna turns his gaze toward her, petals drift, fabric moves naturally, subtle camera dolly-in, preserve faces and hands."},
+      {"id":"shot_04","duration":4,"image_prompt":"Cinematic 3D devotional wide shot of Radha and Krishna beside the Yamuna in moonlit Vrindavan, peacock in foreground, luminous moon reflected in water, kadamba trees, fireflies and soft mist, serene divine atmosphere, richly detailed Indian devotional aesthetics, realistic film rendering, vertical 9:16, no text.","negative_prompt":"cartoon, text, watermark, logo, orange color cast, excessive glow, distorted anatomy","video_prompt":"Slow cinematic pull-back, mist drifts, water ripples, peacock moves subtly, garments and leaves respond to a soft breeze, keep both characters stable and recognizable."}
+    ]}
+  ],
+  "audio": {"music_prompt":"Serene Indian devotional cinematic score, bansuri flute, soft tanpura drone, subtle temple bells, intimate moonlit Vrindavan atmosphere, gradual emotional rise, no vocals.","dialogue":[],"sfx":["soft river ambience","night insects","gentle breeze","distant flute"]}
+}
