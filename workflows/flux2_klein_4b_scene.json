@@ -1,0 +1,412 @@
+{
+  "76": {
+    "inputs": {
+      "image": "LITTLE_SHAPE_TRAIN.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "img1"
+    }
+  },
+  "81": {
+    "inputs": {
+      "image": "CIRCLE_RED.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "img2"
+    }
+  },
+  "146": {
+    "inputs": {
+      "image": "SQUARE_BLUE.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "img3"
+    }
+  },
+  "_pipeline_nodes": {
+    "positive_prompt": "147:136",
+    "negative_prompt": "147:137",
+    "reference_images": [
+      "76",
+      "81",
+      "146"
+    ]
+  },
+  "147:123": {
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "147:124": {
+    "inputs": {
+      "noise": [
+        "147:126",
+        0
+      ],
+      "guider": [
+        "147:138",
+        0
+      ],
+      "sampler": [
+        "147:123",
+        0
+      ],
+      "sigmas": [
+        "147:139",
+        0
+      ],
+      "latent_image": [
+        "147:130",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "147:125": {
+    "inputs": {
+      "samples": [
+        "147:124",
+        0
+      ],
+      "vae": [
+        "147:128",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "147:126": {
+    "inputs": {
+      "noise_seed": 448224537312910
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "147:127": {
+    "inputs": {
+      "unet_name": "flux-2-klein-4b.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "147:128": {
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "147:129": {
+    "inputs": {
+      "image": [
+        "147:131",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "Get Image Size"
+    }
+  },
+  "147:130": {
+    "inputs": {
+      "width": [
+        "147:129",
+        0
+      ],
+      "height": [
+        "147:129",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyFlux2LatentImage",
+    "_meta": {
+      "title": "Empty Flux 2 Latent"
+    }
+  },
+  "147:131": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "megapixels": 1,
+      "resolution_steps": 1,
+      "image": [
+        "76",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Scale Image to Total Pixels"
+    }
+  },
+  "147:132": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "megapixels": 1,
+      "resolution_steps": 1,
+      "image": [
+        "81",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Scale Image to Total Pixels"
+    }
+  },
+  "147:133:140": {
+    "inputs": {
+      "conditioning": [
+        "147:135:143",
+        0
+      ],
+      "latent": [
+        "147:133:141",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "Set Reference Latent"
+    }
+  },
+  "147:133:141": {
+    "inputs": {
+      "pixels": [
+        "147:132",
+        0
+      ],
+      "vae": [
+        "147:128",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "147:133:142": {
+    "inputs": {
+      "conditioning": [
+        "147:135:145",
+        0
+      ],
+      "latent": [
+        "147:133:141",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "Set Reference Latent"
+    }
+  },
+  "147:134": {
+    "inputs": {
+      "clip_name": "qwen_3_4b.safetensors",
+      "type": "flux2",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "147:135:143": {
+    "inputs": {
+      "conditioning": [
+        "147:137",
+        0
+      ],
+      "latent": [
+        "147:135:144",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "Set Reference Latent"
+    }
+  },
+  "147:135:144": {
+    "inputs": {
+      "pixels": [
+        "147:131",
+        0
+      ],
+      "vae": [
+        "147:128",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "147:135:145": {
+    "inputs": {
+      "conditioning": [
+        "147:136",
+        0
+      ],
+      "latent": [
+        "147:135:144",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "Set Reference Latent"
+    }
+  },
+  "147:136": {
+    "inputs": {
+      "text": "A wide 16:9 preschool 3D animation scene. The exact same Little Shape Train character from Reference Image 1 remains firmly in place on the left, perfectly aligned, facing forward and pointing right along its colorful railway track, with its 3D eyes and smiling face prominently displayed on the front engine bumper. On its right side, the Red Circle Man from Reference Image 2 is standing in the grass looking left at the train and happily waving. On the far right, the Blue Square Man from Reference Image 3 plays basketball. No flipped perspective, no mirrored assets, clean layout composition.",
+      "clip": [
+        "147:134",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "147:137": {
+    "inputs": {
+      "text": "",
+      "clip": [
+        "147:134",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode ( Negative Prompt)"
+    }
+  },
+  "147:138": {
+    "inputs": {
+      "cfg": 1,
+      "model": [
+        "147:127",
+        0
+      ],
+      "positive": [
+        "147:153:152",
+        0
+      ],
+      "negative": [
+        "147:153:150",
+        0
+      ]
+    },
+    "class_type": "CFGGuider",
+    "_meta": {
+      "title": "CFG Guider"
+    }
+  },
+  "147:139": {
+    "inputs": {
+      "steps": 4,
+      "width": [
+        "147:129",
+        0
+      ],
+      "height": [
+        "147:129",
+        1
+      ]
+    },
+    "class_type": "Flux2Scheduler",
+    "_meta": {
+      "title": "Flux2Scheduler"
+    }
+  },
+  "147:149": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "megapixels": 1,
+      "resolution_steps": 1,
+      "image": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Scale Image to Total Pixels"
+    }
+  },
+  "147:153:150": {
+    "inputs": {
+      "conditioning": [
+        "147:133:140",
+        0
+      ],
+      "latent": [
+        "147:153:151",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "Set Reference Latent"
+    }
+  },
+  "147:153:151": {
+    "inputs": {
+      "pixels": [
+        "147:149",
+        0
+      ],
+      "vae": [
+        "147:128",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "147:153:152": {
+    "inputs": {
+      "conditioning": [
+        "147:133:142",
+        0
+      ],
+      "latent": [
+        "147:153:151",
+        0
+      ]
+    },
+    "class_type": "ReferenceLatent",
+    "_meta": {
+      "title": "Set Reference Latent"
+    }
+  }
+}

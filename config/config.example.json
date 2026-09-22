@@ -1,0 +1,13 @@
+{
+  "comfyui": {
+    "url": "http://127.0.0.1:8188",
+    "image_workflow": "workflows/image_workflow.json"
+  },
+  "video": {
+    "backend": "comfyui_wan",
+    "workflow": "workflows/wan_i2v_workflow.json"
+  },
+  "output": {
+    "root": "movies"
+  }
+}
