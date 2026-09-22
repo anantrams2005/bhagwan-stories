@@ -22,8 +22,14 @@ class SceneImageStage:
             raise RuntimeError("Scene image generation requested without an image generator")
 
         records: list[dict[str, Any]] = []
+        total_shots = sum(len(scene["shots"]) for scene in story["scenes"])
+        print(f"[SCENE] Starting {total_shots} shot(s) with FLUX.2 Klein 4B")
+        print("[SCENE] Source dimensions are derived by Klein GetImageSize; use 16:9 refs.")
+        shot_number = 0
         for scene in story["scenes"]:
             for shot in scene["shots"]:
+                shot_number += 1
+                print(f"[SCENE] Shot {shot_number}/{total_shots}: {scene['id']}/{shot['id']}")
                 shot_dir = movie_dir / "scenes" / scene["id"] / shot["id"]
                 asset_ids = shot.get("assets", shot.get("characters", []))
 
@@ -35,6 +41,7 @@ class SceneImageStage:
                     )
 
                 refs = [asset_refs[a] for a in asset_ids]
+                print("[SCENE]   refs: " + " | ".join(str(p) for p in refs))
                 image = self.generator.generate(
                     shot["image_prompt"],
                     shot.get("negative_prompt", ""),
@@ -52,4 +59,5 @@ class SceneImageStage:
                         "video": None,
                     }
                 )
+        print(f"[SCENE] Completed {len(records)} scene image(s)")
         return records
