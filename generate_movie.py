@@ -10,6 +10,10 @@ from src.movie_pipeline import MoviePipeline
 from src.story import build_plan, load_story, validate_story
 from src.vid.comfyui import ComfyUIVideoGenerator
 
+REPO_ROOT = Path(__file__).resolve().parent
+DEFAULT_ASSET_WORKFLOW = REPO_ROOT / "workflows" / "z_turbo_assets.json"
+DEFAULT_SCENE_WORKFLOW = REPO_ROOT / "workflows" / "flux2_klein_4b_scene.json"
+
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Generate a cinematic devotional mini-movie.")
@@ -17,8 +21,8 @@ def main() -> int:
     p.add_argument("--validate", action="store_true")
     p.add_argument("--plan", action="store_true")
     p.add_argument("--image-backend", choices=["none", "comfyui"], default="none")
-    p.add_argument("--asset-image-workflow", type=Path)
-    p.add_argument("--scene-image-workflow", type=Path)
+    p.add_argument("--asset-image-workflow", type=Path, default=DEFAULT_ASSET_WORKFLOW)
+    p.add_argument("--scene-image-workflow", type=Path, default=DEFAULT_SCENE_WORKFLOW)
     p.add_argument("--video-backend", choices=["none", "comfyui_wan"], default="none")
     p.add_argument("--video-workflow", type=Path)
     p.add_argument("--comfyui-url", default="http://127.0.0.1:8188")
@@ -45,11 +49,6 @@ def main() -> int:
     video_gen = None
 
     if args.image_backend == "comfyui":
-        if not args.asset_image_workflow:
-            raise SystemExit("--asset-image-workflow is required")
-        if not args.scene_image_workflow:
-            raise SystemExit("--scene-image-workflow is required")
-
         asset_image_gen = ComfyUIImageGenerator(
             args.comfyui_url,
             args.asset_image_workflow,
