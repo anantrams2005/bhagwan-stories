@@ -9,16 +9,20 @@ from src.vid.stage import VideoStage
 
 
 class MoviePipeline:
-    """Production order: resolve assets -> compose scene images -> generate video."""
+    """Production order: assets (Z-Turbo) -> scenes (Klein 4B) -> video."""
 
     def __init__(
         self,
-        image_generator: Any = None,
+        asset_image_generator: Any = None,
+        scene_image_generator: Any = None,
         video_generator: Any = None,
         asset_root: Path = Path("assets"),
     ) -> None:
-        self.assets = AssetStage(AssetLibrary(asset_root), image_generator)
-        self.scene_images = SceneImageStage(image_generator)
+        self.assets = AssetStage(
+            AssetLibrary(asset_root),
+            asset_image_generator,
+        )
+        self.scene_images = SceneImageStage(scene_image_generator)
         self.video = VideoStage(video_generator) if video_generator else None
 
     def run(self, story: dict[str, Any], movie_dir: Path) -> list[dict[str, Any]]:
