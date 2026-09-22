@@ -11,13 +11,14 @@ import requests
 
 
 class ComfyUIImageGenerator:
-    """ComfyUI image adapter.
+    """ComfyUI image adapter for API-format workflows.
 
-    The workflow remains authoritative: the adapter only changes the fields
-    explicitly described by its _pipeline_nodes metadata.
+    Workflow-specific node mappings live in the workflow JSON under the
+    _pipeline_nodes metadata key. That metadata is removed before the workflow
+    is submitted to ComfyUI.
 
-    For the Klein 4B Image Edit scene workflow, the three reference slots map
-    to the custom Image Edit node's image/image_1/image_2 inputs.
+    The bundled Klein scene workflow has three active reference-image slots:
+    76 -> image, 81 -> image_1, 146 -> image_2 on the Image Edit graph.
     """
 
     def __init__(self, base_url: str, workflow_path: Path, timeout: int = 120) -> None:
@@ -36,21 +37,26 @@ class ComfyUIImageGenerator:
         workflow = copy.deepcopy(
             json.loads(self.workflow_path.read_text(encoding="utf-8"))
         )
-        nodes = workflow.get("_pipeline_nodes", {})
+        nodes = workflow.pop("_pipeline_nodes", {})
 
         self._set_text(workflow, nodes.get("positive_prompt"), prompt)
         self._set_text(workflow, nodes.get("negative_prompt"), negative_prompt)
 
-        uploaded = [
-            self._upload_image(path)
-            for path in (reference_images or [])
-            if Path(path).exists()
-        ]
-        self._set_reference_images(
-            workflow,
-            nodes.get("reference_images", []),
-            uploaded,
-        )
+        reference_slots = nodes.get("reference_images", [])
+        if reference_slots:
+            refs = [Path(p) for p in (reference_images or []) if Path(p).exists()]
+            expected = len(reference_slots)
+            if len(refs) != expected:
+                raise ValueError(
+                    f"{self.workflow_path.name} requires {expected} reference images; "
+                    f"received {len(refs)}"
+                )
+            uploaded = [self._upload_image(path) for path in refs]
+            self._set_reference_images(workflow, reference_slots, uploaded)
+        elif reference_images:
+            raise ValueError(
+                f"{self.workflow_path.name} does not declare reference image slots"
+            )
 
         client_id = str(uuid.uuid4())
         response = requests.post(
@@ -94,19 +100,6 @@ class ComfyUIImageGenerator:
         node_ids: list[str],
         uploaded_names: list[str],
     ) -> None:
-        """Fill reference slots without changing workflow topology.
-
-        A Klein 4B Image Edit workflow can expose three active reference
-        LoadImage nodes feeding the custom Image Edit node. We keep the slot
-        mapping explicit and require the workflow metadata to name those
-        slots; this avoids guessing node ids from a frontend export.
-        """
-        if len(uploaded_names) > len(node_ids):
-            raise ValueError(
-                f"Workflow supports {len(node_ids)} reference image(s), "
-                f"but the shot requested {len(uploaded_names)}"
-            )
-
         for node_id, image_name in zip(node_ids, uploaded_names):
             if node_id not in workflow:
                 raise ValueError(
