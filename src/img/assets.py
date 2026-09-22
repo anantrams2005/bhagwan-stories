@@ -42,13 +42,6 @@ class AssetLibrary:
         )
         return generator.generate(prompt, negative, output_dir, "reference.png")
 
-    def run(self, story: dict[str, Any]) -> dict[str, Path]:
-        """Resolve/generate every reusable visual entity referenced by the story."""
-        refs: dict[str, Path] = {}
-        for asset in self._assets(story):
-            refs[asset["id"]] = self.resolve_or_generate(asset, self.generator)
-        return refs
-
 
 class AssetStage:
     """Resolve named characters and supporting visual entities before scenes."""
@@ -60,7 +53,10 @@ class AssetStage:
     def run(self, story: dict[str, Any]) -> dict[str, Path]:
         refs: dict[str, Path] = {}
         for asset in self._assets(story):
-            refs[asset["id"]] = self.library.resolve_or_generate(asset, self.generator)
+            refs[asset["id"]] = self.library.resolve_or_generate(
+                asset,
+                self.generator,
+            )
         return refs
 
     @staticmethod
