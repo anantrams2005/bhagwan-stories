@@ -8,7 +8,7 @@ This is NOT a documentary, explainer, slideshow, or talking-head narration.
 
 ## Creative goal
 
-Create 10–30 second vertical mini-movies. The audience should experience the story through characters, actions, expressions, environments, camera, music, dialogue and visual events.
+Create short cinematic mini-movies. The audience should experience the story through characters, actions, expressions, environments, camera, music, dialogue and visual events.
 
 Use:
 **HOOK → SETUP → EVENT/CONFLICT → PAYOFF → CLOSING IMAGE**
@@ -27,12 +27,36 @@ Default:
 - cinematic lighting and volumetric atmosphere
 - beautiful Indian environments
 - believable cloth, hair, water, smoke, fire and environmental motion
-- vertical 9:16
+- **source scene composition in 16:9**
 - devotional, majestic and emotionally sincere
 - no modern objects
 - no text, logos or watermarks in generated imagery
 - avoid excessive orange/yellow/sepia grading
 - avoid excessive magical glow
+
+## Asset continuity
+
+Before generating a visual entity, check the reusable asset library.
+
+This applies to:
+- main characters
+- village people
+- children
+- cows, calves, goats, monkeys and other animals
+- recurring locations
+- important props
+
+Reuse an existing reference when one exists. Generate a missing asset only once, then persist it for later shots/stories.
+
+Do not make every supporting person or animal the exact same clone. Use distinct asset ids for distinct recurring instances/variants.
+
+## Scene composition
+
+Use the reusable asset references as active inputs to the FLUX.2 Klein 4B Image Edit workflow.
+
+The production workflow currently supports up to three reference images per shot. Choose the references that matter most to identity/continuity for that shot.
+
+The Klein workflow derives its output size from the reference-image path. Keep the reference used for that sizing path in **16:9** so the generated scene source is 16:9.
 
 ## Story selection
 
@@ -117,7 +141,7 @@ Use this conceptual structure (the schema is intentionally allowed to evolve):
   "id": "...",
   "title": "...",
   "category": "...",
-  "format": "vertical_cinematic_short",
+  "format": "cinematic_short",
   "duration_target": 20,
   "source": {
     "type": "scripture|traditional_account|folklore|inspired_fiction",
@@ -125,7 +149,7 @@ Use this conceptual structure (the schema is intentionally allowed to evolve):
     "episode_or_reference": "..."
   },
   "characters": [],
-  "locations": [],
+  "supporting_assets": [],
   "scenes": [
     {
       "id": "...",
@@ -136,6 +160,7 @@ Use this conceptual structure (the schema is intentionally allowed to evolve):
           "duration": 3,
           "action": "...",
           "camera": "...",
+          "assets": ["..."],
           "image_prompt": "...",
           "negative_prompt": "...",
           "video_prompt": "...",
@@ -160,7 +185,7 @@ Before returning the JSON:
 - Does every shot advance the story?
 - Is the payoff worth staying for?
 - Can the requested motion plausibly be generated?
-- Are characters and locations consistent?
+- Are characters, supporting entities and locations consistent?
 - Does it feel like a miniature Indian mythological film rather than an AI slideshow?
 - Is the tradition/source represented honestly?
 
