@@ -7,28 +7,36 @@ The goal is **story-first visual filmmaking**, not documentary narration or slid
 ## Pipeline
 
 ```
-Story JSON → scene/shot plan → image generation → image-to-video → audio → edit
+Story JSON
+  ↓
+Asset planner / reuse existing assets
+  ↓
+Z-Turbo reusable assets
+  ↓
+FLUX.2 Klein 4B Image Edit scene source images (16:9)
+  ↓
+Image-to-video
+  ↓
+Audio
+  ↓
+Final edit / delivery format
 ```
 
-This first implementation keeps model-specific workflows outside the story format.
+## Image generation split
 
-## Current scope
-
-- Python CLI
-- JSON story input and validation
-- deterministic movie/scene/shot output directories
-- ComfyUI image-generation adapter
-- generic ComfyUI image-to-video adapter intended for Wan 2.2
-- master prompt for asking ChatGPT to produce cinematic story breakdowns
-- sample Radha-Krishna story
-
-Audio and final editing are extension points for the next stages.
+- **Reusable assets:** Z-Turbo. Characters, village people, children, animals, locations and props are generated only when the asset library does not already contain the requested reference.
+- **Scene composition:** FLUX.2 Klein 4B Image Edit using the three active reference-image inputs from the production workflow.
+- The Klein workflow uses its reference image size to drive output dimensions through its existing `GetImageSize` path. Therefore the scene source is **16:9 when the reference image supplied to that path is 16:9**.
+- The current production scene workflow is the user's ComfyUI Klein 4B Image Edit workflow; the repository adapter does not replace its graph or invent a different reference topology.
+- Up to three reusable asset references can be supplied to a shot.
 
 ## Requirements
 
 - Python 3.10+
-- running ComfyUI for image generation
-- an exported ComfyUI image workflow
+- running ComfyUI
+- exported API-compatible ComfyUI workflows
+- Z-Turbo workflow for asset generation
+- FLUX.2 Klein 4B Image Edit workflow for scene generation
 
 ```bash
 python -m venv .venv
@@ -44,32 +52,34 @@ Validate:
 python generate_movie.py stories/examples/krishna_flute.json --validate
 ```
 
-Create a production plan without generating media:
+Create a production plan:
 
 ```bash
 python generate_movie.py stories/examples/krishna_flute.json --plan
 ```
 
-Generate images:
+Generate the image stages:
 
 ```bash
 python generate_movie.py stories/examples/krishna_flute.json \
   --image-backend comfyui \
   --comfyui-url http://127.0.0.1:8188 \
-  --image-workflow workflows/image_workflow.json
+  --asset-image-workflow workflows/z_turbo_assets.json \
+  --scene-image-workflow workflows/flux2_klein_4b_scene.json
 ```
 
-Generate I2V after images:
+Add I2V:
 
 ```bash
 python generate_movie.py stories/examples/krishna_flute.json \
   --image-backend comfyui \
-  --image-workflow workflows/image_workflow.json \
+  --asset-image-workflow workflows/z_turbo_assets.json \
+  --scene-image-workflow workflows/flux2_klein_4b_scene.json \
   --video-backend comfyui_wan \
   --video-workflow workflows/wan_i2v_workflow.json
 ```
 
-The workflows are intentionally external because the exact ComfyUI graphs will depend on the installed model/version.
+The workflow files stay external so model-specific ComfyUI graphs can evolve without changing story JSON.
 
 ## Design principles
 
@@ -80,20 +90,6 @@ The workflows are intentionally external because the exact ComfyUI graphs will d
 5. Build a strong source image before animation.
 6. Keep model-specific details out of story JSON where possible.
 7. Don't present invented devotional fiction as scripture.
-8. Target vertical 9:16 short-form movies first.
+8. Generate scene source images in 16:9; convert/crop for the final platform format later if needed.
 9. Optimize for viewer retention, not a fixed shot count.
 10. Keep image, video and audio backends replaceable.
-
-## Roadmap
-
-- robust ComfyUI workflow parameter mapping
-- reusable master character/environment assets
-- Wan 2.2 I2V adapter hardening
-- automatic shot rendering/retry/resume
-- ACE-Step music adapter
-- Sarvam dialogue adapter
-- SFX
-- FFmpeg assembly
-- optional captions
-- batch rendering
-- story library/metadata
