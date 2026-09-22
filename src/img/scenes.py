@@ -5,9 +5,9 @@ from typing import Any
 
 
 class SceneImageStage:
-    """Compose 16:9 shot source images from up to three reusable asset refs."""
+    """Compose 16:9 shot source images with the Klein 4B 3-ref workflow."""
 
-    MAX_REFERENCE_IMAGES = 3
+    REQUIRED_REFERENCE_IMAGES = 3
 
     def __init__(self, generator: Any) -> None:
         self.generator = generator
@@ -27,20 +27,14 @@ class SceneImageStage:
                 shot_dir = movie_dir / "scenes" / scene["id"] / shot["id"]
                 asset_ids = shot.get("assets", shot.get("characters", []))
 
-                if len(asset_ids) > self.MAX_REFERENCE_IMAGES:
+                if len(asset_ids) != self.REQUIRED_REFERENCE_IMAGES:
                     raise ValueError(
-                        f"{scene['id']}/{shot['id']} uses {len(asset_ids)} assets; "
-                        f"Klein 4B scene generation currently supports at most "
-                        f"{self.MAX_REFERENCE_IMAGES} reference images"
+                        f"{scene['id']}/{shot['id']} must declare exactly "
+                        f"{self.REQUIRED_REFERENCE_IMAGES} assets for the Klein 4B "
+                        "scene workflow (reference 1, reference 2, reference 3)"
                     )
 
-                refs = [asset_refs[a] for a in asset_ids if a in asset_refs]
-                if len(refs) != len(asset_ids):
-                    missing = [a for a in asset_ids if a not in asset_refs]
-                    raise ValueError(
-                        f"{scene['id']}/{shot['id']} references unresolved assets: {missing}"
-                    )
-
+                refs = [asset_refs[a] for a in asset_ids]
                 image = self.generator.generate(
                     shot["image_prompt"],
                     shot.get("negative_prompt", ""),
