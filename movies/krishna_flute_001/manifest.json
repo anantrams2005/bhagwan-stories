@@ -1,0 +1,54 @@
+{
+  "story_id": "krishna_flute_001",
+  "title": "The Flute in Vrindavan",
+  "shots": [
+    {
+      "scene_id": "scene_01",
+      "shot_id": "shot_01",
+      "duration": 3,
+      "image": "movies/krishna_flute_001/scenes/scene_01/shot_01/source.png",
+      "asset_refs": [
+        "assets/characters/krishna/reference.png",
+        "assets/locations/vrindavan_yamuna/reference.png",
+        "assets/props/krishna_flute/reference.png"
+      ],
+      "video": null
+    },
+    {
+      "scene_id": "scene_01",
+      "shot_id": "shot_02",
+      "duration": 3,
+      "image": "movies/krishna_flute_001/scenes/scene_01/shot_02/source.png",
+      "asset_refs": [
+        "assets/characters/radha/reference.png",
+        "assets/locations/vrindavan_yamuna/reference.png",
+        "assets/props/krishna_flute/reference.png"
+      ],
+      "video": null
+    },
+    {
+      "scene_id": "scene_02",
+      "shot_id": "shot_03",
+      "duration": 4,
+      "image": "movies/krishna_flute_001/scenes/scene_02/shot_03/source.png",
+      "asset_refs": [
+        "assets/characters/radha/reference.png",
+        "assets/characters/krishna/reference.png",
+        "assets/locations/vrindavan_yamuna/reference.png"
+      ],
+      "video": null
+    },
+    {
+      "scene_id": "scene_02",
+      "shot_id": "shot_04",
+      "duration": 4,
+      "image": "movies/krishna_flute_001/scenes/scene_02/shot_04/source.png",
+      "asset_refs": [
+        "assets/characters/radha/reference.png",
+        "assets/characters/krishna/reference.png",
+        "assets/animals/vrindavan_peacock/reference.png"
+      ],
+      "video": null
+    }
+  ]
+}
