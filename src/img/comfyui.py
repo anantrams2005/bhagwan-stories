@@ -34,6 +34,7 @@ class ComfyUIImageGenerator:
         output_name: str,
         reference_images: list[Path] | None = None,
     ) -> Path:
+        print(f"[IMAGE] Loading workflow: {self.workflow_path}")
         workflow = copy.deepcopy(
             json.loads(self.workflow_path.read_text(encoding="utf-8"))
         )
@@ -64,8 +65,17 @@ class ComfyUIImageGenerator:
             json={"prompt": workflow, "client_id": client_id},
             timeout=self.timeout,
         )
-        response.raise_for_status()
+        if not response.ok:
+            try:
+                details = response.json()
+            except ValueError:
+                details = response.text
+            raise RuntimeError(
+                f"ComfyUI rejected {self.workflow_path.name} "
+                f"(HTTP {response.status_code}): {json.dumps(details, ensure_ascii=False)}"
+            )
 
+        print(f"[IMAGE] ComfyUI accepted workflow. prompt_id={response.json().get('prompt_id')}")
         image = self._wait_for_image(response.json()["prompt_id"])
         output_dir.mkdir(parents=True, exist_ok=True)
         destination = output_dir / output_name
