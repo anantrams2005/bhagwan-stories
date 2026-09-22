@@ -3,136 +3,331 @@
   "title": "The Flute in Vrindavan",
   "category": "radha_krishna",
   "format": "cinematic_short",
-  "duration_target": 18,
+  "duration_target": 72,
+  "duration_min": 60,
+  "duration_preferred_max": 90,
+  "duration_rule": "Let the story determine the final duration. Never pad shots just to reach a number. The movie may exceed 90 seconds if the story needs it.",
+  "source_aspect_ratio": "16:9",
+  "final_social_aspect_ratio": "9:16",
+  "story_basis": "inspired_devotional_fiction",
   "characters": [
     {
       "id": "krishna",
-      "description": "Premium cinematic 3D devotional character reference. Use Reference Image 1 as the exact Krishna character identity. Preserve his face, body silhouette, limb length, shoulder width, waist, clothing fit, peacock feather and jewelry from the reference. Krishna has a youthful, naturally lean and graceful adult build with normal human proportions: narrow waist, proportionate shoulders, long natural limbs, and no bulky torso. Do not reinterpret, enlarge, broaden, age, or change his body shape. Full body, centered, neutral background, clean silhouette, realistic animated-feature quality."
+      "description": "Premium cinematic 3D devotional character reference. Use this standalone reference as the exact Krishna character identity. Preserve his face, deep blue skin, youthful lean adult male body silhouette, limb length, shoulder width, narrow waist, clothing fit, peacock feather and jewelry. Natural human proportions, smooth non-muscular chest and torso. Do not reinterpret, enlarge, broaden, age, masculinize into a bodybuilder, or change his body shape. Full body, centered, neutral background, clean silhouette, realistic animated-feature quality."
     },
     {
       "id": "radha",
-      "description": "Premium cinematic 3D devotional character reference. Use Reference Image 1 as the exact Radha character identity. Preserve her face, body silhouette, limb length, shoulder width, waist, clothing fit, hair, dupatta and jewelry from the reference. Radha has a youthful, naturally slender and graceful adult build with normal human proportions and a defined waist. Do not reinterpret, enlarge, broaden, age, or change her body shape. Full body, centered, neutral background, clean silhouette, realistic animated-feature quality."
+      "description": "Premium cinematic 3D devotional character reference. Use this standalone reference as the exact Radha character identity. Preserve her face, warm natural skin tone, graceful slender adult feminine proportions, limb length, waist, hair, dupatta, clothing and jewelry. Do not reinterpret, broaden, age or change her body shape. Full body, centered, neutral background, clean silhouette, realistic animated-feature quality."
     }
   ],
   "locations": [
     {
       "id": "vrindavan_yamuna",
-      "description": "Premium cinematic 3D environment reference of a peaceful Vrindavan riverside at dusk, broad Yamuna river, natural sandy bank, mature kadamba trees, flowering shrubs, soft atmospheric mist, distant simple village silhouettes, believable Indian rural setting, cinematic animated-feature environment, balanced neutral daylight, no characters, no religious statues, no text."
+      "description": "Premium cinematic 3D environment reference of a peaceful Vrindavan riverside at dusk, broad Yamuna river, sandy bank, mature kadamba trees, flowering shrubs, soft atmospheric mist, distant simple village silhouettes, believable Indian rural setting, cinematic animated-feature environment, balanced natural dusk lighting, no characters, no religious statues, no text."
     }
   ],
   "supporting_assets": [
     {
       "id": "krishna_flute",
       "category": "props",
-      "description": "Premium cinematic 3D prop reference of a single traditional Indian bansuri flute: one straight slender natural bamboo flute, warm light-brown bamboo with subtle realistic grain, seven small finger holes and one end opening, simple understated handcrafted appearance, isolated horizontally centered on a plain neutral background, orthographic product-style view, sharp edges, no hands, no person, no jewelry, no duplicate flute, no decorative fantasy elements."
+      "description": "Premium cinematic 3D prop reference of one traditional Indian bansuri flute: straight slender natural bamboo, warm light-brown grain, seven small finger holes and one end opening, simple handcrafted appearance, isolated horizontally centered on neutral background, no hands, no person, no duplicate flute, no fantasy decoration."
     },
     {
       "id": "vrindavan_peacock",
       "category": "animals",
-      "description": "Premium cinematic 3D reference of one Indian peacock standing naturally, full body visible, realistic blue-green plumage and detailed folded tail feathers, calm posture, clean silhouette, neutral simple background, animated-feature quality, no duplicate bird."
+      "description": "Premium cinematic 3D reference of one Indian peacock, full body, realistic blue-green plumage and folded tail feathers, calm natural posture, clean silhouette, neutral simple background, animated-feature quality, no duplicate bird."
     }
   ],
   "scenes": [
     {
       "id": "scene_01",
-      "purpose": "Establish the mysterious flute call.",
+      "purpose": "Open with a visual mystery: Krishna plays the flute alone beside the Yamuna while Vrindavan seems to respond.",
       "shots": [
         {
           "id": "shot_01",
-          "duration": 3,
+          "duration": 5,
           "assets": [
             "krishna",
             "vrindavan_yamuna",
             "krishna_flute"
           ],
-          "image_prompt": "Wide 16:9 cinematic STORY FRAME from a stylized 3D animated Indian mythology film. REFERENCE 1 = KRISHNA ONLY and is the primary character identity reference. REFERENCE 2 = VRINDAVAN/YAMUNA ENVIRONMENT ONLY. REFERENCE 3 = KRISHNA'S FLUTE PROP ONLY. Krishna is a youthful lean MALE with the EXACT face, deep blue skin, normal natural male anatomy, same body proportions, peacock feather, yellow pitambar and jewelry as Reference 1. Do not redesign him or make him muscular. Krishna stands naturally beside the Yamuna at dusk, gently playing one small straight bamboo bansuri. Show the river, kadamba trees, fireflies and atmospheric depth around him. He is immersed in the story, not posing for a character portrait. Premium stylized 3D animated-feature look, painterly cinematic materials, natural cloth, subtle dusk mist, emotional devotional atmosphere.",
-          "negative_prompt": "photograph, photorealism, portrait, character sheet, studio lighting, muscular body, bodybuilder, six pack, defined abs, broad shoulders, bulky torso, fat body, changed face, different face, aged face, female Krishna, female clothing, braid, white skin, pale skin, distorted hands, extra fingers, extra limbs, giant flute, long flute, oversized flute, duplicate flute, floating flute, text, logo, watermark",
-          "video_prompt": "Subtle natural motion: Krishna gently raises the flute, peacock feather and silk fabric move in a soft breeze, fireflies drift, water ripples, slow cinematic push-in, preserve face, hands and costume."
+          "image_prompt": "Wide 16:9 cinematic STORY FRAME from a premium stylized 3D animated Indian mythology film. REFERENCE 1 = KRISHNA ONLY and is the primary Krishna identity. REFERENCE 2 = VRINDAVAN/YAMUNA ENVIRONMENT ONLY. REFERENCE 3 = KRISHNA'S FLUTE PROP ONLY. Krishna matches Reference 1 exactly: youthful lean adult MALE, deep blue skin, same face, same proportions, peacock feather, yellow pitambar and jewelry, natural smooth chest and torso with NO visible muscle definition. Krishna stands naturally beside the Yamuna at dusk and begins playing one small straight bamboo bansuri. Establish the world around him with river, kadamba trees, fireflies and distant village silhouettes. This must look like a movie scene, not a character portrait or poster. Strong foreground depth, cinematic composition, atmospheric 3D animated-feature materials.",
+          "negative_prompt": "photograph, photorealism, portrait, poster, character sheet, studio pose, muscular body, bodybuilder, six pack, eight pack, defined abs, sculpted chest, broad shoulders, bulky torso, changed face, aged face, female Krishna, white skin, distorted hands, extra fingers, extra limbs, giant flute, duplicate flute, text, logo, watermark",
+          "video_prompt": "Krishna slowly lifts the small flute and begins to play. His fingers make subtle natural movement, peacock feather and cloth respond to a soft breeze, fireflies drift, Yamuna water ripples. Very slow cinematic push-in. Preserve face, anatomy, hands and costume."
         },
         {
           "id": "shot_02",
-          "duration": 3,
+          "duration": 6,
           "assets": [
-            "radha",
+            "krishna",
             "vrindavan_yamuna",
             "krishna_flute"
           ],
-          "image_prompt": "Wide 16:9 cinematic STORY FRAME from the same stylized 3D animated Indian mythology film. REFERENCE 1 = RADHA ONLY and is the primary character identity reference. REFERENCE 2 = VRINDAVAN/YAMUNA ENVIRONMENT ONLY. REFERENCE 3 = KRISHNA'S FLUTE PROP ONLY and stays off-screen. Radha preserves the EXACT face, natural warm skin tone, graceful feminine proportions, long dark hair, clothing and jewelry from Reference 1. She has just heard Krishna's distant flute and turns toward the sound beside the Yamuna. Show her in a natural story action, not a posed portrait. Use a medium-wide composition with environment surrounding her, gentle dusk light, moving dupatta and hair, river depth and soft mist. Premium stylized 3D animated-feature quality.",
-          "negative_prompt": "photograph, photorealism, portrait, fashion shoot, beauty shot, character sheet, stiff pose, male Radha, blue skin, Krishna identity, Krishna clothing, changed face, changed body proportions, muscular body, bulky body, duplicate character, visible flute, giant flute, extra limbs, text, logo, watermark",
-          "video_prompt": "Radha slowly stops and turns toward the distant flute, veil and flowers move gently, subtle breathing, slow lateral camera movement, preserve anatomy and facial identity."
+          "image_prompt": "Wide 16:9 cinematic story frame continuing directly from Shot 1. REFERENCE 1 = EXACT KRISHNA IDENTITY, REFERENCE 2 = SAME VRINDAVAN/YAMUNA ENVIRONMENT, REFERENCE 3 = SAME FLUTE. Krishna remains a youthful lean blue-skinned adult male with the exact same face and body proportions. He sits beneath a kadamba tree near the river, playing the bansuri peacefully. The camera is farther away than Shot 1, showing the environment reacting to the music: a peacock in the distance may be suggested only if naturally present, leaves move, water reflects dusk light, fireflies float. No posing for camera; he is absorbed in the moment. Premium stylized 3D animated film frame, cinematic depth and natural materials.",
+          "negative_prompt": "photograph, portrait, character sheet, muscular Krishna, abs, bodybuilder, changed face, changed clothing, giant flute, extra characters, duplicate Krishna, poster composition, text, watermark",
+          "video_prompt": "Gentle side-to-side camera drift. Krishna continues playing. Leaves sway, fireflies move and the river softly ripples. Keep Krishna stable and recognizable."
+        },
+        {
+          "id": "shot_03",
+          "duration": 5,
+          "assets": [
+            "krishna",
+            "vrindavan_yamuna",
+            "krishna_flute"
+          ],
+          "image_prompt": "Wide 16:9 cinematic story frame. REFERENCE 1 = KRISHNA ONLY, REFERENCE 2 = YAMUNA/Vrindavan environment, REFERENCE 3 = flute. Show the consequence of the music rather than another portrait: Krishna remains in the middle distance while the foreground contains moving grass and flowers and the Yamuna reflects the dusk sky. His flute playing is the visual cause of the peaceful atmosphere. Krishna's face and proportions must remain identical to Reference 1. Natural lean adult male anatomy, no muscles. Premium animated-feature movie composition with layered depth and visual storytelling.",
+          "negative_prompt": "photo, photorealistic, portrait, muscular, six pack, bodybuilder, changed identity, oversized character, oversized flute, text, logo, watermark",
+          "video_prompt": "Slow pull-back revealing more of Vrindavan. Grass and flowers sway, river ripples, fireflies pass through foreground. Krishna continues a gentle flute melody without exaggerated movement."
         }
       ]
     },
     {
       "id": "scene_02",
-      "purpose": "Bring Radha and Krishna together for the emotional payoff.",
+      "purpose": "Radha hears the flute and realizes the sound is drawing her toward the river.",
       "shots": [
         {
-          "id": "shot_03",
-          "duration": 4,
+          "id": "shot_04",
+          "duration": 6,
           "assets": [
             "radha",
-            "krishna",
-            "vrindavan_yamuna"
+            "vrindavan_yamuna",
+            "krishna_flute"
           ],
-          "image_prompt": "Wide 16:9 cinematic STORY FRAME from the same stylized 3D animated Indian mythology film. REFERENCE 1 = KRISHNA ONLY — PRIMARY KRISHNA IDENTITY. REFERENCE 2 = RADHA ONLY — PRIMARY RADHA IDENTITY. REFERENCE 3 = VRINDAVAN/YAMUNA ENVIRONMENT ONLY. Treat Reference 1 and Reference 2 as two separate people; NEVER blend their identities, faces, skin, hair, clothes, jewelry or body shapes. Krishna MUST match Reference 1: youthful lean MALE, deep blue skin, EXACT same face, normal smooth male body with natural chest and waist, peacock feather, yellow pitambar. NO muscular definition. Radha MUST match Reference 2: graceful FEMALE, warm natural skin, EXACT same face, long dark hair, red/rose traditional clothing. Krishna stands naturally on the left and Radha has just arrived from the right. They look at each other for the first time. Use environmental storytelling: Yamuna behind them, kadamba trees and dusk haze, visible distance between characters, natural gestures and eye line. This is a movie frame showing an event, NOT a posed character portrait. Krishna's small straight bansuri is held naturally and is approximately forearm length. Premium stylized 3D animated-feature rendering.",
-          "negative_prompt": "photograph, photorealistic, portrait, studio portrait, fashion shoot, character sheet, bodybuilder, muscular Krishna, six pack, eight pack, defined abs, sculpted chest, exaggerated muscles, broad shoulders, bulky torso, fat Krishna, changed Krishna face, different Krishna face, aged Krishna, female Krishna, Krishna feminine hair, braid, female clothing, pale Krishna, white Krishna, Radha male, Radha blue skin, identity mixing, identity transfer, swapped faces, swapped clothing, merged bodies, fused bodies, duplicate characters, giant flute, long flute, oversized flute, flute longer than forearm, malformed flute, floating flute, extra limbs, extra fingers, text, logo, watermark",
-          "video_prompt": "Radha takes one slow graceful step toward Krishna, Krishna turns his gaze toward her, petals drift, fabric moves naturally, subtle camera dolly-in, preserve faces and hands."
+          "image_prompt": "Wide 16:9 cinematic STORY FRAME. REFERENCE 1 = RADHA ONLY and is the exact Radha identity. REFERENCE 2 = VRINDAVAN/YAMUNA ENVIRONMENT. REFERENCE 3 = KRISHNA'S FLUTE PROP ONLY and must remain off-screen. Radha preserves Reference 1 exactly: same face, warm natural skin, graceful slender adult feminine proportions, long dark hair, traditional red/rose clothing, dupatta and jewelry. She is walking through a quiet Vrindavan path when she suddenly hears a distant flute. Show the moment of recognition through her body language: she slows, turns her head and looks toward the river. Natural environment, moving dupatta, flowers and soft dusk haze. Movie frame, not portrait.",
+          "negative_prompt": "photograph, beauty portrait, fashion shoot, character sheet, changed face, male Radha, blue skin, Krishna clothing, muscular body, stiff pose, visible flute, giant flute, extra limbs, text, watermark",
+          "video_prompt": "Radha walks slowly, then stops as she hears the distant flute. Her head turns toward the sound, hair and dupatta move gently. Subtle breathing and natural eye movement."
         },
         {
-          "id": "shot_04",
-          "duration": 4,
+          "id": "shot_05",
+          "duration": 6,
           "assets": [
             "radha",
+            "vrindavan_yamuna",
+            "krishna_flute"
+          ],
+          "image_prompt": "Wide 16:9 cinematic story frame continuing Radha's journey. REFERENCE 1 = EXACT RADHA, REFERENCE 2 = SAME VRINDAVAN ENVIRONMENT, REFERENCE 3 = FLUTE PROP ONLY and remains off-screen. Radha has decided to follow the sound. Show her moving along a sandy path between kadamba trees, one hand lightly gathering her dupatta while she looks toward the distant Yamuna. Her expression is gentle curiosity and emotional recognition, not exaggerated surprise. Preserve exact face, hair, clothing, jewelry and proportions. Cinematic foreground leaves partially frame the shot. Premium stylized 3D animated-feature quality.",
+          "negative_prompt": "photo, photorealistic, portrait, fashion shoot, changed face, body distortion, male Radha, blue skin, modern clothing, giant flute, visible flute, duplicate Radha, text, logo, watermark",
+          "video_prompt": "Radha walks at a natural slow pace toward the river. Dupatta and hair move with the breeze, small leaves shift as she passes, camera tracks gently beside her."
+        },
+        {
+          "id": "shot_06",
+          "duration": 6,
+          "assets": [
+            "radha",
+            "vrindavan_yamuna",
+            "krishna_flute"
+          ],
+          "image_prompt": "Wide 16:9 cinematic story frame. EXACT RADHA is Reference 1, Vrindavan/Yamuna is Reference 2, flute prop is Reference 3 and remains off-screen. Radha reaches a small opening where she can finally see the Yamuna through the trees. She pauses at the edge of the clearing, listening. Her face shows quiet anticipation. Keep the composition environmental and cinematic with Radha not filling the frame. Preserve exact identity and proportions. Soft dusk haze, river reflections, flowers and distant flute atmosphere. Stylized 3D animated film, not photography.",
+          "negative_prompt": "photograph, portrait, close-up beauty shot, changed face, exaggerated emotion, muscular, male Radha, blue skin, modern clothing, visible flute, text, watermark",
+          "video_prompt": "Radha stops at the clearing and takes a quiet breath. She looks toward the river. Camera slowly moves around her shoulder to reveal the Yamuna beyond."
+        }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "purpose": "Build anticipation as Radha approaches the source of the flute.",
+      "shots": [
+        {
+          "id": "shot_07",
+          "duration": 6,
+          "assets": [
             "krishna",
+            "radha",
+            "vrindavan_yamuna"
+          ],
+          "image_prompt": "Wide 16:9 cinematic STORY FRAME. REFERENCE 1 = KRISHNA ONLY and is the primary Krishna identity. REFERENCE 2 = RADHA ONLY and is the primary Radha identity. REFERENCE 3 = SAME VRINDAVAN/YAMUNA ENVIRONMENT. Treat both references as separate people. NEVER blend faces, skin, hair, clothing, jewelry or body shapes. Krishna exactly matches Reference 1: youthful lean deep-blue adult male, smooth natural torso, yellow pitambar, peacock feather. Radha exactly matches Reference 2: graceful warm-skinned adult female with long dark hair and red/rose clothing. Krishna is visible in the distance beside the Yamuna playing the flute; Radha has just entered the far side of the frame and notices him. The distance between them is important. Environmental storytelling, layered foreground foliage, cinematic depth, movie frame rather than posed portrait.",
+          "negative_prompt": "photograph, photorealistic, portrait, poster, muscular Krishna, abs, bodybuilder, broad shoulders, changed Krishna face, female Krishna, blue Radha, swapped faces, swapped clothes, identity mixing, fused bodies, duplicate characters, giant flute, distorted anatomy, text, watermark",
+          "video_prompt": "Camera slowly reveals Krishna through foreground leaves as Radha enters the distant edge of frame. Krishna continues playing. Radha pauses. Keep both identities stable."
+        },
+        {
+          "id": "shot_08",
+          "duration": 6,
+          "assets": [
+            "krishna",
+            "radha",
+            "vrindavan_yamuna"
+          ],
+          "image_prompt": "Wide 16:9 cinematic story frame continuing directly from Shot 7. Reference 1 = Krishna identity, Reference 2 = Radha identity, Reference 3 = Yamuna environment. Krishna remains seated or standing naturally beside the river, lean and non-muscular. Radha slowly approaches from behind the trees. They are not yet face-to-face. Krishna has not dramatically turned; the moment is quiet and believable. Use composition with Krishna on one side and Radha approaching through the environment on the other. Exact faces and proportions from references. Premium stylized 3D animated-feature movie frame with atmospheric dusk depth.",
+          "negative_prompt": "photo, portrait, fashion pose, muscular Krishna, six pack, bodybuilder, changed faces, identity mixing, fused bodies, oversized characters, dramatic superhero pose, extra limbs, text, watermark",
+          "video_prompt": "Radha takes several slow steps toward Krishna. Krishna continues playing. Camera gently tracks with Radha while maintaining both characters in the same spatial relationship."
+        },
+        {
+          "id": "shot_09",
+          "duration": 6,
+          "assets": [
+            "krishna",
+            "radha",
             "vrindavan_peacock"
           ],
-          "image_prompt": "Wide 16:9 cinematic STORY FRAME — final emotional shot of the same stylized 3D animated Indian mythology film. REFERENCE 1 = KRISHNA ONLY and is the PRIMARY KRISHNA IDENTITY. REFERENCE 2 = RADHA ONLY and is the PRIMARY RADHA IDENTITY. REFERENCE 3 = PEACOCK + ENVIRONMENT ONLY. Never blend the two character references. Krishna MUST preserve Reference 1's EXACT face, deep blue skin, youthful lean MALE anatomy, normal smooth chest and waist, peacock feather, yellow pitambar and jewelry. No muscular definition, no heroic bodybuilding physique. Radha MUST preserve Reference 2's EXACT face, warm natural skin, graceful FEMALE anatomy, long dark hair and red/rose clothing. They stand naturally beside the Yamuna after their first meeting, sharing a quiet emotional glance. A peacock is farther behind them near the river. Use foreground leaves, river reflections, atmospheric dusk haze and cinematic depth to make this feel like an actual animated movie frame. Do not center or pose the characters like a poster. The emotional action is the exchanged glance and peaceful pause after the flute. Krishna holds one small simple bamboo bansuri, approximately forearm length. Premium stylized 3D animated-feature rendering, cohesive with shots 1-3, painterly cinematic materials, subtle volumetric light.",
-          "negative_prompt": "photograph, photorealism, DSLR, live action, portrait, poster, fashion shoot, beauty shot, character sheet, muscular Krishna, bodybuilder, six pack, eight pack, visible abs, sculpted chest, exaggerated muscles, broad shoulders, bulky torso, heroic bodybuilder physique, changed Krishna face, different Krishna face, aged Krishna, female Krishna, feminine Krishna, braid, female clothing, pale Krishna, white skin, Radha male, Radha blue skin, identity mixing, swapped face, swapped clothing, merged bodies, duplicate characters, giant flute, long flute, oversized flute, malformed flute, floating flute, distorted anatomy, plastic photoreal CGI, text, logo, watermark",
-          "video_prompt": "Slow cinematic pull-back, mist drifts, water ripples, peacock moves subtly, garments and leaves respond to a soft breeze, keep both characters stable and recognizable."
+          "image_prompt": "Wide 16:9 cinematic story frame. Reference 1 = exact Krishna, Reference 2 = exact Radha, Reference 3 = exact peacock/environment reference. Krishna and Radha are now only a short distance apart near the Yamuna. Krishna lowers the flute slightly after noticing her. Radha stops. The peacock is naturally positioned farther behind them and does not compete with the characters. Krishna remains lean, smooth and naturally proportioned. Radha remains graceful and slender. Use a three-dimensional movie composition with foreground leaves and background river, not a posed couple portrait. Their eye lines and physical positions must tell the story.",
+          "negative_prompt": "photograph, portrait, wedding photo, poster, muscular Krishna, abs, bodybuilder, changed face, identity mixing, merged bodies, swapped clothing, giant peacock, duplicate bird, giant flute, text, watermark",
+          "video_prompt": "Krishna slowly lowers the flute and looks toward Radha. Radha stops and meets his gaze. The peacock makes a subtle natural movement. Very gentle camera dolly-in."
+        }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "purpose": "Deliver the emotional payoff without melodrama: recognition, silence, and a peaceful shared moment.",
+      "shots": [
+        {
+          "id": "shot_10",
+          "duration": 6,
+          "assets": [
+            "krishna",
+            "radha",
+            "vrindavan_yamuna"
+          ],
+          "image_prompt": "Wide 16:9 cinematic emotional story frame. Reference 1 = exact Krishna identity, Reference 2 = exact Radha identity, Reference 3 = same Yamuna environment. Krishna and Radha stand naturally facing each other for the first time. Krishna holds the small bansuri loosely at his side. Their expressions are subtle: recognition, warmth and peace. Krishna must remain a youthful lean blue-skinned adult male with a smooth natural torso, not muscular. Radha must remain the exact graceful adult female from Reference 2. Do not pose them like a romantic poster. Their eye line and relaxed body language should feel like a scene from a premium animated film. Layered foreground foliage, river behind them, soft dusk haze.",
+          "negative_prompt": "photo, photorealistic, portrait, romantic poster, fashion shoot, muscular Krishna, abs, bodybuilder, changed face, identity mixing, fused bodies, exaggerated romance, kissing, modern clothes, text, logo, watermark",
+          "video_prompt": "Krishna and Radha hold each other's gaze. Krishna makes a tiny natural smile. Radha responds with a soft expression. Cloth and hair move in the breeze. Slow, restrained dolly-in."
+        },
+        {
+          "id": "shot_11",
+          "duration": 6,
+          "assets": [
+            "krishna",
+            "radha",
+            "vrindavan_peacock"
+          ],
+          "image_prompt": "Wide 16:9 cinematic story frame continuing the emotional moment. Reference 1 = Krishna, Reference 2 = Radha, Reference 3 = peacock/environment. Krishna and Radha now stand side by side looking toward the Yamuna after their silent meeting. Krishna's flute rests naturally in his hand. A peacock stands farther away. The scene should communicate peace through composition, not through exaggerated facial expressions. Preserve exact identities, body proportions and clothing. Strong cinematic depth, river reflections, soft mist, leaves in foreground, premium stylized 3D animated-feature quality.",
+          "negative_prompt": "photograph, portrait, poster, muscular Krishna, visible abs, bodybuilder, changed faces, identity mixing, duplicate characters, giant peacock, distorted hands, modern clothes, text, watermark",
+          "video_prompt": "Both characters slowly turn their gaze toward the river. Peacock shifts slightly. Water ripples and mist drifts. Camera makes a gentle lateral move."
+        },
+        {
+          "id": "shot_12",
+          "duration": 8,
+          "assets": [
+            "krishna",
+            "radha",
+            "vrindavan_peacock"
+          ],
+          "image_prompt": "Wide 16:9 FINAL CINEMATIC STORY FRAME from the same coherent stylized 3D animated Indian mythology film. Reference 1 = exact Krishna identity. Reference 2 = exact Radha identity. Reference 3 = peacock and environment. Krishna and Radha remain together beside the Yamuna in a peaceful final composition. Krishna is youthful, lean, deep blue, naturally proportioned and non-muscular, with the exact face, peacock feather, yellow pitambar and jewelry from Reference 1. Radha is the exact graceful warm-skinned woman from Reference 2. The peacock is farther in the background. Use a wide environmental composition with foreground leaves, river reflections, kadamba trees, dusk mist and a sense of stillness. This should look unmistakably like the closing frame of a premium animated movie, NOT a photograph, portrait, poster or character sheet. Leave visual breathing room for a final hold.",
+          "negative_prompt": "photograph, photorealism, DSLR, live action, portrait, poster, fashion shoot, muscular Krishna, six pack, eight pack, defined abs, bodybuilder, broad shoulders, bulky torso, changed Krishna face, changed Radha face, identity mixing, fused bodies, duplicate characters, giant peacock, giant flute, distorted anatomy, text, logo, watermark",
+          "video_prompt": "Very slow cinematic pull-back for the final hold. Krishna and Radha remain calm and stable. River ripples, mist drifts, peacock makes one subtle movement, leaves and garments respond to a soft breeze. End in stillness and hold the final composition."
         }
       ]
     }
   ],
   "audio": {
-    "music_prompt": "18-second cinematic Indian devotional instrumental for a Radha-Krishna 3D animated short. Begin with a soft solo bansuri phrase over tanpura and distant Yamuna ambience. Add delicate santoor/plucked texture and very soft temple bells as Radha hears the flute. Gradually widen the arrangement as she approaches Krishna. End with a warm sustained bansuri phrase and gentle tanpura resolution. Emotional but restrained, sacred, intimate, magical Vrindavan dusk. No vocals, no chanting, no modern drums, no EDM, no heavy percussion, no dramatic trailer music.",
-    "music_structure": [
+    "language": "hi-IN",
+    "voiceover_style": "soft cinematic Hindi narration, intimate devotional storytelling, restrained emotion, no news/documentary delivery",
+    "voiceover_script": [
       {
-        "time": "0-4s",
-        "description": "solo bansuri, tanpura, river and night ambience; mysterious opening"
+        "time": "0-5s",
+        "text": "वृंदावन की उस शांत संध्या में, यमुना के किनारे एक बाँसुरी बज उठी।"
       },
       {
-        "time": "4-8s",
-        "description": "soft second bansuri phrase and sparse santoor as Radha reacts"
+        "time": "5-11s",
+        "text": "स्वर इतना मधुर था कि जैसे हवा भी कुछ पल के लिए ठहर गई हो।"
       },
       {
-        "time": "8-13s",
-        "description": "slightly fuller devotional texture as Radha approaches Krishna"
+        "time": "11-16s",
+        "text": "दूर कहीं, राधा ने वह धुन सुनी।"
       },
       {
-        "time": "13-18s",
-        "description": "warm sustained bansuri, soft bell accent and tanpura resolution"
+        "time": "16-22s",
+        "text": "उन्होंने कदम रोक दिए... और मन ने जैसे उस आवाज़ को पहचान लिया।"
+      },
+      {
+        "time": "22-28s",
+        "text": "बिना कुछ कहे, राधा उसी दिशा में चल पड़ीं।"
+      },
+      {
+        "time": "28-34s",
+        "text": "कदम धीरे थे, लेकिन बाँसुरी की पुकार उन्हें यमुना के और पास ले जा रही थी।"
+      },
+      {
+        "time": "34-40s",
+        "text": "पेड़ों के बीच से जब वह किनारा दिखाई दिया, तो धुन का रहस्य भी सामने था।"
+      },
+      {
+        "time": "40-46s",
+        "text": "वहाँ कृष्ण थे... शांत, निश्चल, अपनी बाँसुरी में डूबे हुए।"
+      },
+      {
+        "time": "46-52s",
+        "text": "राधा कुछ पल वहीं ठहर गईं। कृष्ण ने भी जैसे उनकी आहट महसूस कर ली।"
+      },
+      {
+        "time": "52-58s",
+        "text": "दोनों की नज़रें मिलीं... और उस पल को शब्दों की ज़रूरत नहीं थी।"
+      },
+      {
+        "time": "58-64s",
+        "text": "बाँसुरी शांत हो गई, लेकिन उसकी धुन जैसे हवा में अब भी ठहरी हुई थी।"
+      },
+      {
+        "time": "64-72s",
+        "text": "यमुना बहती रही... वृंदावन की शाम ढलती रही... और वह मिलन एक शांत स्मृति बन गया।"
       }
     ],
     "dialogue": [],
+    "music_prompt": "72-second cinematic Indian devotional instrumental for a premium Radha-Krishna 3D animated short. Begin with intimate solo bansuri over tanpura and soft Yamuna ambience. Gradually introduce delicate santoor and sparse plucked Indian textures as Radha hears and follows the flute. Build gently during her approach, then become warmer and more spacious when Radha and Krishna meet. End with a sustained bansuri phrase, tanpura resolution and one very soft temple-bell accent. Sacred, intimate, tender, magical Vrindavan dusk. No vocals, no chanting, no EDM, no modern drums, no heavy percussion, no trailer-style impact music.",
+    "music_structure": [
+      {
+        "time": "0-16s",
+        "description": "solo bansuri, tanpura, river ambience and soft night insects; mysterious opening"
+      },
+      {
+        "time": "16-34s",
+        "description": "second bansuri phrase, sparse santoor and gentle atmospheric texture as Radha follows the sound"
+      },
+      {
+        "time": "34-52s",
+        "description": "slightly fuller devotional arrangement as Radha approaches Krishna; keep percussion extremely restrained"
+      },
+      {
+        "time": "52-64s",
+        "description": "warm emotional bansuri and sustained strings/plucked texture as their eyes meet"
+      },
+      {
+        "time": "64-72s",
+        "description": "arrangement opens into spacious bansuri, tanpura and one subtle bell accent; peaceful resolution"
+      }
+    ],
+    "music_generation_note": "If the music model works more reliably with shorter generations, generate 4-5 contiguous music segments using the structure above and crossfade them during editing rather than forcing one long generation.",
     "sfx": [
       "Yamuna water ambience",
       "soft night insects",
       "gentle breeze through kadamba trees",
-      "very subtle cloth movement",
-      "distant flute ambience"
+      "subtle cloth and dupatta movement",
+      "light footsteps on sandy path",
+      "distant flute ambience before Krishna is revealed",
+      "very subtle firefly/atmospheric sparkle sound if available",
+      "one soft temple bell at the emotional resolution"
     ]
   },
   "story": {
     "theme": "Radha hears Krishna's flute in Vrindavan and follows its sound to a quiet meeting beside the Yamuna.",
     "story_arc": [
-      "The flute begins beside the Yamuna.",
-      "Radha hears it and follows the sound.",
-      "She reaches Krishna and their eyes meet.",
-      "The moment settles into a peaceful devotional image."
+      "A mysterious flute begins beside the Yamuna.",
+      "The music seems to change the stillness of Vrindavan.",
+      "Radha hears the flute and recognizes its call.",
+      "She follows the sound through the trees.",
+      "She discovers Krishna beside the Yamuna.",
+      "They meet through a quiet exchanged glance.",
+      "The flute falls silent and the story ends in peaceful stillness."
     ],
-    "tone": "tender, magical, devotional, cinematic",
-    "visual_rule": "Every shot must feel like a frame from one coherent stylized 3D animated film, not a photo, portrait, slideshow or character sheet.",
-    "ending": "Hold briefly on Radha and Krishna together as the peacock and Yamuna complete the frame."
+    "tone": "tender, magical, devotional, cinematic, restrained",
+    "visual_rule": "Every shot must feel like a frame from one coherent stylized 3D animated film, not a photo, portrait, slideshow, character sheet or poster.",
+    "storytelling_rule": "Show the story through visible actions, environment, eyelines, movement and composition. Narration must support the visuals rather than explain what the viewer can already see.",
+    "ending": "Hold on Radha and Krishna together beside the Yamuna while the peacock and environment complete the frame. Let the final shot breathe before cutting to black.",
+    "continuity_rules": [
+      "Reuse the same character reference assets throughout the movie.",
+      "For every multi-character shot, Reference 1 is Krishna and Reference 2 is Radha.",
+      "Never merge or transfer identity between Krishna and Radha.",
+      "Do not turn Krishna into a muscular superhero or bodybuilder.",
+      "Keep scene images wide 16:9 at source stage.",
+      "Every shot must advance the story or deepen the emotional beat.",
+      "Do not pad duration with repetitive shots."
+    ]
+  },
+  "edit": {
+    "target_runtime_seconds": 72,
+    "pacing": "slow cinematic pacing with visible story progression; avoid rapid slideshow cuts",
+    "transition_style": "mostly clean cuts and occasional gentle dissolves only where emotionally appropriate",
+    "final_hold_seconds": 2,
+    "subtitles": "optional Hindi subtitles matching the Hindi voiceover exactly",
+    "crop_note": "Source images and scenes are 16:9. Preserve faces and key action when creating the final 9:16 social crop."
   }
 }
