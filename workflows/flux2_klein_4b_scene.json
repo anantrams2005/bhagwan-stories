@@ -26,6 +26,19 @@
       "title": "img3"
     }
   },
+  "148": {
+    "inputs": {
+      "filename_prefix": "bhagwan_stories/scene",
+      "images": [
+        "147:125",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Scene Image"
+    }
+  },
   "_pipeline_nodes": {
     "positive_prompt": "147:136",
     "negative_prompt": "147:137",
@@ -33,7 +46,8 @@
       "76",
       "81",
       "146"
-    ]
+    ],
+    "output_node": "148"
   },
   "147:123": {
     "inputs": {
