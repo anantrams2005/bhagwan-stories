@@ -31,6 +31,9 @@ def validate_story(story: dict[str, Any]) -> list[str]:
             for key in ("id","duration","image_prompt","video_prompt"):
                 if key not in shot: errors.append(f"{p} missing {key}")
             if "duration" in shot and not isinstance(shot["duration"],(int,float)): errors.append(f"{p}.duration must be numeric")
+            asset_ids = shot.get("assets", shot.get("characters", []))
+            if len(asset_ids) != 3:
+                errors.append(f"{p} must declare exactly 3 assets for the FLUX.2 Klein 4B scene workflow")
             for asset_id in shot.get("assets",shot.get("characters",[])):
                 if asset_id not in known_assets: errors.append(f"{p} references unknown asset: {asset_id}")
 

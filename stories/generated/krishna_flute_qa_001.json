@@ -63,8 +63,8 @@
             "grandchild_boy",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandson asking grandfather a curious question under the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandson asking grandfather a curious question under the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The grandson asks why Krishna always plays the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -83,8 +83,8 @@
             "grandchild_boy",
             "grandchild_girl"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather smiling as he begins the explanation. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather smiling as he begins the explanation. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather smiles and says the flute has many meanings in devotional traditions. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -109,8 +109,8 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = krishna_flute. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Krishna sitting peacefully beside the Yamuna holding a small bamboo flute. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sitting peacefully beside the Yamuna holding a small bamboo flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna sits beside the Yamuna holding the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -124,8 +124,8 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = krishna_flute. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Krishna gently raising the bamboo flute toward his lips beside the river. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gently raising the bamboo flute toward his lips beside the river. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "He raises the flute toward his lips. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -139,8 +139,8 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = krishna_flute. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Krishna beginning to play the bansuri beneath a kadamba tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna beginning to play the bansuri beneath a kadamba tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna begins to play. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -154,8 +154,8 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamuna_evening. Reference 3 = krishna_flute. Create a cinematic 3D Indian mythology film frame showing Yamuna water rippling softly while Krishna plays in the background. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yamuna water rippling softly while Krishna plays in the background. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The river ripples gently. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -175,8 +175,8 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamuna_evening. Reference 3 = krishna_flute. Create a cinematic 3D Indian mythology film frame showing kadamba leaves swaying gently around Krishna as the flute music continues. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show kadamba leaves swaying gently around Krishna as the flute music continues. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Leaves move in the breeze. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -187,10 +187,11 @@
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
             "krishna",
-            "yamuna_evening"
+            "yamuna_evening",
+            "krishna_flute"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing young cowherd child stopping on a path to listen to Krishna's flute. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show young cowherd child stopping on a path to listen to Krishna's flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "A cowherd child pauses to listen. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -201,10 +202,11 @@
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
             "krishna",
-            "yamuna_evening"
+            "yamuna_evening",
+            "krishna_flute"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing peacock turning toward the distant sound of Krishna's flute. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock turning toward the distant sound of Krishna's flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "A peacock turns toward the sound. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -218,8 +220,8 @@
             "radha",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Radha in a Vrindavan path pausing as she hears Krishna's distant flute. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha in a Vrindavan path pausing as she hears Krishna's distant flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Radha hears the distant melody. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -239,8 +241,8 @@
             "krishna",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = krishna. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Radha, a cowherd child and distant peacock all oriented toward Krishna's music. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha and Krishna share a peaceful moment beside the Yamuna as the flute melody draws the evening to stillness.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The sound seems to connect everyone to the same moment. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -254,8 +256,8 @@
             "grandchild_boy",
             "grandchild_girl"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather explaining the flute symbolism to the children. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather explaining the flute symbolism to the children. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather explains the symbolic idea of the empty flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -274,8 +276,8 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = krishna_flute. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Krishna absorbed peacefully in playing the flute beside the Yamuna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna absorbed peacefully in playing the flute beside the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna plays with calm concentration. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -289,8 +291,8 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamuna_evening. Reference 3 = krishna_flute. Create a cinematic 3D Indian mythology film frame showing breeze moving through flowers and trees around Krishna as the music travels. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show breeze moving through flowers and trees around Krishna as the music travels. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The breeze carries the sound through the grove. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -310,8 +312,8 @@
             "grandchild_boy",
             "grandchild_girl"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather speaking thoughtfully to the children. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather speaking thoughtfully to the children. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather clarifies that the symbolism is devotional interpretation, not a direct scriptural quote. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -330,8 +332,8 @@
             "grandfather",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandfather. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandson smiling thoughtfully after understanding the explanation. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is warm Indian grandfather; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandson smiling thoughtfully after understanding the explanation. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The grandson smiles, understanding the idea. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -345,8 +347,8 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = krishna_flute. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing Krishna lowering the flute and looking peacefully across the Yamuna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna lowering the flute and looking peacefully across the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna lowers the flute and looks toward the river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -360,8 +362,8 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = krishna_flute. Reference 3 = yamuna_evening. Create a cinematic 3D Indian mythology film frame showing wide cinematic view of Krishna beside the Yamuna with flute, fireflies and kadamba trees. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show wide cinematic view of Krishna beside the Yamuna with flute, fireflies and kadamba trees. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The final image shows the quiet river and Krishna with the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -381,8 +383,8 @@
             "grandchild_boy",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather smiling warmly as the children sit quietly beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather smiling warmly as the children sit quietly beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather closes with the devotional feeling of surrender. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
