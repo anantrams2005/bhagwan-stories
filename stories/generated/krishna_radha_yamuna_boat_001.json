@@ -12,19 +12,27 @@
   "characters": [
     {
       "id": "grandfather",
-      "description": "Warm Indian grandfather in his late 60s, white kurta-pajama, simple shawl, expressive kind face, seated naturally while telling stories."
-    },
-    {
-      "id": "grandmother",
-      "description": "Warm Indian grandmother in her late 60s, simple traditional sari, gentle expressive face, seated naturally while telling stories."
-    },
-    {
-      "id": "grandchild_girl",
-      "description": "Indian girl aged about 8, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+      "description": "Warm Indian grandfather in his late 60s, white kurta-pajama, simple shawl, expressive kind face."
     },
     {
       "id": "grandchild_boy",
-      "description": "Indian boy aged about 10, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+      "description": "Indian boy aged about 10 in simple Indian clothes, curious expressive face."
+    },
+    {
+      "id": "grandmother",
+      "description": "Warm Indian grandmother in her late 60s, simple traditional sari, gentle expressive face."
+    },
+    {
+      "id": "grandchild_girl",
+      "description": "Indian girl aged about 8 in simple Indian clothes, curious expressive face."
+    },
+    {
+      "id": "krishna",
+      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+    },
+    {
+      "id": "radha",
+      "description": "Graceful Radha in traditional Vrindavan attire and delicate jewelry."
     }
   ],
   "locations": [
