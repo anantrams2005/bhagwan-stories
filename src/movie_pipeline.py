@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -18,14 +19,21 @@ class MoviePipeline:
         self.scene_images = SceneImageStage(scene_image_generator)
         self.video = VideoStage(video_generator) if video_generator else None
 
+    @staticmethod
+    def _copy_story_assets(refs: dict[str, Path], movie_dir: Path) -> None:
+        """Package the exact reusable references needed by this story for Kaggle handoff."""
+        for asset_id, source in refs.items():
+            destination = movie_dir / "assets" / asset_id / source.name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
+
     def run(self, story: dict[str, Any], movie_dir: Path) -> list[dict[str, Any]]:
         movie_dir = Path(movie_dir)
-        (movie_dir / "scenes").mkdir(parents=True, exist_ok=True)
-        (movie_dir / "generated_short_videos").mkdir(parents=True, exist_ok=True)
-        (movie_dir / "audio" / "music").mkdir(parents=True, exist_ok=True)
-        (movie_dir / "final").mkdir(parents=True, exist_ok=True)
+        for path in ("assets", "scenes", "generated_short_videos", "audio/music", "final"):
+            (movie_dir / path).mkdir(parents=True, exist_ok=True)
 
         refs = self.assets.run(story)
+        self._copy_story_assets(refs, movie_dir)
         records = self.scene_images.run(story, movie_dir, refs)
         if self.video:
             records = self.video.run(records, story)
