@@ -1,0 +1,444 @@
+{
+  "id": "krishna_ukhal_yamala_arjuna_part1_001",
+  "title": "Krishna, the Butter Thief, and the Two Trees — Part 1",
+  "category": "krishna_leela",
+  "format": "cinematic_short",
+  "duration_target": 60,
+  "source": {
+    "type": "traditional_account",
+    "name": "Traditional Krishna/Vrindavan story",
+    "episode_or_reference": "Story idea supplied in stories/story_ideas.md; traditional account/folklore treatment, not presented as a direct scripture quotation."
+  },
+  "characters": [
+    {
+      "id": "grandfather",
+      "description": "Warm Indian grandfather in his late 60s, white kurta-pajama, simple shawl, expressive kind face."
+    },
+    {
+      "id": "grandchild_boy",
+      "description": "Indian boy aged about 10 in simple Indian clothes, curious expressive face."
+    },
+    {
+      "id": "grandchild_girl",
+      "description": "Indian girl aged about 8 in simple Indian clothes, curious expressive face."
+    },
+    {
+      "id": "krishna",
+      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+    },
+    {
+      "id": "yashoda",
+      "description": "Mother Yashoda in traditional Vrindavan sari and jewelry, warm expressive face."
+    }
+  ],
+  "locations": [
+    {
+      "id": "banyan_courtyard",
+      "description": "Peaceful Vrindavan village courtyard beneath a huge old banyan tree, exposed roots, soft afternoon light, earthen ground, clay pots, village greenery and a calm storytelling atmosphere."
+    },
+    {
+      "id": "nanda_courtyard",
+      "description": "Nanda's Gokul courtyard with butter pots, wooden ukhal, cowshed elements and large trees nearby."
+    }
+  ],
+  "supporting_assets": [
+    {
+      "id": "ukhal",
+      "category": "props",
+      "description": "Heavy traditional wooden mortar used for pounding grain, large enough for Krishna to be tied to."
+    },
+    {
+      "id": "yamala_arjuna_trees",
+      "category": "props",
+      "description": "Two enormous ancient trees standing close together, their trunks side by side with a narrow gap."
+    },
+    {
+      "id": "gokul_gopas",
+      "category": "people",
+      "description": "Small group of Gokul villagers and cowherds in varied traditional clothing."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_01",
+      "purpose": "Storytelling frame beneath the banyan tree and immediate hook.",
+      "shots": [
+        {
+          "id": "shot_01",
+          "duration": 3,
+          "action": "Grandfather teases the children that this time Krishna's butter stealing finally gets him caught.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather making a playful serious face while the children listen. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather teases the children that this time Krishna's butter stealing finally gets him caught. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "आज कन्हैया की माखन-चोरी का हिसाब होने वाला था… और इस बार वे सचमुच पकड़े गए!"
+            }
+          ]
+        },
+        {
+          "id": "shot_02",
+          "duration": 3,
+          "action": "The children look excited.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children reacting with surprise beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children look excited. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_02",
+      "purpose": "Set up the leela and characters.",
+      "shots": [
+        {
+          "id": "shot_03",
+          "duration": 3,
+          "action": "Krishna and friends steal butter in a Gokul courtyard.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "nanda_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = nanda_courtyard. Create a cinematic 3D Indian mythology film frame showing Krishna and friends caught around butter pots in Nanda's courtyard. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna and friends steal butter in a Gokul courtyard. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_04",
+          "duration": 3,
+          "action": "Villagers notice the mischief and gather around Krishna.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "gokul_gopas",
+            "nanda_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = gokul_gopas. Reference 3 = nanda_courtyard. Create a cinematic 3D Indian mythology film frame showing Gokul villagers gathering around Krishna after catching him near the butter pots. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Villagers notice the mischief and gather around Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_05",
+          "duration": 3,
+          "action": "The villagers bring Krishna to Yashoda.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "gokul_gopas",
+            "yashoda"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = gokul_gopas. Reference 3 = yashoda. Create a cinematic 3D Indian mythology film frame showing villagers gently bringing Krishna before Yashoda in the courtyard. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The villagers bring Krishna to Yashoda. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_06",
+          "duration": 3,
+          "action": "The villagers ask Yashoda to punish him.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "krishna",
+            "gokul_gopas"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = krishna. Reference 3 = gokul_gopas. Create a cinematic 3D Indian mythology film frame showing villagers explaining the butter theft to Yashoda while Krishna looks innocent. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The villagers ask Yashoda to punish him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "purpose": "Develop the central action.",
+      "shots": [
+        {
+          "id": "shot_07",
+          "duration": 3,
+          "action": "Yashoda decides to tie Krishna to the wooden ukhal.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "krishna",
+            "ukhal"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = krishna. Reference 3 = ukhal. Create a cinematic 3D Indian mythology film frame showing Yashoda preparing the wooden ukhal while Krishna watches with a mischievous expression. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Yashoda decides to tie Krishna to the wooden ukhal. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_08",
+          "duration": 3,
+          "action": "Yashoda ties Krishna securely to the ukhal.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "krishna",
+            "ukhal"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = krishna. Reference 3 = ukhal. Create a cinematic 3D Indian mythology film frame showing Yashoda gently tying Krishna to the heavy wooden mortar. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Yashoda ties Krishna securely to the ukhal. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_09",
+          "duration": 3,
+          "action": "Krishna looks at the ukhal, then toward the nearby trees.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "ukhal",
+            "yamala_arjuna_trees"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = ukhal. Reference 3 = yamala_arjuna_trees. Create a cinematic 3D Indian mythology film frame showing Krishna glancing from the ukhal toward two enormous trees nearby. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna looks at the ukhal, then toward the nearby trees. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_10",
+          "duration": 3,
+          "action": "He begins slowly dragging the heavy ukhal across the courtyard.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "ukhal",
+            "nanda_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = ukhal. Reference 3 = nanda_courtyard. Create a cinematic 3D Indian mythology film frame showing Krishna pulling the wooden ukhal behind him across the earthen courtyard. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "He begins slowly dragging the heavy ukhal across the courtyard. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "purpose": "Escalate the problem or mystery.",
+      "shots": [
+        {
+          "id": "shot_11",
+          "duration": 3,
+          "action": "The ukhal follows as Krishna reaches the narrow gap between the two trees.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "ukhal",
+            "yamala_arjuna_trees"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = ukhal. Reference 3 = yamala_arjuna_trees. Create a cinematic 3D Indian mythology film frame showing Krishna approaching the narrow gap between two huge trees while dragging the ukhal. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The ukhal follows as Krishna reaches the narrow gap between the two trees. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_12",
+          "duration": 3,
+          "action": "Krishna looks calm and determined as the ukhal becomes wedged between the trunks.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "ukhal",
+            "yamala_arjuna_trees"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = ukhal. Reference 3 = yamala_arjuna_trees. Create a cinematic 3D Indian mythology film frame showing wooden ukhal wedged between the two ancient trees with Krishna standing just beyond it. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna looks calm and determined as the ukhal becomes wedged between the trunks. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_13",
+          "duration": 3,
+          "action": "Krishna pulls again with divine strength.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "ukhal",
+            "yamala_arjuna_trees"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = ukhal. Reference 3 = yamala_arjuna_trees. Create a cinematic 3D Indian mythology film frame showing Krishna pulling firmly while the two ancient trees begin to strain. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna pulls again with divine strength. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_14",
+          "duration": 3,
+          "action": "Leaves shake and birds fly from the branches.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yamala_arjuna_trees",
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yamala_arjuna_trees. Reference 2 = krishna. Create a cinematic 3D Indian mythology film frame showing two enormous trees trembling as leaves and birds react to the movement. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Leaves shake and birds fly from the branches. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_05",
+      "purpose": "Deliver the divine or comic payoff.",
+      "shots": [
+        {
+          "id": "shot_15",
+          "duration": 3,
+          "action": "The trunks begin to crack and bend toward the ground.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yamala_arjuna_trees",
+            "ukhal",
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yamala_arjuna_trees. Reference 2 = ukhal. Reference 3 = krishna. Create a cinematic 3D Indian mythology film frame showing ancient tree trunks bending and beginning to split apart around the wedged ukhal. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The trunks begin to crack and bend toward the ground. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_16",
+          "duration": 3,
+          "action": "The children beneath the banyan tree react in amazement.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "grandchild_girl"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandchildren looking astonished as grandfather builds suspense. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children beneath the banyan tree react in amazement. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandchild_girl",
+              "text": "दादाजी! फिर क्या हुआ?"
+            }
+          ]
+        },
+        {
+          "id": "shot_17",
+          "duration": 3,
+          "action": "Grandfather pauses before the reveal.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "grandchild_girl"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather holding up one finger dramatically beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather pauses before the reveal. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "बस… अगले ही पल दोनों पेड़ धरती की ओर झुकने लगे!"
+            }
+          ]
+        },
+        {
+          "id": "shot_18",
+          "duration": 3,
+          "action": "The trees crash down in a controlled spectacular moment, without showing injury.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "yamala_arjuna_trees",
+            "ukhal"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamala_arjuna_trees. Reference 3 = ukhal. Create a cinematic 3D Indian mythology film frame showing two enormous trees falling away from Krishna in a spectacular but safe divine event. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The trees crash down in a controlled spectacular moment, without showing injury. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_06",
+      "purpose": "Return to the children beneath the banyan tree and close the lesson.",
+      "shots": [
+        {
+          "id": "shot_19",
+          "duration": 3,
+          "action": "A bright divine presence begins to emerge from the fallen trees.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "yamala_arjuna_trees"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yamala_arjuna_trees. Create a cinematic 3D Indian mythology film frame showing two radiant divine figures beginning to emerge from the fallen trees. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "A bright divine presence begins to emerge from the fallen trees. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_20",
+          "duration": 3,
+          "action": "Grandfather closes Part 1 with the promise of the divine reveal.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather smiling as the children wait eagerly for the next part. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather closes Part 1 with the promise of the divine reveal. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "लेकिन बच्चों, उन पेड़ों के भीतर कौन छिपा था… यह कहानी अगले भाग में सुनाऊँगा।"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "music_prompt": "Suspenseful devotional score with low tanpura drone, soft mridangam pulses and rising bansuri; divine reveal held for the final moments.",
+    "dialogue": [
+      {
+        "speaker": "grandfather",
+        "text": "आज कन्हैया की माखन-चोरी का हिसाब होने वाला था… और इस बार वे सचमुच पकड़े गए!"
+      },
+      {
+        "speaker": "grandchild_girl",
+        "text": "दादाजी! फिर क्या हुआ?"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "बस… अगले ही पल दोनों पेड़ धरती की ओर झुकने लगे!"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "लेकिन बच्चों, उन पेड़ों के भीतर कौन छिपा था… यह कहानी अगले भाग में सुनाऊँगा।"
+      }
+    ],
+    "sfx": [
+      "soft banyan leaves",
+      "light village ambience",
+      "natural footsteps",
+      "subtle birds",
+      "gentle cloth movement"
+    ]
+  }
+}
