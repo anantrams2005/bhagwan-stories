@@ -1,0 +1,420 @@
+{
+  "id": "krishna_human_pyramid_butter_001",
+  "title": "Krishna's Human Pyramid Butter Heist",
+  "category": "krishna_leela",
+  "format": "cinematic_short",
+  "duration_target": 60,
+  "source": {
+    "type": "traditional_account",
+    "name": "Traditional Krishna/Vrindavan story",
+    "episode_or_reference": "Story idea supplied in stories/story_ideas.md; traditional account/folklore treatment, not presented as a direct scripture quotation."
+  },
+  "characters": [
+    {
+      "id": "grandfather",
+      "description": "Warm Indian grandfather in his late 60s, white kurta-pajama, simple shawl, expressive kind face, seated naturally while telling stories."
+    },
+    {
+      "id": "grandmother",
+      "description": "Warm Indian grandmother in her late 60s, simple traditional sari, gentle expressive face, seated naturally while telling stories."
+    },
+    {
+      "id": "grandchild_girl",
+      "description": "Indian girl aged about 8, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+    },
+    {
+      "id": "grandchild_boy",
+      "description": "Indian boy aged about 10, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+    }
+  ],
+  "locations": [
+    {
+      "id": "banyan_courtyard",
+      "description": "Peaceful Vrindavan village courtyard beneath a huge old banyan tree, exposed roots, soft afternoon light, earthen ground, clay pots, village greenery and a calm storytelling atmosphere."
+    },
+    {
+      "id": "gokul_rooftop_butter",
+      "description": "Gokul courtyard with a butter pot hanging unusually high from a wooden beam beneath a roof."
+    }
+  ],
+  "supporting_assets": [
+    {
+      "id": "butter_pot_high",
+      "category": "props",
+      "description": "Clay butter pot hanging high above reach from a sturdy wooden beam."
+    },
+    {
+      "id": "cowherd_friends",
+      "category": "people",
+      "description": "Distinct group of young Gokul cowherd boys in traditional simple clothing, varied faces and proportions."
+    },
+    {
+      "id": "monkeys",
+      "category": "animals",
+      "description": "Small group of playful Vrindavan monkeys gathered near a window."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_01",
+      "purpose": "Storytelling frame beneath the banyan tree and immediate hook.",
+      "shots": [
+        {
+          "id": "shot_01",
+          "duration": 3,
+          "action": "Grandfather says Yashoda tried to make the butter pot impossible to reach.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather smiling while telling the children about Yashoda's clever plan. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather says Yashoda tried to make the butter pot impossible to reach. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "मैया यशोदा ने सोचा—आज माखन की मटकी इतनी ऊँची रखूँगी कि कन्हैया पहुँच ही नहीं पाएँगे!"
+            }
+          ]
+        },
+        {
+          "id": "shot_02",
+          "duration": 3,
+          "action": "The children laugh because they already suspect Krishna has a plan.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children laughing knowingly beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children laugh because they already suspect Krishna has a plan. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_02",
+      "purpose": "Set up the leela and characters.",
+      "shots": [
+        {
+          "id": "shot_03",
+          "duration": 3,
+          "action": "Yashoda hangs the butter pot high above the floor.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "butter_pot_high",
+            "gokul_rooftop_butter"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = butter_pot_high. Reference 3 = gokul_rooftop_butter. Create a cinematic 3D Indian mythology film frame showing Yashoda hanging a clay butter pot high from a wooden beam. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Yashoda hangs the butter pot high above the floor. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_04",
+          "duration": 3,
+          "action": "Krishna enters and looks up at the impossible height.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_high",
+            "gokul_rooftop_butter"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_high. Reference 3 = gokul_rooftop_butter. Create a cinematic 3D Indian mythology film frame showing Krishna looking up at the very high butter pot with a thoughtful mischievous expression. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna enters and looks up at the impossible height. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_05",
+          "duration": 3,
+          "action": "Krishna gathers his cowherd friends.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_friends",
+            "gokul_rooftop_butter"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_friends. Reference 3 = gokul_rooftop_butter. Create a cinematic 3D Indian mythology film frame showing Krishna calling a group of cowherd friends together in the courtyard. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna gathers his cowherd friends. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_06",
+          "duration": 3,
+          "action": "The boys whisper and plan.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_friends"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_friends. Create a cinematic 3D Indian mythology film frame showing Krishna and the boys quietly making a playful plan. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The boys whisper and plan. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "purpose": "Develop the central action.",
+      "shots": [
+        {
+          "id": "shot_07",
+          "duration": 3,
+          "action": "The first boy kneels and another climbs carefully onto his shoulders.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "cowherd_friends",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = cowherd_friends. Reference 2 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing cowherd boys beginning a careful human pyramid beneath the hanging pot. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The first boy kneels and another climbs carefully onto his shoulders. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_08",
+          "duration": 3,
+          "action": "More boys join to make the pyramid taller.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "cowherd_friends",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = cowherd_friends. Reference 2 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing more cowherd boys carefully forming a stable human pyramid. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "More boys join to make the pyramid taller. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_09",
+          "duration": 3,
+          "action": "Krishna climbs to the top.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_friends",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_friends. Reference 3 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing Krishna climbing carefully to the top of the human pyramid. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna climbs to the top. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_10",
+          "duration": 3,
+          "action": "Krishna reaches the pot.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_friends",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_friends. Reference 3 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing Krishna reaching the high clay butter pot from the top of the pyramid. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna reaches the pot. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "purpose": "Escalate the problem or mystery.",
+      "shots": [
+        {
+          "id": "shot_11",
+          "duration": 3,
+          "action": "He opens the pot and tastes the fresh butter.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing Krishna opening the butter pot and tasting fresh white butter. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "He opens the pot and tastes the fresh butter. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_12",
+          "duration": 3,
+          "action": "Monkeys peek through the nearby window.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "monkeys",
+            "krishna",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = monkeys. Reference 2 = krishna. Reference 3 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing playful monkeys peeking through a window toward Krishna and the butter. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Monkeys peek through the nearby window. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_13",
+          "duration": 3,
+          "action": "Krishna invites the monkeys to share.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "monkeys",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = monkeys. Reference 3 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing Krishna gesturing toward the monkeys and offering them butter. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna invites the monkeys to share. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_14",
+          "duration": 3,
+          "action": "The monkeys happily eat butter.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "monkeys",
+            "krishna",
+            "butter_pot_high"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = monkeys. Reference 2 = krishna. Reference 3 = butter_pot_high. Create a cinematic 3D Indian mythology film frame showing monkeys happily eating butter near the window while Krishna smiles. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The monkeys happily eat butter. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_05",
+      "purpose": "Deliver the divine or comic payoff.",
+      "shots": [
+        {
+          "id": "shot_15",
+          "duration": 3,
+          "action": "The boys laugh as the monkeys make a noisy commotion.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "cowherd_friends",
+            "monkeys",
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = cowherd_friends. Reference 2 = monkeys. Reference 3 = krishna. Create a cinematic 3D Indian mythology film frame showing cowherd boys laughing while monkeys make playful noise. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The boys laugh as the monkeys make a noisy commotion. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_16",
+          "duration": 3,
+          "action": "Yashoda arrives carrying a stick and everyone freezes.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "krishna",
+            "cowherd_friends"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = krishna. Reference 3 = cowherd_friends. Create a cinematic 3D Indian mythology film frame showing Yashoda entering with a small household stick while Krishna and the boys freeze. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Yashoda arrives carrying a stick and everyone freezes. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_17",
+          "duration": 3,
+          "action": "Krishna points innocently toward the monkeys.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "yashoda",
+            "monkeys"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yashoda. Reference 3 = monkeys. Create a cinematic 3D Indian mythology film frame showing Krishna pointing innocently toward the butter-eating monkeys while pretending not to know anything. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna points innocently toward the monkeys. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_18",
+          "duration": 3,
+          "action": "Yashoda gives Krishna a knowing look.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = krishna. Create a cinematic 3D Indian mythology film frame showing Yashoda giving Krishna a loving but knowing look. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Yashoda gives Krishna a knowing look. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_06",
+      "purpose": "Return to the children beneath the banyan tree and close the lesson.",
+      "shots": [
+        {
+          "id": "shot_19",
+          "duration": 3,
+          "action": "Grandfather laughs as he delivers the joke.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "grandchild_girl"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather laughing with the children beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather laughs as he delivers the joke. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "कन्हैया ने सोचा—माखन भी बच गया और इल्ज़ाम भी बंदरों पर चला गया!"
+            }
+          ]
+        },
+        {
+          "id": "shot_20",
+          "duration": 3,
+          "action": "The children laugh at Krishna's excuse.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children laughing beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children laugh at Krishna's excuse. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "music_prompt": "Fast playful bansuri, light mridangam and comic percussion accents, warm Gokul ambience, playful ending.",
+    "dialogue": [
+      {
+        "speaker": "grandfather",
+        "text": "मैया यशोदा ने सोचा—आज माखन की मटकी इतनी ऊँची रखूँगी कि कन्हैया पहुँच ही नहीं पाएँगे!"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "कन्हैया ने सोचा—माखन भी बच गया और इल्ज़ाम भी बंदरों पर चला गया!"
+      }
+    ],
+    "sfx": [
+      "soft banyan leaves",
+      "light village ambience",
+      "natural footsteps",
+      "subtle birds",
+      "gentle cloth movement"
+    ]
+  }
+}
