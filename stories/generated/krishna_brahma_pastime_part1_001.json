@@ -1,0 +1,431 @@
+{
+  "id": "krishna_brahma_pastime_part1_001",
+  "title": "Brahma's Test of Krishna — Part 1",
+  "category": "krishna_leela",
+  "format": "cinematic_short",
+  "duration_target": 60,
+  "source": {
+    "type": "traditional_account",
+    "name": "Traditional Krishna/Vrindavan story",
+    "episode_or_reference": "Story idea supplied in stories/story_ideas.md; traditional account/folklore treatment, not presented as a direct scripture quotation."
+  },
+  "characters": [
+    {
+      "id": "grandfather",
+      "description": "Warm Indian grandfather in his late 60s, white kurta-pajama, simple shawl, expressive kind face, seated naturally while telling stories."
+    },
+    {
+      "id": "grandmother",
+      "description": "Warm Indian grandmother in her late 60s, simple traditional sari, gentle expressive face, seated naturally while telling stories."
+    },
+    {
+      "id": "grandchild_girl",
+      "description": "Indian girl aged about 8, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+    },
+    {
+      "id": "grandchild_boy",
+      "description": "Indian boy aged about 10, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+    }
+  ],
+  "locations": [
+    {
+      "id": "banyan_courtyard",
+      "description": "Peaceful Vrindavan village courtyard beneath a huge old banyan tree, exposed roots, soft afternoon light, earthen ground, clay pots, village greenery and a calm storytelling atmosphere."
+    },
+    {
+      "id": "vrindavan_meadow",
+      "description": "Sunny Vrindavan meadow with grass, trees, cows and a small stream, suitable for Krishna and the cowherd boys to picnic."
+    }
+  ],
+  "supporting_assets": [
+    {
+      "id": "cowherd_boys",
+      "category": "people",
+      "description": "Distinct group of young cowherd boys in varied simple Vrindavan clothing, playful and natural."
+    },
+    {
+      "id": "calves",
+      "category": "animals",
+      "description": "Small group of natural-looking Vrindavan calves with varied markings."
+    },
+    {
+      "id": "balarama",
+      "category": "people",
+      "description": "Young Balarama accompanying Krishna in the meadow."
+    },
+    {
+      "id": "brahma",
+      "category": "people",
+      "description": "Brahma depicted as a dignified divine figure with traditional four-faced iconography handled respectfully and clearly, without caricature."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_01",
+      "purpose": "Storytelling frame beneath the banyan tree and immediate hook.",
+      "shots": [
+        {
+          "id": "shot_01",
+          "duration": 3,
+          "action": "Grandfather says this story is about Brahma testing Krishna.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather lowering his voice as he introduces a surprising divine test. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather says this story is about Brahma testing Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "आज की लीला में ब्रह्मा जी ने कन्हैया की परीक्षा लेने की कोशिश की… लेकिन आगे जो हुआ, वह अद्भुत था।"
+            }
+          ]
+        },
+        {
+          "id": "shot_02",
+          "duration": 3,
+          "action": "The children listen closely.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children listening with curiosity under the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children listen closely. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_02",
+      "purpose": "Set up the leela and characters.",
+      "shots": [
+        {
+          "id": "shot_03",
+          "duration": 3,
+          "action": "Krishna and the cowherd boys sit together eating their lunch.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "balarama",
+            "cowherd_boys"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = balarama. Reference 3 = cowherd_boys. Create a cinematic 3D Indian mythology film frame showing Krishna, Balarama and cowherd boys sitting in a meadow sharing a simple picnic meal. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna and the cowherd boys sit together eating their lunch. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_04",
+          "duration": 3,
+          "action": "The boys happily share food with one another.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_boys",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_boys. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing cowherd boys playfully sharing food while Krishna laughs. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The boys happily share food with one another. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_05",
+          "duration": 3,
+          "action": "Krishna reaches for a friend's food with a playful grin.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_boys",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_boys. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing Krishna playfully reaching for a friend's food during the picnic. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna reaches for a friend's food with a playful grin. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_06",
+          "duration": 3,
+          "action": "Brahma observes from above, puzzled by the scene.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "brahma",
+            "krishna",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = brahma. Reference 2 = krishna. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing Brahma observing Krishna and the boys from a divine vantage point, looking thoughtful. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Brahma observes from above, puzzled by the scene. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "purpose": "Develop the central action.",
+      "shots": [
+        {
+          "id": "shot_07",
+          "duration": 3,
+          "action": "Brahma decides to test Krishna.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "brahma"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = brahma. Create a cinematic 3D Indian mythology film frame showing Brahma making a contemplative decision to test Krishna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Brahma decides to test Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_08",
+          "duration": 3,
+          "action": "The calves wander toward the meadow edge.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "calves",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = calves. Reference 2 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing calves wandering peacefully near the meadow while the boys eat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The calves wander toward the meadow edge. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_09",
+          "duration": 3,
+          "action": "The cowherd boys become briefly distracted.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "cowherd_boys",
+            "calves",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = cowherd_boys. Reference 2 = calves. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing cowherd boys distracted by the calves moving toward the grass. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The cowherd boys become briefly distracted. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_10",
+          "duration": 3,
+          "action": "Brahma secretly moves the calves away.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "brahma",
+            "calves",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = brahma. Reference 2 = calves. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing Brahma using divine power to quietly remove the calves from the meadow. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Brahma secretly moves the calves away. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "purpose": "Escalate the problem or mystery.",
+      "shots": [
+        {
+          "id": "shot_11",
+          "duration": 3,
+          "action": "The boys notice the calves are gone.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "cowherd_boys",
+            "krishna",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = cowherd_boys. Reference 2 = krishna. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing cowherd boys looking around in confusion after the calves disappear. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The boys notice the calves are gone. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_12",
+          "duration": 3,
+          "action": "Krishna stands and looks across the meadow.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_boys",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_boys. Reference 3 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing Krishna standing calmly and looking across the meadow after noticing the missing calves. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna stands and looks across the meadow. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_13",
+          "duration": 3,
+          "action": "Brahma watches, expecting Krishna to panic.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "brahma",
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = brahma. Reference 2 = krishna. Create a cinematic 3D Indian mythology film frame showing Brahma observing from above, expecting Krishna to become distressed. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Brahma watches, expecting Krishna to panic. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_14",
+          "duration": 3,
+          "action": "Krishna closes his eyes and becomes still.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing Krishna standing peacefully with eyes gently closed as he understands the divine trick. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna closes his eyes and becomes still. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_05",
+      "purpose": "Deliver the divine or comic payoff.",
+      "shots": [
+        {
+          "id": "shot_15",
+          "duration": 3,
+          "action": "A subtle divine radiance surrounds Krishna.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "vrindavan_meadow"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = vrindavan_meadow. Create a cinematic 3D Indian mythology film frame showing Krishna surrounded by a restrained divine radiance as he prepares a miraculous response. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "A subtle divine radiance surrounds Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_16",
+          "duration": 3,
+          "action": "Grandfather tells the children that Krishna has understood the test.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "grandchild_girl"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather explaining the turning point to the children. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather tells the children that Krishna has understood the test. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "कन्हैया समझ गए कि यह कोई साधारण शरारत नहीं थी। उन्हें पता था कि ब्रह्मा जी परीक्षा ले रहे हैं।"
+            }
+          ]
+        },
+        {
+          "id": "shot_17",
+          "duration": 3,
+          "action": "The children wait for the miracle.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children leaning forward in anticipation beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children wait for the miracle. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_18",
+          "duration": 3,
+          "action": "Krishna opens his eyes with a knowing smile.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Create a cinematic 3D Indian mythology film frame showing Krishna opening his eyes with a calm knowing smile. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna opens his eyes with a knowing smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_06",
+      "purpose": "Return to the children beneath the banyan tree and close the lesson.",
+      "shots": [
+        {
+          "id": "shot_19",
+          "duration": 3,
+          "action": "Multiple identical-looking but naturally varied divine forms begin to appear around the meadow.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "cowherd_boys",
+            "calves"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = cowherd_boys. Reference 3 = calves. Create a cinematic 3D Indian mythology film frame showing Krishna's divine presence multiplying into matching cowherd and calf forms across the meadow. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Multiple identical-looking but naturally varied divine forms begin to appear around the meadow. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_20",
+          "duration": 3,
+          "action": "Grandfather stops at the cliffhanger.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather smiling as the children stare in amazement. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather stops at the cliffhanger. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "अब ब्रह्मा जी ने जो देखा, उससे वे खुद हैरान रह गए… उसकी कहानी अगले भाग में!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "music_prompt": "Playful pastoral devotional music evolving into mysterious divine suspense, bansuri, tanpura and soft mridangam.",
+    "dialogue": [
+      {
+        "speaker": "grandfather",
+        "text": "आज की लीला में ब्रह्मा जी ने कन्हैया की परीक्षा लेने की कोशिश की… लेकिन आगे जो हुआ, वह अद्भुत था।"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "कन्हैया समझ गए कि यह कोई साधारण शरारत नहीं थी। उन्हें पता था कि ब्रह्मा जी परीक्षा ले रहे हैं।"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "अब ब्रह्मा जी ने जो देखा, उससे वे खुद हैरान रह गए… उसकी कहानी अगले भाग में!"
+      }
+    ],
+    "sfx": [
+      "soft banyan leaves",
+      "light village ambience",
+      "natural footsteps",
+      "subtle birds",
+      "gentle cloth movement"
+    ]
+  }
+}
