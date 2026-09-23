@@ -64,8 +64,8 @@
             "grandchild_girl",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing young granddaughter looking up at grandfather with a curious question. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show young granddaughter looking up at grandfather with a curious question. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The granddaughter asks a direct question under the banyan tree. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -84,8 +84,8 @@
             "grandchild_girl",
             "grandchild_boy"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_girl. Reference 3 = grandchild_boy. Create a cinematic 3D Indian mythology film frame showing grandfather smiling thoughtfully as he prepares to explain. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Indian boy. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather smiling thoughtfully as he prepares to explain. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather smiles and says there is more than one traditional explanation. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -107,10 +107,11 @@
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
             "peacock",
-            "vrindavan_grove"
+            "vrindavan_grove",
+            "krishna"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = peacock. Reference 2 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing beautiful peacock walking through a lush Vrindavan grove. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian peacock; Reference 2 is Vrindavan grove; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show beautiful peacock walking through a lush Vrindavan grove. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "A peacock moves through a Vrindavan grove. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -124,8 +125,8 @@
             "peacock",
             "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock. Reference 3 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing Krishna watching a peacock in a flowering Vrindavan grove. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna watching a peacock in a flowering Vrindavan grove. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Young Krishna watches the peacock peacefully. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -136,10 +137,11 @@
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
             "peacock",
-            "vrindavan_grove"
+            "vrindavan_grove",
+            "krishna"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = peacock. Reference 2 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing peacock spreading its magnificent tail feathers in the grove. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian peacock; Reference 2 is Vrindavan grove; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock spreading its magnificent tail feathers in the grove. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The peacock spreads its tail. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -153,8 +155,8 @@
             "peacock",
             "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock. Reference 3 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing Krishna smiling gently while watching the peacock dance. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling gently while watching the peacock dance. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna smiles at the dance. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -172,10 +174,10 @@
           "assets": [
             "peacock",
             "peacock_feather",
-            "vrindavan_grove"
+            "krishna"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = peacock. Reference 2 = peacock_feather. Reference 3 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing single peacock feather drifting down onto the grass near Krishna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian peacock; Reference 2 is single elegant peacock feather; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna stands peacefully in the Vrindavan grove as a peacock feather rests nearby.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "A feather falls naturally to the ground. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -189,8 +191,8 @@
             "peacock_feather",
             "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock_feather. Reference 3 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing Krishna gently lifting the fallen peacock feather from the grass. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gently lifting the fallen peacock feather from the grass. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna picks up the feather respectfully. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -201,10 +203,11 @@
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
             "krishna",
-            "peacock_feather"
+            "peacock_feather",
+            "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock_feather. Create a cinematic 3D Indian mythology film frame showing Krishna placing the peacock feather into his crown. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna placing the peacock feather into his crown. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "He places the feather into his crown. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -218,8 +221,8 @@
             "peacock",
             "peacock_feather"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock. Reference 3 = peacock_feather. Create a cinematic 3D Indian mythology film frame showing peacock watching peacefully as Krishna wears the feather. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is single elegant peacock feather. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock watching peacefully as Krishna wears the feather. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The peacock watches nearby. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -239,8 +242,8 @@
             "grandchild_girl",
             "grandchild_boy"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_girl. Reference 3 = grandchild_boy. Create a cinematic 3D Indian mythology film frame showing grandfather explaining the symbolism to the children. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Indian boy. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather explaining the symbolism to the children. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather explains that the feather is associated with beauty, nature and humility in many devotional traditions. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -259,8 +262,8 @@
             "peacock_feather",
             "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock_feather. Reference 3 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing Krishna walking peacefully through Vrindavan with the peacock feather clearly visible. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna walking peacefully through Vrindavan with the peacock feather clearly visible. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna walks through Vrindavan wearing the feather naturally. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -271,10 +274,11 @@
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
             "krishna",
-            "peacock_feather"
+            "peacock_feather",
+            "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock_feather. Create a cinematic 3D Indian mythology film frame showing close cinematic view of the peacock feather moving gently in the breeze above Krishna's crown. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show close cinematic view of the peacock feather moving gently in the breeze above Krishna's crown. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "A breeze moves the feather slightly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -288,8 +292,8 @@
             "peacock",
             "vrindavan_grove"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = peacock. Reference 3 = vrindavan_grove. Create a cinematic 3D Indian mythology film frame showing Krishna in the foreground while a peacock dances softly in the background. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna in the foreground while a peacock dances softly in the background. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The peacock dances again in the background. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -309,8 +313,8 @@
             "grandchild_girl",
             "grandchild_boy"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_girl. Reference 3 = grandchild_boy. Create a cinematic 3D Indian mythology film frame showing grandfather speaking carefully and warmly beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Indian boy. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather speaking carefully and warmly beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather tells the children that traditions may emphasize different meanings. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -329,8 +333,8 @@
             "grandfather",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_girl. Reference 2 = grandfather. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing granddaughter smiling after hearing the explanation. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian girl; Reference 2 is warm Indian grandfather; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show granddaughter smiling after hearing the explanation. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The granddaughter looks satisfied. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -344,8 +348,8 @@
             "grandchild_girl",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather gesturing toward a peacock feather as a simple visual reminder. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather gesturing toward a peacock feather as a simple visual reminder. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather points toward a peacock feather lying on the ground. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -359,8 +363,8 @@
             "grandchild_girl",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children looking thoughtfully toward the greenery beyond the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children looking thoughtfully toward the greenery beyond the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The children look toward the grove in imagination. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -380,8 +384,8 @@
             "grandchild_girl",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing Krishna walking peacefully through Vrindavan with peacock feather, serene closing image. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Grandfather closes the explanation as the granddaughter smiles beneath the banyan tree.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandfather closes with the image of Krishna and the peacock feather. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {

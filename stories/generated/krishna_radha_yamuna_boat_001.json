@@ -73,12 +73,12 @@
           "action": "Grandmother introduces a quiet evening story by the Yamuna.",
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
-            "grandfather",
+            "grandmother",
             "grandchild_boy",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandmother telling the children a gentle evening story beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandmother; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Grandmother introduces the evening story while the grandson listens beneath the banyan tree.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandmother introduces a quiet evening story by the Yamuna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -97,8 +97,8 @@
             "grandchild_boy",
             "grandchild_girl"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandmother. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing children listening to grandmother beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandmother; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children listening to grandmother beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The children listen closely. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -118,8 +118,8 @@
             "small_boat",
             "yamuna_boat_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = small_boat. Reference 3 = yamuna_boat_evening. Create a cinematic 3D Indian mythology film frame showing Krishna sitting beside the Yamuna at dusk with a small wooden boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small wooden river boat; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sitting beside the Yamuna at dusk with a small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna sits alone beside the Yamuna with his little boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -133,8 +133,8 @@
             "small_boat",
             "yamuna_boat_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = small_boat. Reference 3 = yamuna_boat_evening. Create a cinematic 3D Indian mythology film frame showing Krishna looking peacefully across the evening Yamuna beside his little boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small wooden river boat; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking peacefully across the evening Yamuna beside his little boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "He looks across the quiet river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -148,8 +148,8 @@
             "radha_friends",
             "krishna"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = radha_friends. Reference 3 = krishna. Create a cinematic 3D Indian mythology film frame showing Radha approaching the Yamuna with two friends and noticing Krishna's small boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha approaching the Yamuna with two friends and noticing Krishna's small boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Radha approaches with two friends and sees the boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -163,8 +163,8 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = krishna. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Radha speaking to Krishna beside the little boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha speaking to Krishna beside the little boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Radha asks Krishna to take them across. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -189,8 +189,8 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Krishna gesturing toward the small boat as he explains it cannot easily fit everyone. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gesturing toward the small boat as he explains it cannot easily fit everyone. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna points out that the boat is very small. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -209,8 +209,8 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = krishna. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Radha smiling and gently persuading Krishna beside the river. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha smiling and gently persuading Krishna beside the river. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Radha smiles and gently persuades him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -224,8 +224,8 @@
             "radha_friends",
             "krishna"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = radha_friends. Reference 3 = krishna. Create a cinematic 3D Indian mythology film frame showing Radha's two friends smiling while Krishna playfully pretends to worry about the tiny boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha's two friends smiling while Krishna playfully pretends to worry about the tiny boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Her friends smile as Krishna pretends to worry. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -239,8 +239,8 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Krishna smiling and agreeing to take them across. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling and agreeing to take them across. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna finally agrees. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -260,8 +260,8 @@
             "radha",
             "yamuna_boat_evening"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = yamuna_boat_evening. Create a cinematic 3D Indian mythology film frame showing Krishna respectfully washing Radha's feet with Yamuna water at the riverbank. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna respectfully washing Radha's feet with Yamuna water at the riverbank. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna respectfully washes Radha's feet at the riverbank before they board. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -275,8 +275,8 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = krishna. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Radha carefully stepping into Krishna's small wooden boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha carefully stepping into Krishna's small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Radha steps carefully into the small boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -290,8 +290,8 @@
             "radha_friends",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = radha_friends. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Radha's two friends carefully boarding the small wooden boat. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha's two friends carefully boarding the small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Her two friends board after her. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -305,8 +305,8 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Krishna rowing the small boat across the calm Yamuna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna rowing the small boat across the calm Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Krishna takes the oar and begins rowing. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         }
@@ -326,8 +326,8 @@
             "radha",
             "radha_friends"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = radha_friends. Create a cinematic 3D Indian mythology film frame showing small boat gliding gently across the evening Yamuna with Radha and her friends. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Radha's two friends. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show small boat gliding gently across the evening Yamuna with Radha and her friends. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The boat moves gently across the water. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -341,8 +341,8 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = radha. Reference 2 = krishna. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing Radha looking toward Krishna with a warm gentle smile as he rows. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha looking toward Krishna with a warm gentle smile as he rows. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Radha looks at Krishna with a gentle smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -356,8 +356,8 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = small_boat. Create a cinematic 3D Indian mythology film frame showing wide cinematic view of the little boat crossing the reflective Yamuna at dusk. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show wide cinematic view of the little boat crossing the reflective Yamuna at dusk. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The river reflects the evening sky around them. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -371,8 +371,8 @@
             "grandchild_boy",
             "grandchild_girl"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandmother. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandmother speaking thoughtfully to the children beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandmother; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandmother speaking thoughtfully to the children beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandmother explains that the story is a traditional devotional-style folk narrative. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
@@ -397,8 +397,8 @@
             "grandchild_girl",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children looking dreamily toward the imagined Yamuna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children looking dreamily toward the imagined Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The children imagine the boat crossing the river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -412,8 +412,8 @@
             "radha",
             "radha_friends"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = radha. Reference 3 = radha_friends. Create a cinematic 3D Indian mythology film frame showing Krishna's small boat reaching the peaceful opposite bank of the Yamuna. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Radha's two friends. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna's small boat reaching the peaceful opposite bank of the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "The little boat reaches the far bank. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": []
         },
@@ -423,12 +423,12 @@
           "action": "Grandmother closes with the peaceful image of Krishna, Radha and the Yamuna.",
           "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
           "assets": [
-            "grandfather",
+            "grandmother",
             "grandchild_boy",
             "banyan_courtyard"
           ],
-          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing peaceful final wide shot of Krishna, Radha and the little boat beside the Yamuna at dusk. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
-          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandmother; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Grandmother closes the story with a peaceful smile while the children listen beneath the banyan tree.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "negative_prompt": "",
           "video_prompt": "Grandmother closes with the peaceful image of Krishna, Radha and the Yamuna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
