@@ -1,0 +1,430 @@
+{
+  "id": "krishna_bell_butter_001",
+  "title": "The Bell That Only Rang for Krishna",
+  "category": "krishna_leela",
+  "format": "cinematic_short",
+  "duration_target": 60,
+  "source": {
+    "type": "traditional_account",
+    "name": "Traditional Krishna/Vrindavan story",
+    "episode_or_reference": "Story idea supplied in stories/story_ideas.md; traditional account/folklore treatment, not presented as a direct scripture quotation."
+  },
+  "characters": [
+    {
+      "id": "grandfather",
+      "description": "Warm Indian grandfather in his late 60s, white kurta-pajama, simple shawl, expressive kind face, seated naturally while telling stories."
+    },
+    {
+      "id": "grandmother",
+      "description": "Warm Indian grandmother in her late 60s, simple traditional sari, gentle expressive face, seated naturally while telling stories."
+    },
+    {
+      "id": "grandchild_girl",
+      "description": "Indian girl aged about 8, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+    },
+    {
+      "id": "grandchild_boy",
+      "description": "Indian boy aged about 10, simple traditional/casual Indian clothes, curious expressive face, distinct from the other child."
+    }
+  ],
+  "locations": [
+    {
+      "id": "banyan_courtyard",
+      "description": "Peaceful Vrindavan village courtyard beneath a huge old banyan tree, exposed roots, soft afternoon light, earthen ground, clay pots, village greenery and a calm storytelling atmosphere."
+    },
+    {
+      "id": "gokul_butter_room",
+      "description": "Gokul butter room with a clay pot hanging from a wooden beam and a small bell tied above it."
+    }
+  ],
+  "supporting_assets": [
+    {
+      "id": "butter_pot_bell",
+      "category": "props",
+      "description": "Clay butter pot with a small brass bell tied to its hanging rope."
+    },
+    {
+      "id": "monkey",
+      "category": "animals",
+      "description": "Playful Vrindavan monkey with natural proportions and expressive face."
+    },
+    {
+      "id": "ants",
+      "category": "animals",
+      "description": "Tiny ants shown only as a small group around fallen butter, never oversized."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_01",
+      "purpose": "Storytelling frame beneath the banyan tree and immediate hook.",
+      "shots": [
+        {
+          "id": "shot_01",
+          "duration": 3,
+          "action": "Grandfather announces that today's story is about a bell with a secret.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather leaning forward conspiratorially while the children listen. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather announces that today's story is about a bell with a secret. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "आज की कहानी में एक छोटी-सी घंटी है… और वह सिर्फ कन्हैया की वजह से बजती थी!"
+            }
+          ]
+        },
+        {
+          "id": "shot_02",
+          "duration": 3,
+          "action": "The grandchildren look intrigued.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children reacting with curiosity beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The grandchildren look intrigued. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_02",
+      "purpose": "Set up the leela and characters.",
+      "shots": [
+        {
+          "id": "shot_03",
+          "duration": 3,
+          "action": "In Gokul, Yashoda's butter pot hangs from a beam with a brass bell tied to it.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "butter_pot_bell",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = butter_pot_bell. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing butter pot hanging from a wooden beam with a small brass bell tied above it. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "In Gokul, Yashoda's butter pot hangs from a beam with a brass bell tied to it. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_04",
+          "duration": 3,
+          "action": "Krishna and his friends sneak into the butter room.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing Krishna entering the butter room with two playful cowherd friends. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna and his friends sneak into the butter room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_05",
+          "duration": 3,
+          "action": "Krishna notices the bell and whispers to it not to ring.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing Krishna leaning toward the little brass bell with a playful secret expression. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna notices the bell and whispers to it not to ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_06",
+          "duration": 3,
+          "action": "The boys pull down the butter and eat while the bell remains silent.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing Krishna and cowherd friends eating fresh butter beneath the hanging pot while the bell stays still. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The boys pull down the butter and eat while the bell remains silent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "purpose": "Develop the central action.",
+      "shots": [
+        {
+          "id": "shot_07",
+          "duration": 3,
+          "action": "A monkey reaches the butter and eats greedily; the bell still does not ring.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "monkey",
+            "butter_pot_bell"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = monkey. Reference 3 = butter_pot_bell. Create a cinematic 3D Indian mythology film frame showing monkey eating butter from the pot area while Krishna watches, bell remaining still. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "A monkey reaches the butter and eats greedily; the bell still does not ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_08",
+          "duration": 3,
+          "action": "Ants gather around a small fallen smear of butter; the bell remains silent.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "ants",
+            "butter_pot_bell",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = ants. Reference 2 = butter_pot_bell. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing tiny ants gathering around a little butter smear while the bell remains motionless. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Ants gather around a small fallen smear of butter; the bell remains silent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_09",
+          "duration": 3,
+          "action": "Krishna looks relieved and takes one more bite.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Create a cinematic 3D Indian mythology film frame showing Krishna smiling confidently and taking another bite of butter. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna looks relieved and takes one more bite. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_10",
+          "duration": 3,
+          "action": "The instant Krishna eats, the brass bell rings loudly.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing Krishna frozen in surprise as the little brass bell swings and rings. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The instant Krishna eats, the brass bell rings loudly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "purpose": "Escalate the problem or mystery.",
+      "shots": [
+        {
+          "id": "shot_11",
+          "duration": 3,
+          "action": "Krishna's friends look at him in shock and amusement.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Create a cinematic 3D Indian mythology film frame showing cowherd friends turning toward Krishna in surprised laughter. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna's friends look at him in shock and amusement. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_12",
+          "duration": 3,
+          "action": "Yashoda hears the bell and approaches the room.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "yashoda",
+            "gokul_butter_room",
+            "butter_pot_bell"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = yashoda. Reference 2 = gokul_butter_room. Reference 3 = butter_pot_bell. Create a cinematic 3D Indian mythology film frame showing Yashoda walking quickly toward the butter room after hearing the bell. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Yashoda hears the bell and approaches the room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_13",
+          "duration": 3,
+          "action": "Krishna looks up at the bell as if asking why it betrayed him.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "butter_pot_bell"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = butter_pot_bell. Create a cinematic 3D Indian mythology film frame showing Krishna looking up at the bell with a mock-offended expression. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna looks up at the bell as if asking why it betrayed him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_14",
+          "duration": 3,
+          "action": "The bell appears to swing innocently above him.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "butter_pot_bell",
+            "krishna"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = butter_pot_bell. Reference 2 = krishna. Create a cinematic 3D Indian mythology film frame showing small brass bell gently swinging above Krishna in a playful cinematic close shot. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The bell appears to swing innocently above him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    },
+    {
+      "id": "scene_05",
+      "purpose": "Deliver the divine or comic payoff.",
+      "shots": [
+        {
+          "id": "shot_15",
+          "duration": 3,
+          "action": "Grandfather reveals the bell's imagined answer.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "grandchild_girl"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather smiling as he delivers the punchline beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather reveals the bell's imagined answer. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "घंटी ने जैसे कहा—‘कन्हैया, जब आपका भोग लगेगा, तो मैं कैसे न बजूँ?’"
+            }
+          ]
+        },
+        {
+          "id": "shot_16",
+          "duration": 3,
+          "action": "The children laugh at the idea that even the bell could not hide Krishna's devotion.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children laughing beneath the banyan tree. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children laugh at the idea that even the bell could not hide Krishna's devotion. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_17",
+          "duration": 3,
+          "action": "Krishna smiles as Yashoda approaches, turning the prank into a loving family moment.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "krishna",
+            "yashoda",
+            "gokul_butter_room"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = krishna. Reference 2 = yashoda. Reference 3 = gokul_butter_room. Create a cinematic 3D Indian mythology film frame showing Krishna giving a small innocent smile as Yashoda reaches the doorway. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Krishna smiles as Yashoda approaches, turning the prank into a loving family moment. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_18",
+          "duration": 3,
+          "action": "Grandfather explains that the story is about offering and devotion, not the theft itself.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "grandchild_girl"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = grandchild_girl. Create a cinematic 3D Indian mythology film frame showing grandfather speaking gently while the children listen. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather explains that the story is about offering and devotion, not the theft itself. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [
+            {
+              "speaker": "grandfather",
+              "text": "कहानी हमें याद दिलाती है कि प्रेम से किया गया भोग भगवान से जुड़ने का माध्यम माना जाता है।"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene_06",
+      "purpose": "Return to the children beneath the banyan tree and close the lesson.",
+      "shots": [
+        {
+          "id": "shot_19",
+          "duration": 3,
+          "action": "The children glance at one another, amused.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandchild_boy",
+            "grandchild_girl",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandchild_boy. Reference 2 = grandchild_girl. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing children sharing a playful look after the story. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "The children glance at one another, amused. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        },
+        {
+          "id": "shot_20",
+          "duration": 3,
+          "action": "Grandfather closes with a smile.",
+          "camera": "Cinematic medium-wide composition with a gentle controlled camera move.",
+          "assets": [
+            "grandfather",
+            "grandchild_boy",
+            "banyan_courtyard"
+          ],
+          "image_prompt": "Use the supplied references as visual source material. Reference 1 = grandfather. Reference 2 = grandchild_boy. Reference 3 = banyan_courtyard. Create a cinematic 3D Indian mythology film frame showing grandfather smiling beneath the banyan tree as leaves move softly overhead. Keep every referenced character's face, body proportions, clothing and identity consistent with its reference. Natural Indian environments, detailed fabrics and jewelry, expressive but restrained acting, layered foreground/background depth, 16:9 movie composition, no text or watermark.",
+          "negative_prompt": "photorealistic live action, western cartoon, modern objects, modern clothing, changed face, altered identity, muscular bodybuilder anatomy, extra fingers, extra limbs, duplicate characters, text, logo, watermark, excessive orange, yellow, amber or sepia grading, excessive magical glow",
+          "video_prompt": "Grandfather closes with a smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": []
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "music_prompt": "Playful bansuri with light bells, mridangam taps and village ambience; a tiny bell accent at the divine punchline.",
+    "dialogue": [
+      {
+        "speaker": "grandfather",
+        "text": "आज की कहानी में एक छोटी-सी घंटी है… और वह सिर्फ कन्हैया की वजह से बजती थी!"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "घंटी ने जैसे कहा—‘कन्हैया, जब आपका भोग लगेगा, तो मैं कैसे न बजूँ?’"
+      },
+      {
+        "speaker": "grandfather",
+        "text": "कहानी हमें याद दिलाती है कि प्रेम से किया गया भोग भगवान से जुड़ने का माध्यम माना जाता है।"
+      }
+    ],
+    "sfx": [
+      "soft banyan leaves",
+      "light village ambience",
+      "natural footsteps",
+      "subtle birds",
+      "gentle cloth movement"
+    ]
+  }
+}
