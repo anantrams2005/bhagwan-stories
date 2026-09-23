@@ -81,7 +81,9 @@
               "speaker": "grandfather",
               "text": "आज की कहानी में एक छोटी-सी घंटी है… और वह सिर्फ कन्हैया की वजह से बजती थी!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -96,7 +98,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children reacting with curiosity beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The grandchildren look intrigued. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -117,7 +121,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show butter pot hanging from a wooden beam with a small brass bell tied above it. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "In Gokul, Yashoda's butter pot hangs from a beam with a brass bell tied to it. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -132,7 +138,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna entering the butter room with two playful cowherd friends. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna and his friends sneak into the butter room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -147,7 +155,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna leaning toward the little brass bell with a playful secret expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna notices the bell and whispers to it not to ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -162,7 +172,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and cowherd friends eating fresh butter beneath the hanging pot while the bell stays still. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys pull down the butter and eat while the bell remains silent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -183,7 +195,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is playful Vrindavan monkey; Reference 3 is clay butter pot with a small brass bell. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show monkey eating butter from the pot area while Krishna watches, bell remaining still. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A monkey reaches the butter and eats greedily; the bell still does not ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -198,7 +212,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is small group of ants; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show tiny ants gathering around a little butter smear while the bell remains motionless. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Ants gather around a small fallen smear of butter; the bell remains silent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -213,7 +229,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling confidently and taking another bite of butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna looks relieved and takes one more bite. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -228,7 +246,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna frozen in surprise as the little brass bell swings and rings. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The instant Krishna eats, the brass bell rings loudly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -249,7 +269,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd friends turning toward Krishna in surprised laughter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna's friends look at him in shock and amusement. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -264,7 +286,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is Gokul butter room; Reference 3 is clay butter pot with a small brass bell. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda walking quickly toward the butter room after hearing the bell. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda hears the bell and approaches the room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -279,7 +303,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking up at the bell with a mock-offended expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna looks up at the bell as if asking why it betrayed him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -294,7 +320,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is clay butter pot with a small brass bell; Reference 2 is young Krishna; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show small brass bell gently swinging above Krishna in a playful cinematic close shot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The bell appears to swing innocently above him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -320,7 +348,9 @@
               "speaker": "grandfather",
               "text": "घंटी ने जैसे कहा—‘कन्हैया, जब आपका भोग लगेगा, तो मैं कैसे न बजूँ?’"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -335,7 +365,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children laughing beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children laugh at the idea that even the bell could not hide Krishna's devotion. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -350,7 +382,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna giving a small innocent smile as Yashoda reaches the doorway. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna smiles as Yashoda approaches, turning the prank into a loving family moment. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -370,7 +404,9 @@
               "speaker": "grandfather",
               "text": "कहानी हमें याद दिलाती है कि प्रेम से किया गया भोग भगवान से जुड़ने का माध्यम माना जाता है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -391,7 +427,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children sharing a playful look after the story. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children glance at one another, amused. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -406,7 +444,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather smiling beneath the banyan tree as leaves move softly overhead. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Grandfather closes with a smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -489,5 +529,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

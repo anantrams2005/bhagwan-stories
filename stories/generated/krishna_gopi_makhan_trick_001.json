@@ -80,7 +80,9 @@
               "speaker": "grandfather",
               "text": "कन्हैया की माखन-चोरी में सिर्फ माखन नहीं था… उसमें शरारत और बुद्धि दोनों होती थीं!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -95,7 +97,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is warm Indian grandfather. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show The children lean closer to their grandfather with excited expressions.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The grandchildren lean in. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -116,7 +120,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan gopi; Reference 3 is traditional Gokul home. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and friends quietly entering a Gokul home. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna and friends sneak into a Gopi's house. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -131,7 +137,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is traditional Gokul home; Reference 3 is fresh white butter spread on an earthen floor. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and friends sharing fresh butter in the courtyard. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "They eat butter together and laugh. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -146,7 +154,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is fresh white butter spread on an earthen floor; Reference 3 is traditional Gokul home. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and friends spreading leftover butter across the floor. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys smear leftover butter across the earthen floor as a prank. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -161,7 +171,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Vrindavan gopi; Reference 2 is fresh white butter spread on an earthen floor; Reference 3 is traditional Gokul home. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi stepping into the courtyard, slipping on the butter and reacting with surprise. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The Gopi enters, sees the mess and slips. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -182,7 +194,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Vrindavan gopi; Reference 2 is Mother Yashoda; Reference 3 is traditional Gokul home. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi walking toward Yashoda's home with an indignant expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The Gopi angrily heads to Yashoda to complain. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -197,7 +211,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is Vrindavan gopi; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda listening calmly to the Gopi and gesturing reassuringly. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda listens but does not scold Krishna, gently dismissing the complaint. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -212,7 +228,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Vrindavan gopi; Reference 2 is traditional Gokul home; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi returning home with a frustrated but determined expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The Gopi returns home still frustrated. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -227,7 +245,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan gopi; Reference 3 is traditional Gokul home. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi catching Krishna red-handed beside the butter pot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "On another day Krishna is again caught eating butter. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -248,7 +268,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Vrindavan gopi; Reference 2 is young Krishna; Reference 3 is traditional Gokul home. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi holding Krishna's hand and leading him away from the butter room. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The Gopi firmly takes Krishna by the hand. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -263,7 +285,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan gopi; Reference 3 is young Gokul child. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna notices the Gopi's child nearby while the Gopi leads him toward Yashoda's home.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "As they approach Yashoda's home, Krishna spots the Gopi's child. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -278,7 +302,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan gopi; Reference 3 is young Gokul child. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna cleverly placing the child's hand into the Gopi's hand while hiding the trick. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna secretly places the child's hand into the Gopi's hand and slips away. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -293,7 +319,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is Vrindavan gopi. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna arriving innocently beside Yashoda while the Gopi approaches behind. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna runs toward Yashoda's house and reaches her before the Gopi. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -314,7 +342,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Vrindavan gopi; Reference 2 is Mother Yashoda; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi pointing toward Krishna while Yashoda looks puzzled. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The Gopi complains that Krishna was caught, but Yashoda looks puzzled. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -329,7 +359,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is Vrindavan gopi; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda smiling as she points out the mix-up while Krishna stands innocently beside her. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda reveals that the boy beside the Gopi is her own child and Krishna has been inside the house. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -344,7 +376,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Vrindavan gopi; Reference 2 is Mother Yashoda; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Gopi realizing the trick while Yashoda laughs and Krishna smiles innocently. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The Gopi realizes Krishna fooled her and everyone laughs. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -359,7 +393,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather and grandchildren laughing together after the clever twist. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Grandfather laughs with the children beneath the banyan tree. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -385,7 +421,9 @@
               "speaker": "grandfather",
               "text": "कन्हैया की लीला ने गुस्से को भी हँसी में बदल दिया। यही तो उनकी शरारत की मिठास है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -400,7 +438,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children grinning at each other as they imagine Krishna's clever trick. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children grin and imagine Krishna's trick. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -479,5 +519,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

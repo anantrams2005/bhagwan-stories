@@ -72,7 +72,9 @@
               "speaker": "grandchild_girl",
               "text": "दादाजी, कृष्ण जी अपने सिर पर मोर पंख क्यों लगाते हैं?"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -92,7 +94,9 @@
               "speaker": "grandfather",
               "text": "बहुत सुंदर सवाल। इसकी एक ही कहानी नहीं, कई लोक-परंपराएँ मिलती हैं।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -113,7 +117,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian peacock; Reference 2 is Vrindavan grove; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show beautiful peacock walking through a lush Vrindavan grove. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A peacock moves through a Vrindavan grove. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -128,7 +134,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna watching a peacock in a flowering Vrindavan grove. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Young Krishna watches the peacock peacefully. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -143,7 +151,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian peacock; Reference 2 is Vrindavan grove; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock spreading its magnificent tail feathers in the grove. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The peacock spreads its tail. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -158,7 +168,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling gently while watching the peacock dance. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna smiles at the dance. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -179,7 +191,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian peacock; Reference 2 is single elegant peacock feather; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna stands peacefully in the Vrindavan grove as a peacock feather rests nearby.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A feather falls naturally to the ground. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -194,7 +208,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gently lifting the fallen peacock feather from the grass. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna picks up the feather respectfully. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -209,7 +225,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna placing the peacock feather into his crown. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "He places the feather into his crown. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -224,7 +242,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is single elegant peacock feather. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock watching peacefully as Krishna wears the feather. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The peacock watches nearby. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -250,7 +270,9 @@
               "speaker": "grandfather",
               "text": "कई भक्त परंपराओं में मोर पंख को प्रकृति की सुंदरता, सरलता और विनम्रता से जोड़ा जाता है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -265,7 +287,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna walking peacefully through Vrindavan with the peacock feather clearly visible. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna walks through Vrindavan wearing the feather naturally. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -280,7 +304,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is single elegant peacock feather; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show close cinematic view of the peacock feather moving gently in the breeze above Krishna's crown. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A breeze moves the feather slightly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -295,7 +321,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Indian peacock; Reference 3 is Vrindavan grove. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna in the foreground while a peacock dances softly in the background. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The peacock dances again in the background. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -321,7 +349,9 @@
               "speaker": "grandfather",
               "text": "अलग-अलग परंपराएँ इसके अलग अर्थ बताती हैं, इसलिए इसे एक ही निश्चित कारण मानना ज़रूरी नहीं है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -336,7 +366,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian girl; Reference 2 is warm Indian grandfather; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show granddaughter smiling after hearing the explanation. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The granddaughter looks satisfied. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -351,7 +383,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather gesturing toward a peacock feather as a simple visual reminder. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Grandfather points toward a peacock feather lying on the ground. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -366,7 +400,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children looking thoughtfully toward the greenery beyond the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children look toward the grove in imagination. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -392,7 +428,9 @@
               "speaker": "grandfather",
               "text": "मोर पंख देखकर हमें कन्हैया की सुंदर, सरल और प्रकृति से जुड़ी छवि याद आती है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -483,5 +521,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

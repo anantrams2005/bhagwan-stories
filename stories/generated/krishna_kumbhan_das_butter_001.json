@@ -72,7 +72,9 @@
               "speaker": "grandfather",
               "text": "बच्चों, आज सुनो कन्हैया की एक ऐसी माखन-चोरी, जिसमें उनके साथ कुम्भन दास जी भी फँस गए थे!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -92,7 +94,9 @@
               "speaker": "grandchild_boy",
               "text": "दादाजी, कृष्ण जी सच में चोरी करने गए थे?"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -113,7 +117,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Kumbhan Das Ji; Reference 3 is Gokul butter house. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna secretly beckoning Kumbhan Das Ji toward a butter house, Krishna looking mischievous. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "In Gokul, young Krishna spots a butter pot and mischievously gestures to Kumbhan Das Ji to follow him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -128,7 +134,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Kumbhan Das Ji; Reference 3 is Gokul butter house. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna leading Kumbhan Das Ji through a village lane toward the butter house. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Kumbhan Das Ji follows Krishna through a narrow Gokul lane, trying not to laugh. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -143,7 +151,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Kumbhan Das Ji; Reference 3 is traditional clay butter pot. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking up at a hanging butter pot while Kumbhan Das Ji watches. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna reaches the butter room and points eagerly at the hanging pot. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -158,7 +168,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Kumbhan Das Ji; Reference 3 is traditional clay butter pot. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sharing fresh butter with Kumbhan Das Ji beside the clay pot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna and Kumbhan Das Ji begin taking butter from the pot and enjoying it together. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -179,7 +191,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Kumbhan Das Ji; Reference 3 is Gokul butter house. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna turning toward the doorway after hearing approaching footsteps, Kumbhan Das startled. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A sudden sound outside makes Krishna glance toward the doorway. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -194,7 +208,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Kumbhan Das Ji; Reference 2 is Gokul butter house; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show villagers arriving at the butter house doorway while Kumbhan Das Ji looks worried. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Villagers approach the house, and Kumbhan Das Ji realizes they have been discovered. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -209,7 +225,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Kumbhan Das Ji; Reference 3 is Gokul butter house. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna quickly slipping out of the butter house while Kumbhan Das Ji remains inside. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna slips away through the doorway with a playful smile while Kumbhan Das Ji remains behind. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -224,7 +242,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Kumbhan Das Ji; Reference 2 is Gokul butter house; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show villagers stopping Kumbhan Das Ji outside the butter house, questioning him. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Kumbhan Das Ji is caught by the villagers and gently held as they question him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -245,7 +265,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Kumbhan Das Ji; Reference 2 is Gokul butter house; Reference 3 is traditional clay butter pot. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Kumbhan Das Ji looks toward the empty village lane where Krishna has just disappeared.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Kumbhan Das Ji looks toward the path where Krishna disappeared, realizing Krishna has escaped. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -265,7 +287,9 @@
               "speaker": "grandfather",
               "text": "कन्हैया तो फुर्र से निकल गए… और कुम्भन दास जी अकेले पकड़े गए!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -280,7 +304,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Gokul butter house; Reference 3 is warm Indian grandfather. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna peeking from behind a Gokul wall with a butter-smeared playful smile. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A brief imagined shot shows Krishna hiding behind a wall, peeking back with a mischievous grin. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -295,7 +321,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Kumbhan Das Ji; Reference 2 is Gokul butter house; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Kumbhan Das Ji smiling peacefully despite being caught, devotion visible in his expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Kumbhan Das Ji smiles despite being caught, showing his affection for Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -316,7 +344,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Kumbhan Das Ji; Reference 2 is Gokul butter house; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show villagers looking less angry as the scene becomes humorous. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The villagers' annoyance softens as the playful nature of the incident becomes clear. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -336,7 +366,9 @@
               "speaker": "grandfather",
               "text": "भक्ति में भगवान के साथ बिताया हुआ हर पल भक्त के लिए अनमोल बन जाता है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -351,7 +383,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show The children laugh and reenact the mischievous escape with playful gestures.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children imagine Krishna running away and giggle. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -366,7 +400,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show grandfather smiling gently as evening light filters through banyan leaves. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Grandfather closes the story with a knowing smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -387,7 +423,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show both grandchildren sharing an amused look beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The grandchildren look at one another, amused by how Krishna escaped. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -407,7 +445,9 @@
               "speaker": "grandfather",
               "text": "और याद रखना—कन्हैया की लीला में शरारत भी प्रेम से भरी होती है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -498,5 +538,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

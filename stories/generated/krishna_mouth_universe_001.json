@@ -80,7 +80,9 @@
               "speaker": "grandfather",
               "text": "एक दिन कन्हैया ने ऐसी चीज़ मुँह में डाल ली कि मैया यशोदा ने जो देखा, उसे देखकर पूरी दुनिया हैरान हो जाए!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -95,7 +97,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children looking curious beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children ask what happened. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -116,7 +120,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is young Balarama; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show young Krishna playing happily with Balarama and friends in a Gokul courtyard. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna plays in the courtyard with Balarama and friends. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -131,7 +137,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small lump of soft Gokul earth; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna noticing a small lump of earth on the ground while playing. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna notices a small lump of earth. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -146,7 +154,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small lump of soft Gokul earth; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna picking up a small lump of earth with a mischievous expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "He mischievously picks it up. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -161,7 +171,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small lump of soft Gokul earth; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna putting the small lump of earth into his mouth while trying to hide it. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna secretly puts the earth into his mouth. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -182,7 +194,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Balarama; Reference 2 is Mother Yashoda; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Balarama hurries into Yashoda's courtyard to report what happened.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Balarama and the friends notice and run to Yashoda. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -197,7 +211,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is young Krishna; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda approaching Krishna with a concerned motherly expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda walks toward Krishna with a serious expression. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -217,7 +233,9 @@
               "speaker": "yashoda",
               "text": "कान्हा, क्या तुमने मिट्टी खाई है?"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -232,7 +250,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna shaking his head innocently and pretending he did nothing wrong. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna shakes his head and pretends innocence. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -258,7 +278,9 @@
               "speaker": "yashoda",
               "text": "अच्छा, अपना मुँह खोलो। अभी पता चल जाएगा।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -273,7 +295,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is vision of stars, planets, rivers, mountains and cosmic space. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna opening his small mouth as Yashoda looks closely. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna slowly opens his mouth. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -288,7 +312,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is young Krishna; Reference 3 is vision of stars, planets, rivers, mountains and cosmic space. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda seeing a vast cosmic universe inside Krishna's open mouth, stars and planets visible. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Inside his mouth, stars and planets appear instead of earth. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -303,7 +329,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is vision of stars, planets, rivers, mountains and cosmic space. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cosmic rivers, mountains, planets and luminous space visible inside Krishna's mouth. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The vision expands to rivers, mountains and worlds. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -324,7 +352,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is young Krishna; Reference 3 is vision of stars, planets, rivers, mountains and cosmic space. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda seeing herself and the Gokul world reflected inside the cosmic vision. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda sees herself within the cosmic vision. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -339,7 +369,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is young Krishna; Reference 3 is vision of stars, planets, rivers, mountains and cosmic space. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda stepping back in awe as the cosmic vision fills her view. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda is overwhelmed and steps back. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -354,7 +386,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is bright Gokul play courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna closes his mouth and smiles innocently while Yashoda watches in astonishment.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Krishna closes his mouth and smiles like an ordinary little child. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -374,7 +408,9 @@
               "speaker": "grandfather",
               "text": "सोचो, अगर तुम मिट्टी खाओ और मम्मी मुँह खुलवाएँ… तो अंदर क्या दिखेगा?"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -395,7 +431,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children laughing and imagining a funny answer beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children laugh and answer playfully. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -415,7 +453,9 @@
               "speaker": "grandfather",
               "text": "कन्हैया बाहर से नन्हे बालक थे, लेकिन उनकी लीला में पूरा ब्रह्मांड समाया था।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -506,5 +546,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }
