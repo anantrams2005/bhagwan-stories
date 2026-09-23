@@ -407,7 +407,6 @@
     }
   ],
   "audio": {
-    "music_prompt": "Playful devotional bansuri, light mridangam, warm village ambience, mischievous but reverent mood, gentle emotional close.",
     "dialogue": [
       {
         "speaker": "grandfather",
@@ -436,6 +435,62 @@
       "natural footsteps",
       "subtle birds",
       "gentle cloth movement"
+    ]
+  },
+  "output_dir": "output",
+  "music": {
+    "provider": "ace_step",
+    "model": "ACE-Step 1.5",
+    "volume_db": -20,
+    "timeline": [
+      {
+        "id": "music_01",
+        "start": 0,
+        "end": 6,
+        "prompt": "Gentle playful Vrindavan devotional instrumental, bansuri, tanpura, soft tabla, warm village ambience, light mischievous energy, no vocals, Storytelling frame beneath the banyan tree and immediate hook.; continuous instrumental bed",
+        "volume_db": -20,
+        "file": "music_01.wav"
+      },
+      {
+        "id": "music_02",
+        "start": 6,
+        "end": 18,
+        "prompt": "Gentle playful Vrindavan devotional instrumental, bansuri, tanpura, soft tabla, warm village ambience, light mischievous energy, no vocals, Set up the leela and characters.; continuous instrumental bed",
+        "volume_db": -20,
+        "file": "music_02.wav"
+      },
+      {
+        "id": "music_03",
+        "start": 18,
+        "end": 30,
+        "prompt": "Gentle playful Vrindavan devotional instrumental, bansuri, tanpura, soft tabla, warm village ambience, light mischievous energy, no vocals, Develop the central action.; continuous instrumental bed",
+        "volume_db": -20,
+        "file": "music_03.wav"
+      },
+      {
+        "id": "music_04",
+        "start": 30,
+        "end": 42,
+        "prompt": "Gentle playful Vrindavan devotional instrumental, bansuri, tanpura, soft tabla, warm village ambience, light mischievous energy, no vocals, Escalate the problem or mystery.; continuous instrumental bed",
+        "volume_db": -20,
+        "file": "music_04.wav"
+      },
+      {
+        "id": "music_05",
+        "start": 42,
+        "end": 54,
+        "prompt": "Gentle playful Vrindavan devotional instrumental, bansuri, tanpura, soft tabla, warm village ambience, light mischievous energy, no vocals, Deliver the divine or comic payoff.; continuous instrumental bed",
+        "volume_db": -20,
+        "file": "music_05.wav"
+      },
+      {
+        "id": "music_06",
+        "start": 54,
+        "end": 60,
+        "prompt": "Gentle playful Vrindavan devotional instrumental, bansuri, tanpura, soft tabla, warm village ambience, light mischievous energy, no vocals, Return to the children beneath the banyan tree and close the lesson.; continuous instrumental bed",
+        "volume_db": -20,
+        "file": "music_06.wav"
+      }
     ]
   }
 }
