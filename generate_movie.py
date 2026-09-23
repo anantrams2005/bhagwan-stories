@@ -49,21 +49,15 @@ def main() -> int:
     video_gen = None
 
     if args.image_backend == "comfyui":
-        asset_image_gen = ComfyUIImageGenerator(
-            args.comfyui_url,
-            args.asset_image_workflow,
-        )
-        scene_image_gen = ComfyUIImageGenerator(
-            args.comfyui_url,
-            args.scene_image_workflow,
-        )
+        asset_image_gen = ComfyUIImageGenerator(args.comfyui_url, args.asset_image_workflow)
+        scene_image_gen = ComfyUIImageGenerator(args.comfyui_url, args.scene_image_workflow)
 
     if args.video_backend == "comfyui_wan":
         if not args.video_workflow:
             raise SystemExit("--video-workflow is required")
         video_gen = ComfyUIVideoGenerator(args.comfyui_url, args.video_workflow)
 
-    movie_dir = Path(story.get("output_dir", "movies")) / story["id"]
+    movie_dir = Path(story.get("output_dir", "output")) / story["id"]
     movie_dir.mkdir(parents=True, exist_ok=True)
 
     pipeline = MoviePipeline(
@@ -74,16 +68,9 @@ def main() -> int:
     )
     records = pipeline.run(story, movie_dir)
 
-    manifest = {
-        "story_id": story["id"],
-        "title": story["title"],
-        "shots": records,
-    }
+    manifest = {"story_id": story["id"], "title": story["title"], "shots": records}
     manifest_path = movie_dir / "manifest.json"
-    manifest_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Movie manifest: {manifest_path}")
     return 0
 
