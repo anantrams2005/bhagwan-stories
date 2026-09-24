@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Any
+import json
 
 
 class AssetLibrary:
@@ -25,8 +26,19 @@ class AssetLibrary:
     ) -> Path:
         category = asset.get("category", "characters")
         asset_id = asset["id"]
+        output_dir = self.root / category / asset_id
         existing = self.resolve(category, asset_id)
-        if existing:
+
+        # Versioned character references allow a corrected identity to replace
+        # an already-generated bad reference without regenerating every asset.
+        requested_version = asset.get("asset_prompt_version")
+        version_file = output_dir / ".prompt_version"
+        current_version = version_file.read_text(encoding="utf-8").strip() if version_file.exists() else None
+        needs_regeneration = existing is None or (
+            requested_version is not None and str(requested_version) != current_version
+        )
+
+        if not needs_regeneration:
             return existing
 
         if generator is None:
@@ -34,13 +46,17 @@ class AssetLibrary:
                 f"Missing asset '{category}/{asset_id}' and no image generator is configured"
             )
 
-        output_dir = self.root / category / asset_id
         prompt = asset["description"]
         negative = asset.get(
             "negative_prompt",
             "text, logo, watermark, distorted anatomy, duplicate subject",
         )
-        return generator.generate(prompt, negative, output_dir, "reference.png")
+
+        output_dir.mkdir(parents=True, exist_ok=True)
+        generated = generator.generate(prompt, negative, output_dir, "reference.png")
+        if requested_version is not None:
+            version_file.write_text(str(requested_version), encoding="utf-8")
+        return generated
 
 
 class AssetStage:
