@@ -28,7 +28,7 @@
     },
     {
       "id": "krishna",
-      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+      "description": "Baby Krishna, approximately 6–8 years old, small child proportions and clearly pre-adolescent, blue skin, soft round childlike face, large expressive eyes, short dark curly hair, peacock-feather crown, yellow pitambar, simple traditional jewelry; never depicted as an adult or muscular teenager."
     }
   ],
   "locations": [
@@ -135,9 +135,9 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna entering the butter room with two playful cowherd friends. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna entering the butter room with two playful cowherd friends. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna and his friends sneak into the butter room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent and his friends sneak into the butter room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -152,9 +152,9 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna leaning toward the little brass bell with a playful secret expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna leaning toward the little brass bell with a playful secret expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna notices the bell and whispers to it not to ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent notices the bell and whispers to it not to ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -169,7 +169,7 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and cowherd friends eating fresh butter beneath the hanging pot while the bell stays still. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and cowherd friends eating fresh butter beneath the hanging pot while the bell stays still. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys pull down the butter and eat while the bell remains silent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -192,7 +192,7 @@
             "monkey",
             "butter_pot_bell"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is playful Vrindavan monkey; Reference 3 is clay butter pot with a small brass bell. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show monkey eating butter from the pot area while Krishna watches, bell remaining still. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is playful Vrindavan monkey; Reference 3 is clay butter pot with a small brass bell. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show monkey eating butter from the pot area while Krishna watches, bell remaining still. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A monkey reaches the butter and eats greedily; the bell still does not ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -226,9 +226,9 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling confidently and taking another bite of butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling confidently and taking another bite of butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna looks relieved and takes one more bite. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent looks relieved and takes one more bite. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -243,9 +243,9 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna frozen in surprise as the little brass bell swings and rings. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna frozen in surprise as the little brass bell swings and rings. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "The instant Krishna eats, the brass bell rings loudly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "The instant baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent eats, the brass bell rings loudly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -266,9 +266,9 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd friends turning toward Krishna in surprised laughter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd friends turning toward Krishna in surprised laughter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna's friends look at him in shock and amusement. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent's friends look at him in shock and amusement. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -300,9 +300,9 @@
             "butter_pot_bell",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking up at the bell with a mock-offended expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot with a small brass bell; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking up at the bell with a mock-offended expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna looks up at the bell as if asking why it betrayed him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent looks up at the bell as if asking why it betrayed him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -317,7 +317,7 @@
             "krishna",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is clay butter pot with a small brass bell; Reference 2 is young Krishna; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show small brass bell gently swinging above Krishna in a playful cinematic close shot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is clay butter pot with a small brass bell; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show small brass bell gently swinging above Krishna in a playful cinematic close shot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The bell appears to swing innocently above him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -379,9 +379,9 @@
             "yashoda",
             "gokul_butter_room"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna giving a small innocent smile as Yashoda reaches the doorway. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Mother Yashoda; Reference 3 is Gokul butter room. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna giving a small innocent smile as Yashoda reaches the doorway. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna smiles as Yashoda approaches, turning the prank into a loving family moment. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent smiles as Yashoda approaches, turning the prank into a loving family moment. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"

@@ -24,7 +24,7 @@
     },
     {
       "id": "krishna",
-      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+      "description": "Baby Krishna, approximately 6–8 years old, small child proportions and clearly pre-adolescent, blue skin, soft round childlike face, large expressive eyes, short dark curly hair, peacock-feather crown, yellow pitambar, simple traditional jewelry; never depicted as an adult or muscular teenager."
     },
     {
       "id": "radha",
@@ -113,9 +113,9 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sitting peacefully beside the Yamuna holding a small bamboo flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sitting peacefully beside the Yamuna holding a small bamboo flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna sits beside the Yamuna holding the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent sits beside the Yamuna holding the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -130,7 +130,7 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gently raising the bamboo flute toward his lips beside the river. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gently raising the bamboo flute toward his lips beside the river. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "He raises the flute toward his lips. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -147,9 +147,9 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna beginning to play the bansuri beneath a kadamba tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna beginning to play the bansuri beneath a kadamba tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna begins to play. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent begins to play. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -164,7 +164,7 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yamuna water rippling softly while Krishna plays in the background. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yamuna water rippling softly while Krishna plays in the background. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The river ripples gently. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -187,7 +187,7 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show kadamba leaves swaying gently around Krishna as the flute music continues. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show kadamba leaves swaying gently around Krishna as the flute music continues. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Leaves move in the breeze. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -204,7 +204,7 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show young cowherd child stopping on a path to listen to Krishna's flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show young cowherd child stopping on a path to listen to Krishna's flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A cowherd child pauses to listen. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -221,7 +221,7 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock turning toward the distant sound of Krishna's flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show peacock turning toward the distant sound of Krishna's flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "A peacock turns toward the sound. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -238,7 +238,7 @@
             "radha",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha in a Vrindavan path pausing as she hears Krishna's distant flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha in a Vrindavan path pausing as she hears Krishna's distant flute. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Radha hears the distant melody. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -261,7 +261,7 @@
             "krishna",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha and Krishna share a peaceful moment beside the Yamuna as the flute melody draws the evening to stillness.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha and Krishna share a peaceful moment beside the Yamuna as the flute melody draws the evening to stillness.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The sound seems to connect everyone to the same moment. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -300,9 +300,9 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna absorbed peacefully in playing the flute beside the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna absorbed peacefully in playing the flute beside the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna plays with calm concentration. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent plays with calm concentration. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -317,7 +317,7 @@
             "yamuna_evening",
             "krishna_flute"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show breeze moving through flowers and trees around Krishna as the music travels. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Yamuna riverbank at evening; Reference 3 is small bamboo bansuri flute. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show breeze moving through flowers and trees around Krishna as the music travels. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The breeze carries the sound through the grove. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
@@ -379,9 +379,9 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna lowering the flute and looking peacefully across the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna lowering the flute and looking peacefully across the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna lowers the flute and looks toward the river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent lowers the flute and looks toward the river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
@@ -396,9 +396,9 @@
             "krishna_flute",
             "yamuna_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show wide cinematic view of Krishna beside the Yamuna with flute, fireflies and kadamba trees. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small bamboo bansuri flute; Reference 3 is Yamuna riverbank at evening. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show wide cinematic view of Krishna beside the Yamuna with flute, fireflies and kadamba trees. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "The final image shows the quiet river and Krishna with the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "The final image shows the quiet river and baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent with the flute. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [],
           "image_model": "flux2_klein_4b",
           "video_model": "wan2.2"
