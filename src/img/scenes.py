@@ -24,6 +24,8 @@ class SceneImageStage:
         records: list[dict[str, Any]] = []
         total_shots = sum(len(scene["shots"]) for scene in story["scenes"])
         print(f"[SCENE] Starting {total_shots} shot(s) with FLUX.2 Klein 4B")
+        print("[SCENE] Model contract: image_prompt -> FLUX.2 Klein 4B; video_prompt -> WAN 2.2 only")
+        print(f"[SCENE] Starting {total_shots} shot(s) with FLUX.2 Klein 4B")
         print("[SCENE] Source dimensions are derived by Klein GetImageSize; use 16:9 refs.")
         shot_number = 0
         for scene in story["scenes"]:
@@ -42,6 +44,8 @@ class SceneImageStage:
 
                 refs = [asset_refs[a] for a in asset_ids]
                 print("[SCENE]   refs: " + " | ".join(str(p) for p in refs))
+                if shot.get("image_model", "flux2_klein_4b") != "flux2_klein_4b":
+                    raise ValueError(f"{scene['id']}/{shot['id']} image_model must be flux2_klein_4b")
                 image = self.generator.generate(
                     shot["image_prompt"],
                     shot.get("negative_prompt", ""),

@@ -28,7 +28,7 @@
     },
     {
       "id": "krishna",
-      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+      "description": "Baby Krishna, approximately 6–8 years old, small child proportions and clearly pre-adolescent, blue skin, soft round childlike face, large expressive eyes, short dark curly hair, peacock-feather crown, yellow pitambar, simple traditional jewelry; never depicted as an adult or muscular teenager."
     },
     {
       "id": "radha",
@@ -85,7 +85,9 @@
               "speaker": "grandmother",
               "text": "आज की कहानी में न माखन है, न कोई बड़ी शरारत… बस यमुना, एक छोटी नाव और राधा रानी हैं।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -100,7 +102,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandmother; Reference 2 is Indian boy; Reference 3 is Indian girl. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children listening to grandmother beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children listen closely. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -118,10 +122,12 @@
             "small_boat",
             "yamuna_boat_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small wooden river boat; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sitting beside the Yamuna at dusk with a small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small wooden river boat; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna sitting beside the Yamuna at dusk with a small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna sits alone beside the Yamuna with his little boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent sits alone beside the Yamuna with his little boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -133,10 +139,12 @@
             "small_boat",
             "yamuna_boat_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is small wooden river boat; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking peacefully across the evening Yamuna beside his little boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is small wooden river boat; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking peacefully across the evening Yamuna beside his little boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "He looks across the quiet river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -148,10 +156,12 @@
             "radha_friends",
             "krishna"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha approaching the Yamuna with two friends and noticing Krishna's small boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha approaching the Yamuna with two friends and noticing Krishna's small boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Radha approaches with two friends and sees the boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -163,15 +173,17 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha speaking to Krishna beside the little boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha speaking to Krishna beside the little boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Radha asks Krishna to take them across. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "Radha asks baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent to take them across. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
               "speaker": "radha",
               "text": "कन्हैया, हमें यमुना के उस पार पहुँचा दोगे?"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -189,15 +201,17 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gesturing toward the small boat as he explains it cannot easily fit everyone. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gesturing toward the small boat as he explains it cannot easily fit everyone. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna points out that the boat is very small. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent points out that the boat is very small. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
           "dialogue": [
             {
               "speaker": "krishna",
               "text": "राधे, मेरी नाव तो बहुत छोटी है… हम सब बैठेंगे तो कहीं डूब न जाए!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -209,10 +223,12 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha smiling and gently persuading Krishna beside the river. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha smiling and gently persuading Krishna beside the river. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Radha smiles and gently persuades him. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -224,10 +240,12 @@
             "radha_friends",
             "krishna"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha's two friends smiling while Krishna playfully pretends to worry about the tiny boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha's two friends smiling while Krishna playfully pretends to worry about the tiny boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Her friends smile as Krishna pretends to worry. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "Her friends smile as baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent pretends to worry. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -239,10 +257,12 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling and agreeing to take them across. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna smiling and agreeing to take them across. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna finally agrees. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent finally agrees. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -260,10 +280,12 @@
             "radha",
             "yamuna_boat_evening"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna respectfully washing Radha's feet with Yamuna water at the riverbank. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is Yamuna river at evening with a small boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna respectfully washing Radha's feet with Yamuna water at the riverbank. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna respectfully washes Radha's feet at the riverbank before they board. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent respectfully washes Radha's feet at the riverbank before they board. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -275,10 +297,12 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha carefully stepping into Krishna's small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha carefully stepping into Krishna's small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Radha steps carefully into the small boat. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -293,7 +317,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is Radha's two friends; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha's two friends carefully boarding the small wooden boat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Her two friends board after her. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -305,10 +331,12 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna rowing the small boat across the calm Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna rowing the small boat across the calm Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna takes the oar and begins rowing. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent takes the oar and begins rowing. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -326,10 +354,12 @@
             "radha",
             "radha_friends"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Radha's two friends. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show small boat gliding gently across the evening Yamuna with Radha and her friends. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is Radha's two friends. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show small boat gliding gently across the evening Yamuna with Radha and her friends. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boat moves gently across the water. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -341,10 +371,12 @@
             "krishna",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is young Krishna; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha looking toward Krishna with a warm gentle smile as he rows. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Radha; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Radha looking toward Krishna with a warm gentle smile as he rows. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Radha looks at Krishna with a gentle smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "Radha looks at baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent with a gentle smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -356,10 +388,12 @@
             "radha",
             "small_boat"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show wide cinematic view of the little boat crossing the reflective Yamuna at dusk. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is small wooden river boat. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show wide cinematic view of the little boat crossing the reflective Yamuna at dusk. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The river reflects the evening sky around them. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -379,7 +413,9 @@
               "speaker": "grandmother",
               "text": "यह कथा लोक-परंपरा के भाव में सुनाई जाती है—जहाँ नाव की छोटी-सी यात्रा प्रेम और सेवा का सुंदर दृश्य बन जाती है।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -400,7 +436,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children looking dreamily toward the imagined Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children imagine the boat crossing the river. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -412,10 +450,12 @@
             "radha",
             "radha_friends"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Radha; Reference 3 is Radha's two friends. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna's small boat reaching the peaceful opposite bank of the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Radha; Reference 3 is Radha's two friends. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna's small boat reaching the peaceful opposite bank of the Yamuna. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The little boat reaches the far bank. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_21",
@@ -435,7 +475,9 @@
               "speaker": "grandmother",
               "text": "कभी-कभी छोटी-सी यात्रा भी ऐसी याद छोड़ जाती है, जिसे भक्त पीढ़ियों तक सुनाते हैं।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -526,5 +568,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

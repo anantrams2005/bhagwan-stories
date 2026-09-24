@@ -28,7 +28,7 @@
     },
     {
       "id": "krishna",
-      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+      "description": "Baby Krishna, approximately 6–8 years old, small child proportions and clearly pre-adolescent, blue skin, soft round childlike face, large expressive eyes, short dark curly hair, peacock-feather crown, yellow pitambar, simple traditional jewelry; never depicted as an adult or muscular teenager."
     }
   ],
   "locations": [
@@ -81,7 +81,9 @@
               "speaker": "grandfather",
               "text": "मैया यशोदा ने सोचा—आज माखन की मटकी इतनी ऊँची रखूँगी कि कन्हैया पहुँच ही नहीं पाएँगे!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -96,7 +98,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children laughing knowingly beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children laugh because they already suspect Krishna has a plan. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -117,7 +121,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda hanging a clay butter pot high from a wooden beam. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda hangs the butter pot high above the floor. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -129,10 +135,12 @@
             "butter_pot_high",
             "gokul_rooftop_butter"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking up at the very high butter pot with a thoughtful mischievous expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna looking up at the very high butter pot with a thoughtful mischievous expression. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna enters and looks up at the impossible height. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent enters and looks up at the impossible height. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -144,10 +152,12 @@
             "cowherd_friends",
             "gokul_rooftop_butter"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna calling a group of cowherd friends together in the courtyard. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna calling a group of cowherd friends together in the courtyard. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna gathers his cowherd friends. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent gathers his cowherd friends. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -159,10 +169,12 @@
             "cowherd_friends",
             "gokul_rooftop_butter"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and the boys quietly making a playful plan. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is gokul_rooftop_butter. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna and the boys quietly making a playful plan. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys whisper and plan. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -180,10 +192,12 @@
             "butter_pot_high",
             "krishna"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys beginning a careful human pyramid beneath the hanging pot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys beginning a careful human pyramid beneath the hanging pot. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The first boy kneels and another climbs carefully onto his shoulders. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -195,10 +209,12 @@
             "butter_pot_high",
             "krishna"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show more cowherd boys carefully forming a stable human pyramid. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show more cowherd boys carefully forming a stable human pyramid. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "More boys join to make the pyramid taller. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -210,10 +226,12 @@
             "cowherd_friends",
             "butter_pot_high"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna climbing carefully to the top of the human pyramid. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna climbing carefully to the top of the human pyramid. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna climbs to the top. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent climbs to the top. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -225,10 +243,12 @@
             "cowherd_friends",
             "butter_pot_high"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna reaching the high clay butter pot from the top of the pyramid. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna reaching the high clay butter pot from the top of the pyramid. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna reaches the pot. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent reaches the pot. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -246,10 +266,12 @@
             "butter_pot_high",
             "monkeys"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is group of playful Vrindavan monkeys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna opening the butter pot and tasting fresh white butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is clay butter pot hanging high from a wooden beam; Reference 3 is group of playful Vrindavan monkeys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna opening the butter pot and tasting fresh white butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "He opens the pot and tastes the fresh butter. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -261,10 +283,12 @@
             "krishna",
             "butter_pot_high"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of playful Vrindavan monkeys; Reference 2 is young Krishna; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show playful monkeys peeking through a window toward Krishna and the butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of playful Vrindavan monkeys; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show playful monkeys peeking through a window toward Krishna and the butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Monkeys peek through the nearby window. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -276,10 +300,12 @@
             "monkeys",
             "butter_pot_high"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of playful Vrindavan monkeys; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gesturing toward the monkeys and offering them butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of playful Vrindavan monkeys; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna gesturing toward the monkeys and offering them butter. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna invites the monkeys to share. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent invites the monkeys to share. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -291,10 +317,12 @@
             "krishna",
             "butter_pot_high"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of playful Vrindavan monkeys; Reference 2 is young Krishna; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show monkeys happily eating butter near the window while Krishna smiles. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of playful Vrindavan monkeys; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is clay butter pot hanging high from a wooden beam. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show monkeys happily eating butter near the window while Krishna smiles. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The monkeys happily eat butter. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -312,10 +340,12 @@
             "monkeys",
             "krishna"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is group of playful Vrindavan monkeys; Reference 3 is young Krishna. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys laughing while monkeys make playful noise. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is group of playful Vrindavan monkeys; Reference 3 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys laughing while monkeys make playful noise. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys laugh as the monkeys make a noisy commotion. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -327,10 +357,12 @@
             "krishna",
             "cowherd_friends"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is young Krishna; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda entering with a small household stick while Krishna and the boys freeze. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda entering with a small household stick while Krishna and the boys freeze. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Yashoda arrives carrying a stick and everyone freezes. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -342,10 +374,12 @@
             "yashoda",
             "monkeys"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Mother Yashoda; Reference 3 is group of playful Vrindavan monkeys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna pointing innocently toward the butter-eating monkeys while pretending not to know anything. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Mother Yashoda; Reference 3 is group of playful Vrindavan monkeys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna pointing innocently toward the butter-eating monkeys while pretending not to know anything. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna points innocently toward the monkeys. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent points innocently toward the monkeys. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -357,10 +391,12 @@
             "krishna",
             "cowherd_friends"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is young Krishna; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda giving Krishna a loving but knowing look. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Mother Yashoda; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Yashoda giving Krishna a loving but knowing look. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Yashoda gives Krishna a knowing look. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "Yashoda gives baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent a knowing look. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -386,7 +422,9 @@
               "speaker": "grandfather",
               "text": "कन्हैया ने सोचा—माखन भी बच गया और इल्ज़ाम भी बंदरों पर चला गया!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -401,7 +439,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is warm Indian grandfather; Reference 2 is Indian boy; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children laughing beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children laugh at Krishna's excuse. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -480,5 +520,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

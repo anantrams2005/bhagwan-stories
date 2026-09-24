@@ -24,7 +24,7 @@
     },
     {
       "id": "krishna",
-      "description": "Youthful devotional Krishna, blue skin, serene expressive face, peacock-feather crown, yellow pitambar, traditional jewelry."
+      "description": "Baby Krishna, approximately 6–8 years old, small child proportions and clearly pre-adolescent, blue skin, soft round childlike face, large expressive eyes, short dark curly hair, peacock-feather crown, yellow pitambar, simple traditional jewelry; never depicted as an adult or muscular teenager."
     },
     {
       "id": "balarama",
@@ -86,7 +86,9 @@
               "speaker": "grandfather",
               "text": "आज की लीला में ब्रह्मा जी ने कन्हैया की परीक्षा लेने की कोशिश की… लेकिन आगे जो हुआ, वह अद्भुत था।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_02",
@@ -101,7 +103,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children listening with curiosity under the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children listen closely. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -119,10 +123,12 @@
             "balarama",
             "cowherd_boys"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is young Balarama; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna, Balarama and cowherd boys sitting in a meadow sharing a simple picnic meal. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is young Balarama; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna, Balarama and cowherd boys sitting in a meadow sharing a simple picnic meal. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna and the cowherd boys sit together eating their lunch. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent and the cowherd boys sit together eating their lunch. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_04",
@@ -134,10 +140,12 @@
             "cowherd_boys",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys playfully sharing food while Krishna laughs. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys playfully sharing food while Krishna laughs. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys happily share food with one another. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_05",
@@ -149,10 +157,12 @@
             "cowherd_boys",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna playfully reaching for a friend's food during the picnic. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna playfully reaching for a friend's food during the picnic. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna reaches for a friend's food with a playful grin. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent reaches for a friend's food with a playful grin. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_06",
@@ -164,10 +174,12 @@
             "krishna",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is young Krishna; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma observing Krishna and the boys from a divine vantage point, looking thoughtful. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma observing Krishna and the boys from a divine vantage point, looking thoughtful. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Brahma observes from above, puzzled by the scene. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -185,10 +197,12 @@
             "krishna",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is young Krishna; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma observes Krishna in the peaceful Vrindavan meadow from above, preparing to test him.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma observes Krishna in the peaceful Vrindavan meadow from above, preparing to test him.. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Brahma decides to test Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "Brahma decides to test baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_08",
@@ -203,7 +217,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of Vrindavan calves; Reference 2 is Vrindavan meadow; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show calves wandering peacefully near the meadow while the boys eat. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The calves wander toward the meadow edge. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_09",
@@ -218,7 +234,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is group of Vrindavan calves; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys distracted by the calves moving toward the grass. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The cowherd boys become briefly distracted. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_10",
@@ -233,7 +251,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is group of Vrindavan calves; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma using divine power to quietly remove the calves from the meadow. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Brahma secretly moves the calves away. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -251,10 +271,12 @@
             "krishna",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is young Krishna; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys looking around in confusion after the calves disappear. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is group of young cowherd boys; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show cowherd boys looking around in confusion after the calves disappear. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The boys notice the calves are gone. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_12",
@@ -266,10 +288,12 @@
             "cowherd_boys",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna standing calmly and looking across the meadow after noticing the missing calves. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna standing calmly and looking across the meadow after noticing the missing calves. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna stands and looks across the meadow. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent stands and looks across the meadow. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_13",
@@ -281,10 +305,12 @@
             "krishna",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is young Krishna; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma observing from above, expecting Krishna to become distressed. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Brahma; Reference 2 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Brahma observing from above, expecting Krishna to become distressed. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Brahma watches, expecting Krishna to panic. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "Brahma watches, expecting baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent to panic. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_14",
@@ -296,10 +322,12 @@
             "vrindavan_meadow",
             "cowherd_boys"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan meadow; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna standing peacefully with eyes gently closed as he understands the divine trick. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Vrindavan meadow; Reference 3 is group of young cowherd boys. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna standing peacefully with eyes gently closed as he understands the divine trick. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna closes his eyes and becomes still. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent closes his eyes and becomes still. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -317,10 +345,12 @@
             "vrindavan_meadow",
             "banyan_courtyard"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan meadow; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna surrounded by a restrained divine radiance as he prepares a miraculous response. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Vrindavan meadow; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna surrounded by a restrained divine radiance as he prepares a miraculous response. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "A subtle divine radiance surrounds Krishna. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "A subtle divine radiance surrounds baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_16",
@@ -340,7 +370,9 @@
               "speaker": "grandfather",
               "text": "कन्हैया समझ गए कि यह कोई साधारण शरारत नहीं थी। उन्हें पता था कि ब्रह्मा जी परीक्षा ले रहे हैं।"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_17",
@@ -355,7 +387,9 @@
           "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is Indian boy; Reference 2 is Indian girl; Reference 3 is Vrindavan banyan-tree courtyard. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show children leaning forward in anticipation beneath the banyan tree. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "The children wait for the miracle. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_18",
@@ -367,10 +401,12 @@
             "banyan_courtyard",
             "vrindavan_meadow"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is Vrindavan banyan-tree courtyard; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna opening his eyes with a calm knowing smile. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is Vrindavan banyan-tree courtyard; Reference 3 is Vrindavan meadow. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna opening his eyes with a calm knowing smile. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
-          "video_prompt": "Krishna opens his eyes with a knowing smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent opens his eyes with a knowing smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     },
@@ -388,10 +424,12 @@
             "cowherd_boys",
             "calves"
           ],
-          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is young Krishna; Reference 2 is group of young cowherd boys; Reference 3 is group of Vrindavan calves. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna's divine presence multiplying into matching cowherd and calf forms across the meadow. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
+          "image_prompt": "Create one coherent cinematic 3D Indian devotional animation frame in 16:9. Reference 1 is baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent; Reference 2 is group of young cowherd boys; Reference 3 is group of Vrindavan calves. Use the three references to preserve each subject's appearance, identity, proportions, clothing, colors and defining details. Show Krishna's divine presence multiplying into matching cowherd and calf forms across the meadow. Keep the referenced subjects naturally positioned in the same believable scene with clear spatial relationships, readable poses, detailed Indian setting, soft cinematic lighting and depth-rich composition. Keep the composition focused on the referenced subjects and referenced setting or props.",
           "negative_prompt": "",
           "video_prompt": "Multiple identical-looking but naturally varied divine forms begin to appear around the meadow. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
-          "dialogue": []
+          "dialogue": [],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         },
         {
           "id": "shot_20",
@@ -411,7 +449,9 @@
               "speaker": "grandfather",
               "text": "अब ब्रह्मा जी ने जो देखा, उससे वे खुद हैरान रह गए… उसकी कहानी अगले भाग में!"
             }
-          ]
+          ],
+          "image_model": "flux2_klein_4b",
+          "video_model": "wan2.2"
         }
       ]
     }
@@ -494,5 +534,22 @@
         "file": "music_06.wav"
       }
     ]
+  },
+  "generation": {
+    "asset_images": {
+      "model": "z_image_turbo",
+      "stage": "reusable_asset_generation"
+    },
+    "scene_images": {
+      "model": "flux2_klein_4b",
+      "workflow": "workflows/flux2_klein_4b_scene.json",
+      "prompt_field": "image_prompt",
+      "reference_count": 3
+    },
+    "i2v": {
+      "model": "wan2.2",
+      "stage": "kaggle_i2v",
+      "prompt_field": "video_prompt"
+    }
   }
 }

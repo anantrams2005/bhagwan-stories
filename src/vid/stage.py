@@ -16,6 +16,8 @@ class VideoStage:
                 shot for scene in story["scenes"] if scene["id"] == record["scene_id"]
                 for shot in scene["shots"] if shot["id"] == record["shot_id"]
             )
+            if shot.get("video_model", "wan2.2") != "wan2.2":
+                raise ValueError(f"{record['scene_id']}/{record['shot_id']} video_model must be wan2.2")
             shot_dir = Path(record["image"]).parent
             video = self.generator.generate(
                 image=Path(record["image"]),
