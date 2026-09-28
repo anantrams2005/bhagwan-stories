@@ -14,7 +14,25 @@ class VideoStage:
         i2v = story.get("generation", {}).get("i2v", {})
         fps = i2v.get("fps")
         if fps is None:
-            raise ValueError("story generation.i2v.fps is required for WAN I2V")
+            get_default_fps = getattr(self.generator, "get_default_fps", None)
+            if get_default_fps is None:
+                raise ValueError(
+                    "story generation.i2v.fps is missing and the video generator "
+                    "does not expose a workflow FPS fallback"
+                )
+            fps = get_default_fps()
+            if fps is None:
+                raise ValueError(
+                    "story generation.i2v.fps is missing and the WAN workflow "
+                    "does not define an FPS value"
+                )
+
+        try:
+            fps = float(fps)
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"WAN I2V FPS must be numeric, got {fps!r}") from exc
+        if fps <= 0:
+            raise ValueError(f"WAN I2V FPS must be greater than zero, got {fps}")
 
         for record in records:
             shot = next(

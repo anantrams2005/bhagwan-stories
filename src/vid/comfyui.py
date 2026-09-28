@@ -15,6 +15,23 @@ class ComfyUIVideoGenerator:
         self.base_url = base_url.rstrip("/")
         self.workflow_path = workflow_path
 
+    def get_default_fps(self) -> float | None:
+        """Return the FPS declared by the workflow's mapped FPS node."""
+        workflow = json.loads(self.workflow_path.read_text(encoding="utf-8"))
+        nodes = workflow.get("_pipeline_nodes", {})
+        node_id = nodes.get("fps")
+        if not node_id or node_id not in workflow:
+            return None
+        inputs = workflow[node_id].get("inputs", {})
+        for key in ("fps", "frame_rate", "value"):
+            value = inputs.get(key)
+            if value is not None and not isinstance(value, (list, dict)):
+                try:
+                    return float(value)
+                except (TypeError, ValueError):
+                    return None
+        return None
+
     def generate(self, image: Path, prompt: str, duration: float, fps: float, output_dir: Path, filename: str) -> Path:
         workflow = json.loads(self.workflow_path.read_text(encoding="utf-8"))
         nodes = workflow.pop("_pipeline_nodes", {})
