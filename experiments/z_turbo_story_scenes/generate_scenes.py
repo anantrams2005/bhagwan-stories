@@ -236,7 +236,7 @@ def main() -> None:
     if not workflow_path.is_absolute():
         workflow_path = ROOT / workflow_path
 
-    seed = int(args.seed if args.seed is not None else story.get("seed", config["seed"]))
+    seed = int(args.seed if args.seed is not None else config.get("story_seeds", {}).get(story["id"], story.get("seed", config["seed"])))
     out_root = ROOT / "output" / story["id"]
     comfy = ComfyUI(config["comfyui_url"])
 
