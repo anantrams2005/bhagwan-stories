@@ -9,7 +9,7 @@ import requests
 
 
 class ComfyUIVideoGenerator:
-    """Generic ComfyUI I2V adapter; workflow-specific node mapping stays in JSON."""
+    """ComfyUI I2V adapter. Timing values come from story JSON, not hardcoded here."""
 
     def __init__(self, base_url: str, workflow_path: Path) -> None:
         self.base_url = base_url.rstrip("/")
@@ -20,21 +20,31 @@ class ComfyUIVideoGenerator:
         image: Path,
         prompt: str,
         duration: float,
+        fps: float,
         output_dir: Path,
         filename: str,
     ) -> Path:
         workflow = json.loads(self.workflow_path.read_text(encoding="utf-8"))
         nodes = workflow.pop("_pipeline_nodes", {})
+        frames = max(1, round(duration * fps) + 1)
+
+        uploaded_name = self._upload_image(image)
         self._set_text(workflow, nodes.get("positive_prompt"), prompt)
         self._set_value(workflow, nodes.get("duration"), duration)
-        self._set_value(workflow, nodes.get("image"), str(image))
+        self._set_value(workflow, nodes.get("fps"), fps)
+        self._set_value(workflow, nodes.get("frames"), frames)
+        self._set_value(workflow, nodes.get("image"), uploaded_name)
 
-        response = requests.post(f"{self.base_url}/prompt", json={"prompt": workflow}, timeout=60)
+        response = requests.post(
+            f"{self.base_url}/prompt", json={"prompt": workflow}, timeout=60
+        )
         response.raise_for_status()
         prompt_id = response.json()["prompt_id"]
 
         while True:
-            history = requests.get(f"{self.base_url}/history/{prompt_id}", timeout=30).json()
+            history = requests.get(
+                f"{self.base_url}/history/{prompt_id}", timeout=30
+            ).json()
             if prompt_id in history:
                 result = history[prompt_id]
                 if result.get("status", {}).get("status_str") == "error":
@@ -62,6 +72,18 @@ class ComfyUIVideoGenerator:
 
         raise RuntimeError("ComfyUI video workflow completed without a video output")
 
+    def _upload_image(self, image: Path) -> str:
+        with image.open("rb") as handle:
+            response = requests.post(
+                f"{self.base_url}/upload/image",
+                files={"image": (image.name, handle, "image/png")},
+                data={"overwrite": "true"},
+                timeout=120,
+            )
+        response.raise_for_status()
+        payload = response.json()
+        return payload.get("name") or image.name
+
     @staticmethod
     def _set_text(workflow: dict[str, Any], node_id: str | None, value: str) -> None:
         if node_id and node_id in workflow:
@@ -71,7 +93,7 @@ class ComfyUIVideoGenerator:
     def _set_value(workflow: dict[str, Any], node_id: str | None, value: Any) -> None:
         if node_id and node_id in workflow:
             inputs = workflow[node_id]["inputs"]
-            for key in ("value", "duration", "image"):
+            for key in ("value", "duration", "fps", "frame_rate", "frames", "length", "image"):
                 if key in inputs:
                     inputs[key] = value
                     return
