@@ -31,10 +31,9 @@ class ComfyUI:
         output_name: str,
         config: dict[str, Any],
     ) -> Path:
-        workflow = json.loads(workflow_path.read_text(encoding="utf-8"))
-        workflow = copy.deepcopy(workflow)
-
+        workflow = copy.deepcopy(json.loads(workflow_path.read_text(encoding="utf-8")))
         metadata = workflow.pop("_pipeline_nodes", {})
+
         positive_node = config.get("positive_prompt_node") or metadata.get("positive_prompt")
         negative_node = config.get("negative_prompt_node") or metadata.get("negative_prompt")
         seed_node = config.get("seed_node") or metadata.get("seed")
@@ -109,41 +108,114 @@ def load(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def indexed_story(story: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    index: dict[str, dict[str, Any]] = {}
+    for key in ("characters", "locations", "supporting_assets"):
+        for item in story.get(key, []):
+            index[item["id"]] = item
+    return index
+
+
+def describe_refs(story: dict[str, Any], shot: dict[str, Any]) -> str:
+    index = indexed_story(story)
+    lines = []
+    for ref_id in shot.get("assets", shot.get("characters", [])):
+        item = index.get(ref_id)
+        if item:
+            lines.append(f"- {ref_id}: {item.get('description', '')}")
+    return "\n".join(lines)
+
+
 def build_prompt(story: dict[str, Any], shot: dict[str, Any], scene: dict[str, Any]) -> str:
-    cast = "\n".join(
-        f"- {c['id']}: {c['description']}" for c in story.get("cast", [])
+    index = indexed_story(story)
+    refs = shot.get("assets", shot.get("characters", []))
+    ref_text = describe_refs(story, shot)
+
+    # Pull the story's actual action instead of reusing its old Klein reference prompt.
+    action = shot.get("action", "").strip()
+    camera = shot.get("camera", "").strip()
+    purpose = scene.get("purpose", "").strip()
+
+    krishna = index.get("krishna", {}).get("description", "")
+    grandparents = [
+        item for item in story.get("characters", [])
+        if item["id"] in {"grandfather", "grandmother"}
+    ]
+    children = [
+        item for item in story.get("characters", [])
+        if item["id"].startswith("grandchild")
+    ]
+
+    continuity = f"""
+KRISHNA IDENTITY — HARD:
+{krishna}
+
+Only Krishna has blue/Shyam-varna skin.
+Every other human character MUST have natural Indian human skin tones.
+Never give blue skin to a grandparent, Radha, Yashoda, cowherd, boatman, village child, or any other person.
+Krishna is a small 6–8-year-old child, slim and pre-adolescent, never an adult, teenager, muscular or chubby.
+Krishna alone has exactly ONE peacock feather.
+
+STORYTELLING CAST:
+Grandparent/narrator and listening children are separate from Krishna. If a shot is in the storytelling frame, Krishna is NOT one of the listeners unless the shot explicitly says the imagined story has entered the scene.
+Never turn the grandparent into a character inside Krishna's historical scene.
+Never make Krishna sit with the grandchildren unless the current action explicitly requires it.
+
+VISUAL CONTINUITY:
+Use the same cinematic stylized 3D Indian animated-movie world in every shot.
+Preserve character age, body proportions, skin tone, hair, clothing and defining accessories.
+Do not invent characters that are not required by the current action.
+Keep important story objects physically consistent.
+Make the current action visually obvious rather than merely decorative.
+Characters should occupy enough of the frame for faces, hands and actions to be readable; do not make them tiny in a huge environment.
+"""
+
+    negative = story.get("generation", {}).get("negative_prompt", "")
+    if not negative:
+        negative = story.get("negative_prompt", "")
+    negative += (
+        ", photorealistic, photograph, live action, real person, "
+        "blue skin on anyone except Krishna, blue grandfather, blue grandmother, "
+        "blue Radha, blue cowherd, blue village child, extra Krishna, duplicate Krishna, "
+        "extra peacock feather, peacock feather on anyone except Krishna, adult Krishna, "
+        "teenage Krishna, muscular Krishna, chubby Krishna, extra children, invented characters, "
+        "story mismatch, unrelated scene, text, logo, watermark"
     )
-    locations = "\n".join(
-        f"- {x['id']}: {x['description']}" for x in story.get("locations", [])
-    )
 
-    return f"""Create one frame from the same cinematic 3D Indian animated movie.
+    return f"""Create ONE cinematic 3D Indian animated-movie frame in 16:9.
 
-VISUAL WORLD:
-{story['visual_bible']}
+THIS IS A STORY FRAME, NOT AN ASSET SHEET.
 
-RECURRING CAST — keep these identities, ages, body proportions, skin tones, hair, clothing and accessories consistent across every shot:
-{cast}
+STORY TITLE:
+{story.get('title', story.get('id', ''))}
 
-RECURRING LOCATIONS:
-{locations}
+SCENE PURPOSE:
+{purpose}
 
-CURRENT STORY BEAT:
-{scene.get('story_beat', '')}
+CURRENT ACTION — THIS MUST BE THE VISUAL STORY:
+{action}
 
-CURRENT SHOT:
-{shot['image_prompt']}
+CAMERA / COMPOSITION:
+{camera}
 
-CONTINUITY RULES:
-The same named characters must look like the same children/adults from previous shots.
-Do not age characters up or down.
-Do not change clothing colors.
-Only Krishna has blue skin and only Krishna has one peacock feather.
-Keep the grandmother and three children distinct from Krishna.
-Do not add unnamed children.
-The scene must be visually understandable without narration.
-Use a cinematic movie composition with readable faces and meaningful foreground, middle-ground and background detail.
-Do not make the characters tiny in a huge environment.
+SUBJECTS AND LOCATIONS REQUIRED FOR THIS SHOT:
+{ref_text}
+
+GLOBAL VISUAL WORLD:
+Cinematic stylized 3D Indian devotional animation, polished feature-film CGI, detailed Indian environments and props, expressive child-friendly faces, natural cinematic lighting, rich depth and atmosphere, believable materials, strong readable composition.
+
+{continuity}
+
+SHOT-SPECIFIC RULE:
+Do not copy the old image_prompt instructions from the source JSON.
+Reconstruct the frame from the CURRENT ACTION and the listed subjects/locations.
+Do not change the story beat, invent a different event, or merge unrelated scenes.
+If the current action says the grandparent is narrating beneath a banyan tree, show the grandparent and listening children beneath the banyan tree.
+If the current action describes Krishna's leela, show Krishna and the explicitly named characters in that leela scene instead.
+The historical Krishna scene and the modern storytelling frame are visually separate worlds.
+
+CURRENT REFERENCE IDS:
+{", ".join(refs)}
 """
 
 
@@ -153,18 +225,18 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("story")
     parser.add_argument("--config", default=str(ROOT / "config.json"))
+    parser.add_argument("--seed", type=int, default=None)
     args = parser.parse_args()
 
     story_path = Path(args.story)
-    config_path = Path(args.config)
+    config = load(Path(args.config))
     story = load(story_path)
-    config = load(config_path)
 
     workflow_path = Path(config["workflow"])
     if not workflow_path.is_absolute():
         workflow_path = ROOT / workflow_path
 
-    seed = int(story.get("seed", config["seed"]))
+    seed = int(args.seed if args.seed is not None else story.get("seed", config["seed"]))
     out_root = ROOT / "output" / story["id"]
     comfy = ComfyUI(config["comfyui_url"])
 
@@ -172,7 +244,7 @@ def main() -> None:
     total = sum(len(s["shots"]) for s in story["scenes"])
     index = 0
 
-    print(f"[Z-TURBO] Story: {story['title']}")
+    print(f"[Z-TURBO] Story: {story.get('title', story['id'])}")
     print(f"[Z-TURBO] Fixed story seed: {seed}")
     print(f"[Z-TURBO] Shots: {total}")
 
@@ -183,6 +255,8 @@ def main() -> None:
             destination = out_root / scene["id"] / f"{shot['id']}.png"
 
             print(f"\n[Z-TURBO] Shot {index}/{total}: {scene['id']}/{shot['id']}")
+            print(f"[Z-TURBO] Action: {shot.get('action', '')}")
+
             image = comfy.generate(
                 workflow_path,
                 prompt,
@@ -201,15 +275,13 @@ def main() -> None:
                 "shot_id": shot["id"],
                 "seed": seed,
                 "image": str(image),
+                "action": shot.get("action", ""),
                 "prompt": prompt,
             })
 
     manifest = out_root / "manifest.json"
     manifest.parent.mkdir(parents=True, exist_ok=True)
-    manifest.write_text(
-        json.dumps(records, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
+    manifest.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"\n[Z-TURBO] Completed {len(records)}/{total}")
     print(f"[Z-TURBO] Manifest: {manifest}")
 
