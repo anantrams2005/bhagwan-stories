@@ -555,7 +555,10 @@
     "i2v": {
       "model": "wan2.2",
       "stage": "kaggle_i2v",
-      "prompt_field": "video_prompt"
+      "prompt_field": "video_prompt",
+      "fps": 16,
+      "frames_per_second": 16,
+      "workflow": "workflows/wan2.2_i2v.json"
     }
   }
 }
