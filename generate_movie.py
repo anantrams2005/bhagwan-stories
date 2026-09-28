@@ -14,6 +14,7 @@ from src.vid.stage import VideoStage
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_ASSET_WORKFLOW = REPO_ROOT / "workflows" / "z_turbo_assets.json"
 DEFAULT_SCENE_WORKFLOW = REPO_ROOT / "workflows" / "flux2_klein_4b_scene.json"
+DEFAULT_VIDEO_WORKFLOW = REPO_ROOT / "workflows" / "wan22_i2v_api.json"
 
 
 def build_existing_video_records(story: dict, movie_dir: Path) -> list[dict]:
@@ -60,7 +61,7 @@ def main() -> int:
     p.add_argument("--asset-image-workflow", type=Path, default=DEFAULT_ASSET_WORKFLOW)
     p.add_argument("--scene-image-workflow", type=Path, default=DEFAULT_SCENE_WORKFLOW)
     p.add_argument("--video-backend", choices=["none", "comfyui_wan"], default="none")
-    p.add_argument("--video-workflow", type=Path)
+    p.add_argument("--video-workflow", type=Path, default=DEFAULT_VIDEO_WORKFLOW)
     p.add_argument("--comfyui-url", default="http://127.0.0.1:8188")
     p.add_argument("--asset-root", type=Path, default=Path("assets"))
     args = p.parse_args()
@@ -92,8 +93,6 @@ def main() -> int:
         scene_image_gen = ComfyUIImageGenerator(args.comfyui_url, args.scene_image_workflow)
 
     if args.video_backend == "comfyui_wan":
-        if not args.video_workflow:
-            raise SystemExit("--video-workflow is required")
         video_gen = ComfyUIVideoGenerator(args.comfyui_url, args.video_workflow)
 
     movie_dir = Path(story.get("output_dir", "output")) / story["id"]
