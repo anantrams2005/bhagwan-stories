@@ -2,13 +2,17 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Any
-import json
 
 
 class AssetLibrary:
     """Persistent reusable visual assets shared across movies."""
 
     CATEGORIES = ("characters", "people", "animals", "locations", "props")
+
+    # Bump this whenever the global reusable-asset visual language changes.
+    # Unlike asset_prompt_version, this invalidates every cached reference,
+    # including old assets that have no per-asset version field.
+    ASSET_STYLE_VERSION = "2"
 
     def __init__(self, root: Path) -> None:
         self.root = root
@@ -18,6 +22,38 @@ class AssetLibrary:
             raise ValueError(f"Unsupported asset category: {category}")
         path = self.root / category / asset_id / "reference.png"
         return path if path.exists() else None
+
+    @staticmethod
+    def _style_prefix(category: str) -> str:
+        if category in {"characters", "people", "animals"}:
+            subject_kind = "character/creature"
+        elif category == "locations":
+            subject_kind = "environment"
+        else:
+            subject_kind = "prop/object"
+
+        return (
+            "Cinematic stylized 3D Indian devotional animation "
+            f"{subject_kind} asset reference. "
+            "Feature-film-quality 3D animated design, family-friendly Indian "
+            "animation, expressive but natural stylized forms, detailed "
+            "traditional clothing/materials where applicable, cinematic studio "
+            "lighting, gentle depth of field, polished 3D render. "
+            "This is a designed 3D animated movie asset, NOT a photograph, "
+            "NOT a real person, NOT live action. Show the full subject clearly, "
+            "centered, on a simple uncluttered neutral studio background. "
+            "All reusable assets must belong to the same cinematic 3D visual world."
+        )
+
+    @staticmethod
+    def _negative_prompt(asset: dict[str, Any]) -> str:
+        required = (
+            "photorealistic, photograph, photo, real person, live action, "
+            "DSLR photo, realistic human portrait, photographic skin texture, "
+            "text, logo, watermark, distorted anatomy, duplicate subject"
+        )
+        custom = asset.get("negative_prompt", "").strip()
+        return f"{custom}, {required}" if custom else required
 
     def resolve_or_generate(
         self,
@@ -29,13 +65,28 @@ class AssetLibrary:
         output_dir = self.root / category / asset_id
         existing = self.resolve(category, asset_id)
 
-        # Versioned character references allow a corrected identity to replace
-        # an already-generated bad reference without regenerating every asset.
         requested_version = asset.get("asset_prompt_version")
         version_file = output_dir / ".prompt_version"
-        current_version = version_file.read_text(encoding="utf-8").strip() if version_file.exists() else None
-        needs_regeneration = existing is None or (
-            requested_version is not None and str(requested_version) != current_version
+        style_version_file = output_dir / ".asset_style_version"
+
+        current_version = (
+            version_file.read_text(encoding="utf-8").strip()
+            if version_file.exists()
+            else None
+        )
+        current_style_version = (
+            style_version_file.read_text(encoding="utf-8").strip()
+            if style_version_file.exists()
+            else None
+        )
+
+        needs_regeneration = (
+            existing is None
+            or (
+                requested_version is not None
+                and str(requested_version) != current_version
+            )
+            or current_style_version != self.ASSET_STYLE_VERSION
         )
 
         if not needs_regeneration:
@@ -46,30 +97,24 @@ class AssetLibrary:
                 f"Missing asset '{category}/{asset_id}' and no image generator is configured"
             )
 
-        # Asset references must match the visual language of the final movie.
-        # Z-Turbo otherwise tends to turn character descriptions into ordinary
-        # photographic portraits. Keep every reusable reference in the same
-        # stylized 3D animation world as the Klein scene images.
         prompt = (
-            "Cinematic stylized 3D Indian devotional animation asset reference. "
-            "Feature-film-quality 3D animated character/object design, "
-            "family-friendly Indian animation, expressive but natural stylized forms, "
-            "soft sculpted faces, detailed traditional clothing and materials, "
-            "cinematic studio lighting, gentle depth of field, polished 3D render. "
-            "This must look like a designed 3D animated movie asset, NOT a photograph, "
-            "NOT a real person, NOT live action. Show the full subject clearly, "
-            "centered, on a simple uncluttered neutral studio background. "
-            "Preserve the following identity/object details exactly: " + asset["description"]
+            self._style_prefix(category)
+            + " Preserve the following identity/object details exactly: "
+            + asset["description"]
         )
-        negative = asset.get(
-            "negative_prompt",
-            "text, logo, watermark, distorted anatomy, duplicate subject, photorealistic, photograph, photo, real person, live action, DSLR photo, realistic human portrait, photographic skin texture",
-        )
+        negative = self._negative_prompt(asset)
 
+        print(
+            f"[ASSET] Generating {category}/{asset_id} "
+            f"(style v{self.ASSET_STYLE_VERSION}, prompt v{requested_version or 'default'})"
+        )
         output_dir.mkdir(parents=True, exist_ok=True)
         generated = generator.generate(prompt, negative, output_dir, "reference.png")
+
+        # Only mark the versions after the image was successfully generated.
         if requested_version is not None:
             version_file.write_text(str(requested_version), encoding="utf-8")
+        style_version_file.write_text(self.ASSET_STYLE_VERSION, encoding="utf-8")
         return generated
 
 
