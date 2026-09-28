@@ -1,0 +1,83 @@
+{
+  "id": "z_turbo_banyan_butter_001",
+  "title": "Dadi Ki Kahani: Krishna Aur Makkhan Ka Matka",
+  "seed": 274913,
+  "visual_bible": "cinematic stylized 3D Indian animated movie, polished feature-film CGI, warm natural Indian colors, soft cinematic lighting, expressive child-friendly faces, believable Indian village architecture and props, rich environmental detail, shallow depth of field when appropriate, 16:9 widescreen composition, consistent character proportions and wardrobe across every shot",
+  "cast": [
+    {
+      "id": "grandmother",
+      "description": "Indian grandmother around 65 years old, kind expressive face, warm medium-brown skin, silver hair tied in a neat low bun, small red bindi, cream sari with a muted maroon border, simple gold earrings and bangles, seated comfortably on a woven mat"
+    },
+    {
+      "id": "boy",
+      "description": "Indian boy around 9 years old, slim child proportions, warm brown skin, short black hair, mustard-yellow kurta, cream pajama trousers"
+    },
+    {
+      "id": "girl",
+      "description": "Indian girl around 7 years old, slim child proportions, warm brown skin, two black braids tied with red ribbons, coral-pink salwar kameez"
+    },
+    {
+      "id": "younger_boy",
+      "description": "Indian boy around 6 years old, small child proportions, warm brown skin, short black hair, light-green kurta, cream pajama trousers"
+    },
+    {
+      "id": "krishna",
+      "description": "Lord Krishna depicted as a small Indian child around 7 years old, slim child proportions, deep rich Shyam-blue skin, round expressive child face, large dark eyes, short curly black hair, exactly one peacock feather tucked into the hair, yellow pitambar dhoti, small gold ornaments, playful innocent expression"
+    }
+  ],
+  "locations": [
+    {
+      "id": "banyan_courtyard",
+      "description": "large ancient banyan tree in a peaceful Indian village courtyard, broad roots, hanging aerial roots, woven mat beneath the tree, clay lamps and small village details, open sky visible behind the canopy"
+    },
+    {
+      "id": "gokul_courtyard",
+      "description": "detailed Gokul village courtyard with mud-plastered walls, wooden roof beams, earthen floor, clay pots, hanging rope, warm morning sunlight"
+    }
+  ],
+  "negative_prompt": "photorealistic, photograph, live action, real person, adult Krishna, muscular Krishna, chubby Krishna, duplicate characters, extra children, blue skin on other children, peacock feather on anyone except Krishna, multiple peacock feathers on Krishna, duplicate objects, malformed hands, extra fingers, extra limbs, deformed face, floating objects, western butter block, text, logo, watermark",
+  "scenes": [
+    {
+      "id": "scene_01",
+      "story_beat": "The grandmother begins the story while the three children lean closer with curiosity.",
+      "shots": [
+        {
+          "id": "shot_01",
+          "image_prompt": "Under the ancient banyan tree, the grandmother sits on the woven mat telling the children a mysterious story. The boy, girl and younger boy sit close around her, listening intensely. She raises one hand as if about to reveal a secret. The children look at her face, not at the camera. Medium-wide cinematic composition with clear faces and enough environmental detail to establish the place."
+        },
+        {
+          "id": "shot_02",
+          "image_prompt": "The grandmother continues the story and points gently toward the old village path as if imagining Gokul long ago. The three children react with excitement: the older boy leans forward, the girl smiles with wide curious eyes, and the younger boy looks amazed. Keep all four characters clearly visible beneath the banyan tree. Slightly closer cinematic framing than the previous shot."
+        }
+      ]
+    },
+    {
+      "id": "scene_02",
+      "story_beat": "The story transitions into Gokul and introduces young Krishna near the butter pots.",
+      "shots": [
+        {
+          "id": "shot_03",
+          "image_prompt": "Transition into the grandmother's imagined story: young Krishna walks through a lively Gokul courtyard carrying a small round makkhan ball in one hand. His single peacock feather is clearly visible. He looks mischievous but innocent. Clay pots and a hanging butter pot establish the setting. Full-body child scale, cinematic 16:9 framing."
+        },
+        {
+          "id": "shot_04",
+          "image_prompt": "Young Krishna quietly reaches upward toward a rope-hung earthen butter pot that is slightly above his reach. He stands on tiptoe, looking up at the pot with a playful determined expression. The pot hangs from a real wooden roof beam. Keep Krishna clearly small and slim, with one peacock feather only. Detailed Gokul courtyard, cinematic side angle."
+        },
+        {
+          "id": "shot_05",
+          "image_prompt": "Krishna has managed to reach the hanging pot and carefully takes a round ball of fresh Indian makkhan from inside it. The butter is soft, hand-shaped and round, never a rectangular western butter block. Krishna smiles triumphantly while looking toward the courtyard entrance, as if he has heard someone approaching."
+        }
+      ]
+    },
+    {
+      "id": "scene_03",
+      "story_beat": "The grandmother returns to the children, who are now laughing and asking what happened next.",
+      "shots": [
+        {
+          "id": "shot_06",
+          "image_prompt": "Back beneath the banyan tree, the grandmother pauses dramatically before revealing what happened next. The three children laugh and crowd closer around her. The older boy raises one finger as if asking a question, the girl covers a smile with her hand, and the younger boy looks impatient to hear the ending. Keep the banyan setting unmistakable and all characters clearly readable."
+        }
+      ]
+    }
+  ]
+}
