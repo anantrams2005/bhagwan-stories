@@ -1,0 +1,13 @@
+{
+  "comfyui_url": "http://127.0.0.1:8188",
+  "workflow": "workflows/z_turbo_scene_api.json",
+  "seed": 274913,
+  "width": 1344,
+  "height": 768,
+  "steps": 8,
+  "positive_prompt_node": null,
+  "negative_prompt_node": null,
+  "seed_node": null,
+  "width_node": null,
+  "height_node": null
+}
