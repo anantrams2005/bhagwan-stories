@@ -260,7 +260,7 @@ def main() -> None:
             image = comfy.generate(
                 workflow_path,
                 prompt,
-                story.get("negative_prompt", ""),
+                story.get("negative_prompt", "") + ", photorealistic, photograph, live action, real person, blue skin on anyone except Krishna, blue grandfather, blue grandmother, blue Radha, blue cowherd, blue village child, extra Krishna, duplicate Krishna, extra peacock feather, peacock feather on anyone except Krishna, adult Krishna, teenage Krishna, muscular Krishna, chubby Krishna, extra children, invented characters, story mismatch, unrelated scene, text, logo, watermark",
                 seed,
                 int(config["width"]),
                 int(config["height"]),
