@@ -37,10 +37,20 @@ class SceneImageStage:
 
                 print(f"[SCENE] Shot {shot_number}/{total_shots}: {shot_name}")
                 if destination.exists():
-                    print(
-                        f"[SCENE]   existing source.png found; this run will replace it. "
-                        f"Files for shots not reached yet may belong to an older run."
+                    print("[SCENE]   existing source.png found; skipping generation to preserve approved image.")
+                    records.append(
+                        {
+                            "scene_id": scene["id"],
+                            "shot_id": shot["id"],
+                            "duration": shot["duration"],
+                            "image": str(destination),
+                            "asset_refs": [],
+                            "video_model": shot.get("video_model", "wan2.2"),
+                            "video_prompt": shot.get("video_prompt", ""),
+                            "video": None,
+                        }
                     )
+                    continue
 
                 asset_ids = shot.get("assets", shot.get("characters", []))
                 if len(asset_ids) != self.REQUIRED_REFERENCE_IMAGES:
