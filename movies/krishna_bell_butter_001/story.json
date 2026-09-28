@@ -554,8 +554,10 @@
     },
     "i2v": {
       "model": "wan2.2",
-      "stage": "kaggle_i2v",
-      "prompt_field": "video_prompt"
+      "stage": "comfyui_i2v",
+      "prompt_field": "video_prompt",
+      "fps": 16,
+      "workflow": "workflows/wan22_i2v_api.json"
     }
   }
 }
