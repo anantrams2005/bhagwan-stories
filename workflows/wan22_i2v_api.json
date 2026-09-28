@@ -171,5 +171,12 @@
     "_meta": {
       "title": "Create Video"
     }
+  },
+  "_pipeline_nodes": {
+    "positive_prompt": "6",
+    "negative_prompt": "7",
+    "image": "57",
+    "frames": "55",
+    "fps": "59"
   }
 }
