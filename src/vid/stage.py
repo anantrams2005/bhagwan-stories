@@ -5,12 +5,17 @@ from typing import Any
 
 
 class VideoStage:
-    """Generate I2V clips and keep a copy in the story's Kaggle handoff folder."""
+    """Generate I2V clips in story order and keep a copy in the movie handoff folder."""
 
     def __init__(self, generator: Any) -> None:
         self.generator = generator
 
     def run(self, records: list[dict[str, Any]], story: dict[str, Any]) -> list[dict[str, Any]]:
+        i2v = story.get("generation", {}).get("i2v", {})
+        fps = i2v.get("fps")
+        if fps is None:
+            raise ValueError("story generation.i2v.fps is required for WAN I2V")
+
         for record in records:
             shot = next(
                 shot for scene in story["scenes"] if scene["id"] == record["scene_id"]
@@ -23,6 +28,7 @@ class VideoStage:
                 image=Path(record["image"]),
                 prompt=shot.get("video_prompt", ""),
                 duration=float(record["duration"]),
+                fps=float(story.get("generation", {}).get("i2v", {}).get("fps", 16)),
                 output_dir=shot_dir,
                 filename="shot.mp4",
             )
