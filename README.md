@@ -117,3 +117,15 @@ ACE-Step's large ML dependencies/checkpoints are kept outside this repository.
 8. Generate scene source images in 16:9; convert/crop for the final platform format later if needed.
 9. Optimize for viewer retention, not a fixed shot count.
 10. Keep image, video and audio backends replaceable.
+
+## Kaggle WAN 2.2 testing
+
+To test generated scene images in the existing Kaggle WAN environment without running local I2V:
+
+```bash
+python tools/prepare_kaggle_wan.py output/<story_id> /tmp/<story_id>_wan_kaggle
+```
+
+Upload the resulting folder to Kaggle and use `wan_manifest.json` to drive the existing WAN 2.2 I2V notebook. The manifest contains each source image, duration, model and `video_prompt`.
+
+Detailed instructions: `docs/kaggle_wan_handoff.md`.

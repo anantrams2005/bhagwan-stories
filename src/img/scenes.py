@@ -60,6 +60,8 @@ class SceneImageStage:
                         "duration": shot["duration"],
                         "image": str(image),
                         "asset_refs": [str(p) for p in refs],
+                        "video_model": shot.get("video_model", "wan2.2"),
+                        "video_prompt": shot.get("video_prompt", ""),
                         "video": None,
                     }
                 )
