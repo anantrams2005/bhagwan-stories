@@ -46,10 +46,24 @@ class AssetLibrary:
                 f"Missing asset '{category}/{asset_id}' and no image generator is configured"
             )
 
-        prompt = asset["description"]
+        # Asset references must match the visual language of the final movie.
+        # Z-Turbo otherwise tends to turn character descriptions into ordinary
+        # photographic portraits. Keep every reusable reference in the same
+        # stylized 3D animation world as the Klein scene images.
+        prompt = (
+            "Cinematic stylized 3D Indian devotional animation asset reference. "
+            "Feature-film-quality 3D animated character/object design, "
+            "family-friendly Indian animation, expressive but natural stylized forms, "
+            "soft sculpted faces, detailed traditional clothing and materials, "
+            "cinematic studio lighting, gentle depth of field, polished 3D render. "
+            "This must look like a designed 3D animated movie asset, NOT a photograph, "
+            "NOT a real person, NOT live action. Show the full subject clearly, "
+            "centered, on a simple uncluttered neutral studio background. "
+            "Preserve the following identity/object details exactly: " + asset["description"]
+        )
         negative = asset.get(
             "negative_prompt",
-            "text, logo, watermark, distorted anatomy, duplicate subject",
+            "text, logo, watermark, distorted anatomy, duplicate subject, photorealistic, photograph, photo, real person, live action, DSLR photo, realistic human portrait, photographic skin texture",
         )
 
         output_dir.mkdir(parents=True, exist_ok=True)
