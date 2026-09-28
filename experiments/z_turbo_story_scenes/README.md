@@ -39,13 +39,13 @@ pip install -r requirements.txt
 5. Start ComfyUI and run:
 
 ```bash
-python generate_scenes.py stories/demo_story.json
+python generate_scenes.py stories/krishna_bell_butter.json
 ```
 
 Output:
 
 ```
-output/demo_story/
+output/<story_id>/
   scene_01/shot_01.png
   scene_01/shot_02.png
   ...
@@ -59,3 +59,34 @@ The default demo uses one seed for **all shots**.
 Do not expect identical faces in every frame just because the seed is identical. The real test is whether the overall visual world, proportions, clothing and cast remain coherent enough to feel like one animated movie.
 
 For a second story, simply choose another story-level seed.
+
+
+## Test stories
+
+The experiment now contains the real production story structures:
+
+- `krishna_bell_butter.json` — bell + makkhan story
+- `radha_yamuna_boat.json` — Radha/Krishna/Yamuna boat story
+- `krishna_brahma_pastime_part1.json` — Brahma pastime Part 1
+- `krishna_brahma_pastime_part2.json` — Brahma pastime Part 2
+
+Fixed seeds:
+
+- Bell: **274913**
+- Radha/Yamuna: **481207**
+- Brahma Part 1 + Part 2: **639821** (same seed deliberately)
+
+Run all four:
+
+```bash
+for story in \
+  stories/krishna_bell_butter.json \
+  stories/radha_yamuna_boat.json \
+  stories/krishna_brahma_pastime_part1.json \
+  stories/krishna_brahma_pastime_part2.json
+do
+  python generate_scenes.py "$story"
+done
+```
+
+The generator uses the original story's `action`, `camera`, scene purpose and referenced character/location descriptions. It intentionally ignores the old FLUX/Klein `image_prompt` so those reference-composition instructions cannot distort this experiment.
