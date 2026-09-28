@@ -14,11 +14,7 @@ class ComfyUIImageGenerator:
     """ComfyUI image adapter for API-format workflows.
 
     Workflow-specific node mappings live in the workflow JSON under the
-    _pipeline_nodes metadata key. That metadata is removed before the workflow
-    is submitted to ComfyUI.
-
-    The bundled Klein scene workflow has three active reference-image slots:
-    76 -> image, 81 -> image_1, 146 -> image_2 on the Image Edit graph.
+    _pipeline_nodes metadata key. That metadata is removed before submission.
     """
 
     def __init__(self, base_url: str, workflow_path: Path, timeout: int = 120) -> None:
@@ -75,10 +71,14 @@ class ComfyUIImageGenerator:
                 f"(HTTP {response.status_code}): {json.dumps(details, ensure_ascii=False)}"
             )
 
-        print(f"[IMAGE] ComfyUI accepted workflow. prompt_id={response.json().get('prompt_id')}")
-        image = self._wait_for_image(response.json()["prompt_id"])
+        payload = response.json()
+        prompt_id = payload.get("prompt_id")
+        if not prompt_id:
+            raise RuntimeError(f"ComfyUI accepted workflow but returned no prompt_id: {payload}")
+
+        print(f"[IMAGE] ComfyUI accepted workflow. prompt_id={prompt_id}")
+        image = self._wait_for_image(prompt_id)
         output_dir.mkdir(parents=True, exist_ok=True)
-        destination = output_dir / output_name
 
         response = requests.get(
             f"{self.base_url}/view",
@@ -90,6 +90,7 @@ class ComfyUIImageGenerator:
             timeout=self.timeout,
         )
         response.raise_for_status()
+        destination = output_dir / output_name
         destination.write_bytes(response.content)
         return destination
 
@@ -117,7 +118,21 @@ class ComfyUIImageGenerator:
                 )
             workflow[node_id].setdefault("inputs", {})["image"] = image_name
 
-    def _wait_for_image(self, prompt_id: str, poll_seconds: float = 1.0) -> dict[str, Any]:
+    def _wait_for_image(
+        self,
+        prompt_id: str,
+        poll_seconds: float = 1.0,
+        log_every_seconds: float = 10.0,
+    ) -> dict[str, Any]:
+        """Wait for the exact prompt, with queue/progress diagnostics.
+
+        A scene can appear on disk before this call returns because ComfyUI
+        writes the SaveImage output as soon as the graph finishes. The pipeline
+        must still wait for the matching prompt_id before downloading it.
+        """
+        started = time.monotonic()
+        next_log = started
+
         for _ in range(600):
             response = requests.get(
                 f"{self.base_url}/history/{prompt_id}",
@@ -125,12 +140,78 @@ class ComfyUIImageGenerator:
             )
             response.raise_for_status()
             history = response.json().get(prompt_id)
+
             if history:
+                status = history.get("status", {})
+                status_str = status.get("status_str", "unknown")
+                completed = status.get("completed", False)
+                messages = status.get("messages", [])
+
+                if status_str == "error" or status.get("status_str") == "error":
+                    raise RuntimeError(
+                        f"ComfyUI prompt {prompt_id} failed: "
+                        f"{json.dumps(messages, ensure_ascii=False)}"
+                    )
+
                 for output in history.get("outputs", {}).values():
                     if output.get("images"):
+                        elapsed = time.monotonic() - started
+                        print(
+                            f"[IMAGE] Completed prompt_id={prompt_id} "
+                            f"after {elapsed:.1f}s"
+                        )
                         return output["images"][0]
+
+                if completed:
+                    raise RuntimeError(
+                        f"ComfyUI marked prompt {prompt_id} complete but returned no images: "
+                        f"{json.dumps(history, ensure_ascii=False)}"
+                    )
+
+            now = time.monotonic()
+            if now >= next_log:
+                queue = self._queue_snapshot()
+                queue_text = self._format_queue(queue, prompt_id)
+                elapsed = now - started
+                print(
+                    f"[IMAGE] Waiting for prompt_id={prompt_id} "
+                    f"({elapsed:.0f}s){queue_text}"
+                )
+                next_log = now + log_every_seconds
+
             time.sleep(poll_seconds)
-        raise TimeoutError(f"Timed out waiting for ComfyUI prompt {prompt_id}")
+
+        raise TimeoutError(
+            f"Timed out waiting for ComfyUI prompt {prompt_id} after "
+            f"{600 * poll_seconds:.0f}s"
+        )
+
+    def _queue_snapshot(self) -> dict[str, Any]:
+        try:
+            response = requests.get(f"{self.base_url}/queue", timeout=10)
+            response.raise_for_status()
+            return response.json()
+        except requests.RequestException:
+            return {}
+
+    @staticmethod
+    def _format_queue(queue: dict[str, Any], prompt_id: str) -> str:
+        running = queue.get("queue_running", [])
+        pending = queue.get("queue_pending", [])
+        running_ids = {str(item[1]) for item in running if len(item) > 1}
+        pending_ids = {str(item[1]) for item in pending if len(item) > 1}
+
+        if prompt_id in running_ids:
+            return " [queue=running]"
+        if prompt_id in pending_ids:
+            position = next(
+                (i + 1 for i, item in enumerate(pending) if len(item) > 1 and str(item[1]) == prompt_id),
+                "?",
+            )
+            return f" [queue=pending position={position}]"
+        if running:
+            return f" [queue=other-job-running pending={len(pending)}]"
+        return f" [queue=idle pending={len(pending)}]"
 
     @staticmethod
     def _set_text(workflow: dict[str, Any], node_id: str | None, value: str) -> None:
