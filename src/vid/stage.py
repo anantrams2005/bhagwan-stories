@@ -28,7 +28,7 @@ class VideoStage:
                 image=Path(record["image"]),
                 prompt=shot.get("video_prompt", ""),
                 duration=float(record["duration"]),
-                fps=float(story.get("generation", {}).get("i2v", {}).get("fps", 16)),
+                fps=float(fps),
                 output_dir=shot_dir,
                 filename="shot.mp4",
             )
