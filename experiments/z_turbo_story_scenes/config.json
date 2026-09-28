@@ -1,0 +1,20 @@
+{
+  "comfyui_url": "http://127.0.0.1:8188",
+  "workflow": "workflows/z_turbo_scene.json",
+  "seed": 274913,
+  "width": 1344,
+  "height": 768,
+  "steps": 4,
+  "positive_prompt_node": null,
+  "negative_prompt_node": null,
+  "seed_node": null,
+  "width_node": null,
+  "height_node": null,
+  "story_seeds": {
+    "krishna_bell_butter_001": 274913,
+    "krishna_radha_yamuna_boat_001": 481207,
+    "krishna_brahma_pastime_part1_001": 639821,
+    "krishna_brahma_pastime_part2_001": 639821
+  },
+  "note": "One fixed seed per story. Brahma Part 1 and Part 2 deliberately share a seed for visual continuity."
+}
