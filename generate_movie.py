@@ -9,10 +9,44 @@ from src.img.comfyui import ComfyUIImageGenerator
 from src.movie_pipeline import MoviePipeline
 from src.story import build_plan, load_story, validate_story
 from src.vid.comfyui import ComfyUIVideoGenerator
+from src.vid.stage import VideoStage
 
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_ASSET_WORKFLOW = REPO_ROOT / "workflows" / "z_turbo_assets.json"
 DEFAULT_SCENE_WORKFLOW = REPO_ROOT / "workflows" / "flux2_klein_4b_scene.json"
+
+
+def build_existing_video_records(story: dict, movie_dir: Path) -> list[dict]:
+    """Build records from already-generated scene images for video-only runs."""
+    records = []
+    missing = []
+
+    for scene in story["scenes"]:
+        for shot in scene["shots"]:
+            image = movie_dir / "scenes" / scene["id"] / shot["id"] / "source.png"
+            if not image.exists():
+                missing.append(f"{scene['id']}/{shot['id']}")
+                continue
+            records.append(
+                {
+                    "scene_id": scene["id"],
+                    "shot_id": shot["id"],
+                    "image": str(image),
+                    "duration": float(shot.get("duration", 3)),
+                }
+            )
+
+    if missing:
+        raise SystemExit(
+            "Video-only run requires every story shot to have source.png. "
+            f"Missing {len(missing)} shot(s): {', '.join(missing)}"
+        )
+
+    expected = sum(len(scene["shots"]) for scene in story["scenes"])
+    if len(records) != expected:
+        raise SystemExit(f"Expected {expected} shots but found {len(records)} scene images.")
+
+    return records
 
 
 def main() -> int:
@@ -20,6 +54,8 @@ def main() -> int:
     p.add_argument("story", type=Path)
     p.add_argument("--validate", action="store_true")
     p.add_argument("--plan", action="store_true")
+    p.add_argument("--video-only", action="store_true",
+                   help="Skip asset/scene generation and run I2V for every existing story shot.")
     p.add_argument("--image-backend", choices=["none", "comfyui"], default="none")
     p.add_argument("--asset-image-workflow", type=Path, default=DEFAULT_ASSET_WORKFLOW)
     p.add_argument("--scene-image-workflow", type=Path, default=DEFAULT_SCENE_WORKFLOW)
@@ -44,6 +80,9 @@ def main() -> int:
         print(json.dumps(build_plan(story), ensure_ascii=False, indent=2))
         return 0
 
+    if args.video_only and args.video_backend != "comfyui_wan":
+        raise SystemExit("--video-only requires --video-backend comfyui_wan")
+
     asset_image_gen = None
     scene_image_gen = None
     video_gen = None
@@ -60,13 +99,17 @@ def main() -> int:
     movie_dir = Path(story.get("output_dir", "output")) / story["id"]
     movie_dir.mkdir(parents=True, exist_ok=True)
 
-    pipeline = MoviePipeline(
-        asset_image_generator=asset_image_gen,
-        scene_image_generator=scene_image_gen,
-        video_generator=video_gen,
-        asset_root=args.asset_root,
-    )
-    records = pipeline.run(story, movie_dir)
+    if args.video_only:
+        records = build_existing_video_records(story, movie_dir)
+        records = VideoStage(video_gen).run(records, story)
+    else:
+        pipeline = MoviePipeline(
+            asset_image_generator=asset_image_gen,
+            scene_image_generator=scene_image_gen,
+            video_generator=video_gen,
+            asset_root=args.asset_root,
+        )
+        records = pipeline.run(story, movie_dir)
 
     manifest = {"story_id": story["id"], "title": story["title"], "shots": records}
     manifest_path = movie_dir / "manifest.json"
