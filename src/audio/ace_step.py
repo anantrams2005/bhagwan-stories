@@ -1,73 +1,70 @@
 from __future__ import annotations
 
-import importlib
-import sys
+import json
+import os
+import time
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin, urlparse
+
+import requests
 
 
 class AceStepMusicGenerator:
-    """Generate instrumental timeline segments with ACE-Step 1.5's Python API.
-
-    ACE-Step is intentionally kept outside this repository. Set ace_step_root to
-    the local ACE-Step checkout so this project does not vendor the model or its
-    large ML dependencies.
-    """
+    """Generate music through an already-running ACE-Step 1.5 HTTP service."""
 
     def __init__(
         self,
-        ace_step_root: Path,
-        checkpoint_dir: Path | None = None,
-        dit_model: str = "acestep-v15-turbo",
-        lm_model: str = "acestep-5Hz-lm-0.6B",
-        device: str = "mps",
+        base_url: str | None = None,
+        timeout: float = 30.0,
+        poll_interval: float = 1.0,
+        poll_timeout: float = 1800.0,
+        api_key: str | None = None,
+        model: str | None = None,
+        thinking: bool = True,
     ) -> None:
-        self.root = Path(ace_step_root).expanduser().resolve()
-        if not self.root.exists():
-            raise FileNotFoundError(f"ACE-Step root does not exist: {self.root}")
-        if str(self.root) not in sys.path:
-            sys.path.insert(0, str(self.root))
+        self.base_url = (
+            base_url or os.environ.get("ACE_STEP_URL") or "http://127.0.0.1:8001"
+        ).rstrip("/")
+        self.timeout = timeout
+        self.poll_interval = poll_interval
+        self.poll_timeout = poll_timeout
+        self.api_key = api_key or os.environ.get("ACE_STEP_API_KEY")
+        self.model = model
+        self.thinking = thinking
+        self.session = requests.Session()
+        if self.api_key:
+            self.session.headers.update({"Authorization": f"Bearer {self.api_key}"})
 
+    def _url(self, path: str) -> str:
+        return urljoin(self.base_url + "/", path.lstrip("/"))
+
+    def _json(self, response: requests.Response) -> dict[str, Any]:
+        response.raise_for_status()
         try:
-            from acestep.handler import AceStepHandler
-            from acestep.llm_inference import LLMHandler
-        except ImportError as exc:
+            payload = response.json()
+        except ValueError as exc:
             raise RuntimeError(
-                "ACE-Step Python package is not importable. "
-                "Point --ace-step-root at the ACE-Step 1.5 checkout."
+                f"ACE-Step returned non-JSON response from {response.url}: "
+                f"{response.text[:1000]}"
             ) from exc
+        if payload.get("code", 200) != 200:
+            raise RuntimeError(f"ACE-Step API error: {payload.get('error') or payload}")
+        return payload
 
-        self._handler_cls = AceStepHandler
-        self._llm_cls = LLMHandler
-        self.checkpoint_dir = Path(checkpoint_dir).expanduser().resolve() if checkpoint_dir else None
-        self.dit_model = dit_model
-        self.lm_model = lm_model
-        self.device = device
-        self._dit = None
-        self._llm = None
-
-    def _initialize(self) -> None:
-        if self._dit is not None:
-            return
-
-        self._dit = self._handler_cls()
-        self._dit.initialize_service(
-            project_root=str(self.root),
-            config_path=self.dit_model,
-            device=self.device,
-        )
-
-        self._llm = self._llm_cls()
-        if self.checkpoint_dir is None:
-            raise RuntimeError(
-                "--ace-step-checkpoints is required when using the ACE-Step music backend"
+    def _check_service(self) -> None:
+        try:
+            payload = self._json(
+                self.session.get(self._url("/health"), timeout=self.timeout)
             )
-        self._llm.initialize(
-            checkpoint_dir=str(self.checkpoint_dir),
-            lm_model_path=self.lm_model,
-            backend="vllm" if self.device == "cuda" else "transformers",
-            device=self.device,
-        )
+        except requests.RequestException as exc:
+            raise RuntimeError(
+                f"Cannot reach ACE-Step API at {self.base_url}. "
+                "Start the ACE-Step API server first."
+            ) from exc
+        status = payload.get("data", {}).get("status")
+        if status not in (None, "ok"):
+            raise RuntimeError(f"ACE-Step health check failed: {payload}")
 
     def generate(
         self,
@@ -77,37 +74,110 @@ class AceStepMusicGenerator:
         filename: str,
         seed: int = -1,
     ) -> Path:
-        self._initialize()
-        from acestep.inference import GenerationConfig, GenerationParams, generate_music
-
+        self._check_service()
         output_dir.mkdir(parents=True, exist_ok=True)
-        params = GenerationParams(
-            task_type="text2music",
-            caption=caption,
-            lyrics="[Instrumental]",
-            instrumental=True,
-            duration=max(10.0, min(600.0, float(duration))),
-            inference_steps=8,
-            shift=3.0,
-            seed=seed,
-        )
-        config = GenerationConfig(
-            batch_size=1,
-            use_random_seed=(seed < 0),
-            audio_format="wav",
-        )
-        result = generate_music(
-            self._dit,
-            self._llm,
-            params,
-            config,
-            save_dir=str(output_dir),
-        )
-        if not result.success or not result.audios:
-            raise RuntimeError(f"ACE-Step music generation failed: {result.error}")
 
-        generated = Path(result.audios[0]["path"])
+        request_body: dict[str, Any] = {
+            "prompt": caption,
+            "lyrics": "[Instrumental]",
+            "thinking": self.thinking,
+            "task_type": "text2music",
+            "audio_duration": max(10.0, min(600.0, float(duration))),
+            "audio_format": "wav",
+            "inference_steps": 8,
+            "use_random_seed": seed < 0,
+            "seed": seed,
+            "batch_size": 1,
+        }
+        if self.model:
+            request_body["model"] = self.model
+
+        try:
+            response = self.session.post(
+                self._url("/release_task"), json=request_body, timeout=self.timeout
+            )
+            payload = self._json(response)
+        except requests.RequestException as exc:
+            raise RuntimeError(
+                f"ACE-Step generation request failed at {self.base_url}: {exc}"
+            ) from exc
+
+        task_id = payload.get("data", {}).get("task_id")
+        if not task_id:
+            raise RuntimeError(f"ACE-Step did not return a task_id: {payload}")
+
+        deadline = time.monotonic() + self.poll_timeout
+        result_items: list[dict[str, Any]] = []
+
+        while time.monotonic() < deadline:
+            try:
+                response = self.session.post(
+                    self._url("/query_result"),
+                    json={"task_id_list": [task_id]},
+                    timeout=self.timeout,
+                )
+                status_payload = self._json(response)
+            except requests.RequestException as exc:
+                raise RuntimeError(
+                    f"ACE-Step result polling failed for task {task_id}: {exc}"
+                ) from exc
+
+            data = status_payload.get("data") or []
+            if data:
+                task = data[0]
+                status = int(task.get("status", 0))
+                if status == 1:
+                    raw_result = task.get("result", "[]")
+                    try:
+                        result_items = (
+                            json.loads(raw_result)
+                            if isinstance(raw_result, str)
+                            else raw_result
+                        )
+                    except json.JSONDecodeError as exc:
+                        raise RuntimeError(
+                            f"ACE-Step returned invalid result JSON for task {task_id}: "
+                            f"{raw_result}"
+                        ) from exc
+                    break
+                if status == 2:
+                    raise RuntimeError(
+                        f"ACE-Step music generation failed for task {task_id}: "
+                        f"{task.get('error') or task}"
+                    )
+
+            time.sleep(self.poll_interval)
+        else:
+            raise TimeoutError(
+                f"Timed out after {self.poll_timeout:.0f}s waiting for ACE-Step task {task_id}"
+            )
+
+        if not result_items:
+            raise RuntimeError(
+                f"ACE-Step task {task_id} succeeded without an audio result"
+            )
+
+        audio_file = result_items[0].get("file")
+        if not audio_file:
+            raise RuntimeError(
+                f"ACE-Step task {task_id} returned no audio file: {result_items[0]}"
+            )
+
+        parsed = urlparse(audio_file)
+        audio_url = (
+            audio_file
+            if parsed.scheme in ("http", "https")
+            else self._url(audio_file)
+        )
+
+        try:
+            audio_response = self.session.get(audio_url, timeout=self.timeout)
+            audio_response.raise_for_status()
+        except requests.RequestException as exc:
+            raise RuntimeError(
+                f"Failed to download ACE-Step audio from {audio_url}: {exc}"
+            ) from exc
+
         destination = output_dir / filename
-        if generated.resolve() != destination.resolve():
-            destination.write_bytes(generated.read_bytes())
+        destination.write_bytes(audio_response.content)
         return destination
