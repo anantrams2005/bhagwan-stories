@@ -95,11 +95,15 @@ def main() -> int:
     if args.video_backend == "comfyui_wan":
         video_gen = ComfyUIVideoGenerator(args.comfyui_url, args.video_workflow)
 
+    # Scene source images live alongside the story JSON (for example,
+    # movies/<story_id>/scenes/), while generated video output follows
+    # story.output_dir. Keep these roots separate for video-only runs.
+    story_dir = args.story.resolve().parent
     movie_dir = Path(story.get("output_dir", "output")) / story["id"]
     movie_dir.mkdir(parents=True, exist_ok=True)
 
     if args.video_only:
-        records = build_existing_video_records(story, movie_dir)
+        records = build_existing_video_records(story, story_dir)
         records = VideoStage(video_gen).run(records, story)
     else:
         pipeline = MoviePipeline(
