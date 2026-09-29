@@ -29,11 +29,11 @@ The intended workflow is:
 2. Copy the whole story folder to the Kaggle WAN I2V notebook.
 3. Generate the I2V clips in Kaggle.
 4. Put the returned clips back under `generated_short_videos/<scene_id>/<shot_id>.mp4`.
-5. Run `combine_movie.py` locally. It reads the music timeline from the story JSON, generates each ACE-Step 1.5 segment, concatenates the clips in story order, and mixes the music into the final MP4.
+5. Run `combine_movie.py` locally. It reads the music timeline from the story JSON, requests each ACE-Step 1.5 segment from the already-running local ACE-Step service, concatenates the clips in story order, and mixes the music into the final MP4.
 
 ## Music timeline
 
-Music is intentionally story-specific. Each JSON has a top-level `music` object with a timeline, analogous to the dialogue timeline:
+Music is story-specific. Each JSON has a top-level `music` object with a timeline:
 
 ```json
 "music": {
@@ -55,6 +55,29 @@ Music is intentionally story-specific. Each JSON has a top-level `music` object 
 
 Segments are aligned to scene durations. This lets different parts of the same short have different musical moods without generating a new track for every shot. Music is instrumental and kept below dialogue level; dialogue/TTS is intentionally not implemented yet.
 
+## ACE-Step service
+
+The movie assembler does **not** import or initialize ACE-Step's Python model. This avoids loading a second copy of the model and avoids requiring ACE-Step's ML dependencies in the Bhagwan Stories Python environment.
+
+The repository uses ACE-Step's HTTP API: submit a `/release_task`, poll `/query_result`, then download the returned `/v1/audio` file. ACE-Step documents the standalone REST API on port 8001 by default.
+
+Start the ACE-Step API using the ACE-Step 1.5 checkout. Keep its existing Gradio UI on port 7860 if you use it; the movie pipeline talks to the API service.
+
+Example:
+
+```bash
+cd /Users/anantagarwal/projects/music_gen/ACE-Step-1.5
+./start_api_server_macos.sh
+```
+
+Then check:
+
+```bash
+curl http://127.0.0.1:8001/health
+```
+
+If your API is running on another port, use `--ace-step-url` or `ACE_STEP_URL`.
+
 ## Commands
 
 Validate a story:
@@ -63,35 +86,31 @@ Validate a story:
 python generate_movie.py stories/generated/krishna_flute_qa_001.json --validate
 ```
 
-Generate assets + scene images:
-
-```bash
-python generate_movie.py stories/generated/krishna_flute_qa_001.json \
-  --image-backend comfyui \
-  --asset-image-workflow workflows/z_turbo_assets.json \
-  --scene-image-workflow workflows/flux2_klein_4b_scene.json
-```
-
 After Kaggle returns the I2V clips, combine and generate music:
 
 ```bash
 python combine_movie.py stories/generated/krishna_flute_qa_001.json \
   --movie-dir output/krishna_flute_qa_001 \
   --music-backend ace_step \
-  --ace-step-root /path/to/Ace-Step1.5 \
-  --ace-step-checkpoints /path/to/checkpoints \
-  --ace-step-device mps
+  --ace-step-url http://127.0.0.1:8001
 ```
 
-`ACE_STEP_ROOT` can be used instead of `--ace-step-root`.
+The URL can also be configured with:
+
+```bash
+export ACE_STEP_URL=http://127.0.0.1:8001
+```
+
+No ACE-Step root, checkpoint directory, or `vector_quantize_pytorch` installation is required by this repository.
 
 ## Requirements
 
 - Python 3.10+
+- `requests` for the ACE-Step HTTP client
 - running ComfyUI for local image generation
 - exported API-compatible ComfyUI workflows
 - FFmpeg on PATH for assembly
-- ACE-Step 1.5 checkout and model checkpoints for music generation
+- separately running ACE-Step 1.5 service for music generation
 - Z-Turbo workflow for reusable asset generation
 - FLUX.2 Klein 4B Image Edit workflow for scene generation
 
@@ -102,8 +121,6 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-
-ACE-Step's large ML dependencies/checkpoints are kept outside this repository.
 
 ## Design principles
 
@@ -117,15 +134,3 @@ ACE-Step's large ML dependencies/checkpoints are kept outside this repository.
 8. Generate scene source images in 16:9; convert/crop for the final platform format later if needed.
 9. Optimize for viewer retention, not a fixed shot count.
 10. Keep image, video and audio backends replaceable.
-
-## Kaggle WAN 2.2 testing
-
-To test generated scene images in the existing Kaggle WAN environment without running local I2V:
-
-```bash
-python tools/prepare_kaggle_wan.py output/<story_id> /tmp/<story_id>_wan_kaggle
-```
-
-Upload the resulting folder to Kaggle and use `wan_manifest.json` to drive the existing WAN 2.2 I2V notebook. The manifest contains each source image, duration, model and `video_prompt`.
-
-Detailed instructions: `docs/kaggle_wan_handoff.md`.
