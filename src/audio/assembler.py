@@ -134,11 +134,10 @@ class MovieAssembler:
         filters.append(
             f"{''.join(labels)}amix=inputs={len(labels)}:duration=longest:dropout_transition=2:normalize=1[mix]"
         )
-        filters.append("[0:v]setpts=PTS-STARTPTS[v]")
         cmd = [
             self.ffmpeg, "-y", *inputs,
             "-filter_complex", ";".join(filters),
-            "-map", "[v]", "-map", "[mix]",
+            "-map", "0:v:0", "-map", "[mix]",
             "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
             "-shortest", "-movflags", "+faststart", str(output),
         ]
