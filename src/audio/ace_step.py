@@ -5,7 +5,7 @@ import os
 import time
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse
 
 import requests
 
@@ -65,6 +65,14 @@ class AceStepMusicGenerator:
         status = payload.get("data", {}).get("status")
         if status not in (None, "ok"):
             raise RuntimeError(f"ACE-Step health check failed: {payload}")
+
+    def _audio_url(self, audio_file: str) -> str:
+        parsed = urlparse(audio_file)
+        if parsed.scheme in ("http", "https"):
+            return audio_file
+        if audio_file.startswith("/v1/audio"):
+            return self._url(audio_file)
+        return self._url("/v1/audio") + "?path=" + quote(audio_file, safe="")
 
     def generate(
         self,
@@ -163,12 +171,7 @@ class AceStepMusicGenerator:
                 f"ACE-Step task {task_id} returned no audio file: {result_items[0]}"
             )
 
-        parsed = urlparse(audio_file)
-        audio_url = (
-            audio_file
-            if parsed.scheme in ("http", "https")
-            else self._url(audio_file)
-        )
+        audio_url = self._audio_url(str(audio_file))
 
         try:
             audio_response = self.session.get(audio_url, timeout=self.timeout)
