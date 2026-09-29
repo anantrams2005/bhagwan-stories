@@ -65,11 +65,22 @@ class ComfyUIVideoGenerator:
             time.sleep(1)
 
         for node_output in outputs.values():
-            for key in ("gifs", "videos"):
+            # Core SaveVideo reports saved videos under the legacy "images"
+            # history key; some video nodes use "videos" or "gifs".
+            for key in ("images", "videos", "gifs"):
                 for item in node_output.get(key, []):
+                    if not isinstance(item, dict):
+                        continue
+                    item_name = item.get("filename", "")
+                    if not item_name.lower().endswith((".mp4", ".webm", ".mkv", ".mov", ".avi")):
+                        continue
                     response = requests.get(
                         f"{self.base_url}/view",
-                        params={"filename": item["filename"], "subfolder": item.get("subfolder", ""), "type": item.get("type", "output")},
+                        params={
+                            "filename": item_name,
+                            "subfolder": item.get("subfolder", ""),
+                            "type": item.get("type", "output"),
+                        },
                         timeout=120,
                     )
                     response.raise_for_status()
@@ -78,7 +89,10 @@ class ComfyUIVideoGenerator:
                     path.write_bytes(response.content)
                     return path
 
-        raise RuntimeError("ComfyUI video workflow completed without a video output")
+        raise RuntimeError(
+            "ComfyUI video workflow completed without a downloadable video output. "
+            f"History outputs: {outputs}"
+        )
 
     def _upload_image(self, image: Path) -> str:
         if not image.exists():
