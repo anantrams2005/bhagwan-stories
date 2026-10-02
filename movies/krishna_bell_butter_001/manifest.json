@@ -7,11 +7,7 @@
       "shot_id": "shot_01",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_01/shot_01/source.png",
-      "asset_refs": [
-        "assets/characters/grandfather/reference.png",
-        "assets/characters/grandchild_boy/reference.png",
-        "assets/locations/banyan_courtyard/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "Grandfather announces that today's story is about a bell with a secret. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep the entire shot outdoors under the banyan tree; do not transition into a room or enclosed interior. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -21,11 +17,7 @@
       "shot_id": "shot_02",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_01/shot_02/source.png",
-      "asset_refs": [
-        "assets/characters/grandchild_boy/reference.png",
-        "assets/characters/grandchild_girl/reference.png",
-        "assets/locations/banyan_courtyard/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "The grandchildren look intrigued. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
       "video": null
@@ -35,11 +27,7 @@
       "shot_id": "shot_03",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_02/shot_03/source.png",
-      "asset_refs": [
-        "assets/characters/yashoda/reference.png",
-        "assets/props/butter_pot_bell/reference.png",
-        "assets/locations/gokul_butter_room/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "In Gokul, Yashoda's butter pot hangs from a beam with a brass bell tied to it. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep the butter matka physically hanging from the roof beam at low child height throughout; never place it on the floor or outside the doorway. Keep the round white makkhan balls inside the hanging pot. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -63,11 +51,7 @@
       "shot_id": "shot_05",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_02/shot_05/source.png",
-      "asset_refs": [
-        "assets/characters/krishna/reference.png",
-        "assets/props/butter_pot_bell/reference.png",
-        "assets/locations/gokul_butter_room/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent notices the bell and whispers to it not to ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep Krishna unmistakably Bal Krishna, 6–8 years old, with deep rich blue Shyam-varna skin. Never turn Krishna into a fair/white/pale-skinned child or an adult/teenager. Keep Krishna unmistakably Bal Krishna: slim 6–8-year-old child, deep rich blue Shyam-varna skin, exactly one peacock feather on Krishna only. No other child becomes blue or wears a peacock feather. Keep the butter matka physically hanging from the roof beam at low child height throughout; never place it on the floor or outside the doorway. Keep the round white makkhan balls inside the hanging pot. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -77,11 +61,7 @@
       "shot_id": "shot_06",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_02/shot_06/source.png",
-      "asset_refs": [
-        "assets/characters/krishna/reference.png",
-        "assets/props/butter_pot_bell/reference.png",
-        "assets/locations/gokul_butter_room/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "The boys pull down the butter and eat while the bell remains silent. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep Krishna unmistakably Bal Krishna, 6–8 years old, with deep rich blue Shyam-varna skin. Never turn Krishna into a fair/white/pale-skinned child or an adult/teenager. Keep Krishna unmistakably Bal Krishna: slim 6–8-year-old child, deep rich blue Shyam-varna skin, exactly one peacock feather on Krishna only. No other child becomes blue or wears a peacock feather. Keep the butter matka physically hanging from the roof beam at low child height throughout; never place it on the floor or outside the doorway. Keep the round white makkhan balls inside the hanging pot. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -92,9 +72,9 @@
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_03/shot_07/source.png",
       "asset_refs": [
-        "assets/characters/krishna/reference.png",
         "assets/animals/monkey/reference.png",
-        "assets/props/butter_pot_bell/reference.png"
+        "assets/props/butter_pot_bell/reference.png",
+        "assets/locations/gokul_butter_room/reference.png"
       ],
       "video_model": "wan2.2",
       "video_prompt": "A monkey reaches the butter and eats greedily; the bell still does not ring. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep Krishna unmistakably Bal Krishna, 6–8 years old, with deep rich blue Shyam-varna skin. Never turn Krishna into a fair/white/pale-skinned child or an adult/teenager. Keep Krishna unmistakably Bal Krishna: slim 6–8-year-old child, deep rich blue Shyam-varna skin, exactly one peacock feather on Krishna only. No other child becomes blue or wears a peacock feather. Keep the butter matka physically hanging from the roof beam at low child height throughout; never place it on the floor or outside the doorway. Keep the round white makkhan balls inside the hanging pot. Keep exactly one brass bell on the pot; never duplicate it.",
@@ -135,8 +115,8 @@
       "image": "output/krishna_bell_butter_001/scenes/scene_03/shot_10/source.png",
       "asset_refs": [
         "assets/characters/krishna/reference.png",
-        "assets/locations/gokul_butter_room/reference.png",
-        "assets/props/makkhan_laddoo/reference.png"
+        "assets/props/butter_pot_bell/reference.png",
+        "assets/locations/gokul_butter_room/reference.png"
       ],
       "video_model": "wan2.2",
       "video_prompt": "The instant baby Krishna, approximately 6–8 years old, small child proportions, clearly pre-adolescent eats, the brass bell rings loudly. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep Krishna unmistakably Bal Krishna, 6–8 years old, with deep rich blue Shyam-varna skin. Never turn Krishna into a fair/white/pale-skinned child or an adult/teenager. Keep Krishna unmistakably Bal Krishna: slim 6–8-year-old child, deep rich blue Shyam-varna skin, exactly one peacock feather on Krishna only. No other child becomes blue or wears a peacock feather. Keep only the loose round makkhan balls on the floor; no pot appears in this shot. Keep exactly one brass bell on the pot; never duplicate it.",
@@ -161,11 +141,7 @@
       "shot_id": "shot_12",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_04/shot_12/source.png",
-      "asset_refs": [
-        "assets/characters/yashoda/reference.png",
-        "assets/locations/gokul_butter_room/reference.png",
-        "assets/props/butter_pot_bell/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "Yashoda hears the bell and approaches the room. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep the butter matka physically hanging from the roof beam at low child height throughout; never place it on the floor or outside the doorway. Keep the round white makkhan balls inside the hanging pot. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -203,11 +179,7 @@
       "shot_id": "shot_15",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_05/shot_15/source.png",
-      "asset_refs": [
-        "assets/characters/grandfather/reference.png",
-        "assets/characters/grandchild_boy/reference.png",
-        "assets/locations/banyan_courtyard/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "Grandfather reveals the bell's imagined answer. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep the entire shot outdoors under the banyan tree; do not transition into a room or enclosed interior. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -217,11 +189,7 @@
       "shot_id": "shot_16",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_05/shot_16/source.png",
-      "asset_refs": [
-        "assets/characters/krishna/reference.png",
-        "assets/characters/grandchild_boy/reference.png",
-        "assets/characters/grandchild_girl/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "The children laugh at the idea that even the bell could not hide Krishna's devotion. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep Krishna unmistakably Bal Krishna: slim 6–8-year-old child, deep rich blue Shyam-varna skin, exactly one peacock feather on Krishna only. No other child becomes blue or wears a peacock feather. Keep exactly one brass bell on the pot; never duplicate it.",
       "video": null
@@ -259,11 +227,7 @@
       "shot_id": "shot_19",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_06/shot_19/source.png",
-      "asset_refs": [
-        "assets/characters/grandchild_boy/reference.png",
-        "assets/characters/grandchild_girl/reference.png",
-        "assets/locations/banyan_courtyard/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "The children glance at one another, amused. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters.",
       "video": null
@@ -273,11 +237,7 @@
       "shot_id": "shot_20",
       "duration": 3,
       "image": "output/krishna_bell_butter_001/scenes/scene_06/shot_20/source.png",
-      "asset_refs": [
-        "assets/characters/grandfather/reference.png",
-        "assets/characters/grandchild_boy/reference.png",
-        "assets/locations/banyan_courtyard/reference.png"
-      ],
+      "asset_refs": [],
       "video_model": "wan2.2",
       "video_prompt": "Grandfather closes with a smile. Keep identities, anatomy, clothing and spatial relationships stable. Natural restrained motion, believable cloth/hair/environment movement, no sudden camera jumps or new characters. Keep the entire shot outdoors under the banyan tree; do not transition into a room or enclosed interior.",
       "video": null

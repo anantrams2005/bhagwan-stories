@@ -1,0 +1,312 @@
+{
+  "1": {
+    "class_type": "UnetLoaderGGUF",
+    "inputs": {
+      "unet_name": "qwen-image-edit-2511-Q4_K_M.gguf"
+    },
+    "_meta": {
+      "title": "UNET"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+      "strength_model": 1.0
+    },
+    "_meta": {
+      "title": "LIGHTNING_LORA"
+    }
+  },
+  "3": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "shift": 3.0
+    },
+    "_meta": {
+      "title": "SAMPLING_SHIFT"
+    }
+  },
+  "4": {
+    "class_type": "CFGNorm",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "strength": 1.0
+    },
+    "_meta": {
+      "title": "CFG_NORM"
+    }
+  },
+  "5": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "TEXT_ENCODER"
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAE"
+    }
+  },
+  "101": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "example.png"
+    },
+    "_meta": {
+      "title": "REF_1"
+    }
+  },
+  "111": {
+    "class_type": "ImageScaleToTotalPixels",
+    "inputs": {
+      "image": [
+        "101",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "megapixels": 0.5,
+      "resolution_steps": 16
+    },
+    "_meta": {
+      "title": "REF_1_SCALE"
+    }
+  },
+  "102": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "example.png"
+    },
+    "_meta": {
+      "title": "REF_2"
+    }
+  },
+  "112": {
+    "class_type": "ImageScaleToTotalPixels",
+    "inputs": {
+      "image": [
+        "102",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "megapixels": 0.5,
+      "resolution_steps": 16
+    },
+    "_meta": {
+      "title": "REF_2_SCALE"
+    }
+  },
+  "103": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "example.png"
+    },
+    "_meta": {
+      "title": "REF_3"
+    }
+  },
+  "113": {
+    "class_type": "ImageScaleToTotalPixels",
+    "inputs": {
+      "image": [
+        "103",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "megapixels": 0.5,
+      "resolution_steps": 16
+    },
+    "_meta": {
+      "title": "REF_3_SCALE"
+    }
+  },
+  "20": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "5",
+        0
+      ],
+      "prompt": "PROMPT",
+      "vae": [
+        "6",
+        0
+      ],
+      "image1": [
+        "111",
+        0
+      ],
+      "image2": [
+        "112",
+        0
+      ],
+      "image3": [
+        "113",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "PROMPT_POS"
+    }
+  },
+  "21": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "5",
+        0
+      ],
+      "prompt": "",
+      "vae": [
+        "6",
+        0
+      ],
+      "image1": [
+        "111",
+        0
+      ],
+      "image2": [
+        "112",
+        0
+      ],
+      "image3": [
+        "113",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "PROMPT_NEG"
+    }
+  },
+  "22": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "20",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    },
+    "_meta": {
+      "title": "REFMETHOD_POS"
+    }
+  },
+  "23": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "21",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    },
+    "_meta": {
+      "title": "REFMETHOD_NEG"
+    }
+  },
+  "30": {
+    "class_type": "EmptySD3LatentImage",
+    "inputs": {
+      "width": 1280,
+      "height": 720,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "LATENT"
+    }
+  },
+  "31": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "22",
+        0
+      ],
+      "negative": [
+        "23",
+        0
+      ],
+      "latent_image": [
+        "30",
+        0
+      ],
+      "seed": 42,
+      "steps": 4,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    },
+    "_meta": {
+      "title": "SAMPLER"
+    }
+  },
+  "32": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "DECODE"
+    }
+  },
+  "33": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "32",
+        0
+      ],
+      "filename_prefix": "shot"
+    },
+    "_meta": {
+      "title": "SAVE"
+    }
+  },
+  "_pipeline_nodes": {
+    "positive_prompt": "20",
+    "negative_prompt": "21",
+    "encode_nodes": [
+      "20",
+      "21"
+    ],
+    "reference_images": [
+      "101",
+      "102",
+      "103"
+    ],
+    "seed": "31",
+    "output_node": "33"
+  }
+}

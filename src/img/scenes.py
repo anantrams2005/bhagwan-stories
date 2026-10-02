@@ -1,16 +1,53 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Any
 
 
+SCENE_MODELS: dict[str, dict[str, Any]] = {
+    "qwen": {
+        "image_model": "qwen_image_edit_2511",
+        "label": "Qwen-Image-Edit-2511",
+        "min_refs": 1,
+        "max_refs": 3,
+        "picture_labels": True,
+    },
+    "flux": {
+        "image_model": "flux2_klein_4b",
+        "label": "FLUX.2 Klein 4B",
+        "min_refs": 3,
+        "max_refs": 3,
+        "picture_labels": False,
+    },
+}
+
+
 class SceneImageStage:
-    """Compose 16:9 shot source images with the Klein 4B 3-ref workflow."""
+    """Compose 16:9 shot source images with the selected scene model (qwen or flux)."""
 
-    REQUIRED_REFERENCE_IMAGES = 3
-
-    def __init__(self, generator: Any) -> None:
+    def __init__(self, generator: Any, model: str = "qwen") -> None:
+        if model not in SCENE_MODELS:
+            raise ValueError(f"scene model must be one of {list(SCENE_MODELS)}; got {model!r}")
         self.generator = generator
+        self.model = model
+        self.cfg = SCENE_MODELS[model]
+
+    @staticmethod
+    def _with_picture_labels(
+        prompt: str, asset_ids: list[str], labels: dict[str, str]
+    ) -> str:
+        """Prefix 'Picture N is <label>.' built from the shot's real asset order,
+        so the numbering can never disagree with the references actually sent.
+        Prompts that already declare their own Reference/Picture mapping are left as-is.
+        """
+        if re.search(r"\b(Reference|Picture) 1\b", prompt):
+            return prompt
+        parts = [
+            f"Picture {i} is {labels.get(a, a.replace('_', ' '))}"
+            for i, a in enumerate(asset_ids, 1)
+        ]
+        return "; ".join(parts) + ". " + prompt
 
     def run(
         self,
@@ -23,9 +60,9 @@ class SceneImageStage:
 
         records: list[dict[str, Any]] = []
         total_shots = sum(len(scene["shots"]) for scene in story["scenes"])
-        print(f"[SCENE] Starting {total_shots} shot(s) with FLUX.2 Klein 4B")
-        print("[SCENE] Model contract: image_prompt -> FLUX.2 Klein 4B; video_prompt -> WAN 2.2 only")
-        print("[SCENE] Source dimensions are derived by Klein GetImageSize; use 16:9 refs.")
+        label = self.cfg["label"]
+        print(f"[SCENE] Starting {total_shots} shot(s) with {label} (--scene-model {self.model})")
+        print(f"[SCENE] Model contract: image_prompt -> {label}; video_prompt -> WAN 2.2 only")
 
         shot_number = 0
         for scene in story["scenes"]:
@@ -53,21 +90,28 @@ class SceneImageStage:
                     continue
 
                 asset_ids = shot.get("assets", shot.get("characters", []))
-                if len(asset_ids) != self.REQUIRED_REFERENCE_IMAGES:
+                min_refs, max_refs = self.cfg["min_refs"], self.cfg["max_refs"]
+                if not min_refs <= len(asset_ids) <= max_refs:
+                    need = str(max_refs) if min_refs == max_refs else f"{min_refs} to {max_refs}"
                     raise ValueError(
-                        f"{shot_name} must declare exactly "
-                        f"{self.REQUIRED_REFERENCE_IMAGES} assets for the Klein 4B "
-                        "scene workflow (reference 1, reference 2, reference 3)"
+                        f"{shot_name} must declare {need} assets for the {label} "
+                        f"scene workflow (--scene-model {self.model}); got {len(asset_ids)}"
                     )
 
                 refs = [asset_refs[a] for a in asset_ids]
                 print("[SCENE]   refs: " + " | ".join(str(p) for p in refs))
 
-                if shot.get("image_model", "flux2_klein_4b") != "flux2_klein_4b":
-                    raise ValueError(f"{shot_name} image_model must be flux2_klein_4b")
+                known = {c["image_model"] for c in SCENE_MODELS.values()}
+                if shot.get("image_model", self.cfg["image_model"]) not in known:
+                    raise ValueError(f"{shot_name} image_model must be one of {sorted(known)}")
 
+                prompt = shot["image_prompt"]
+                if self.cfg["picture_labels"]:
+                    prompt = self._with_picture_labels(
+                        prompt, asset_ids, story.get("reference_labels", {})
+                    )
                 image = self.generator.generate(
-                    shot["image_prompt"],
+                    prompt,
                     shot.get("negative_prompt", ""),
                     shot_dir,
                     "source.png",

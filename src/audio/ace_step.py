@@ -16,7 +16,7 @@ class AceStepMusicGenerator:
     def __init__(
         self,
         base_url: str | None = None,
-        timeout: float = 30.0,
+        timeout: float = 3000.0,
         poll_interval: float = 1.0,
         poll_timeout: float = 1800.0,
         api_key: str | None = None,
@@ -26,7 +26,7 @@ class AceStepMusicGenerator:
         self.base_url = (
             base_url or os.environ.get("ACE_STEP_URL") or "http://127.0.0.1:8001"
         ).rstrip("/")
-        self.timeout = timeout
+        self.timeout = 3000
         self.poll_interval = poll_interval
         self.poll_timeout = poll_timeout
         self.api_key = api_key or os.environ.get("ACE_STEP_API_KEY")

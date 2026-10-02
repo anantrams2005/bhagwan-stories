@@ -13,7 +13,10 @@ from src.vid.stage import VideoStage
 
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_ASSET_WORKFLOW = REPO_ROOT / "workflows" / "z_turbo_assets.json"
-DEFAULT_SCENE_WORKFLOW = REPO_ROOT / "workflows" / "flux2_klein_4b_scene.json"
+SCENE_WORKFLOWS = {
+    "qwen": REPO_ROOT / "workflows" / "qwen_image_edit_2511_scene.json",
+    "flux": REPO_ROOT / "workflows" / "flux2_klein_4b_scene.json",
+}
 DEFAULT_VIDEO_WORKFLOW = REPO_ROOT / "workflows" / "wan22_i2v_api.json"
 
 
@@ -59,7 +62,10 @@ def main() -> int:
                    help="Skip asset/scene generation and run I2V for every existing story shot.")
     p.add_argument("--image-backend", choices=["none", "comfyui"], default="none")
     p.add_argument("--asset-image-workflow", type=Path, default=DEFAULT_ASSET_WORKFLOW)
-    p.add_argument("--scene-image-workflow", type=Path, default=DEFAULT_SCENE_WORKFLOW)
+    p.add_argument("--scene-model", choices=["qwen", "flux"], default="qwen",
+                   help="Which scene-image workflow to run (default: qwen).")
+    p.add_argument("--scene-image-workflow", type=Path, default=None,
+                   help="Override the workflow file for the selected --scene-model.")
     p.add_argument("--video-backend", choices=["none", "comfyui_wan"], default="none")
     p.add_argument("--video-workflow", type=Path, default=DEFAULT_VIDEO_WORKFLOW)
     p.add_argument("--comfyui-url", default="http://127.0.0.1:8188")
@@ -67,7 +73,13 @@ def main() -> int:
     args = p.parse_args()
 
     story = load_story(args.story)
-    errors = validate_story(story)
+    # Asset-count rule only applies when scene images are generated in this run.
+    scene_model = (
+        args.scene_model
+        if args.image_backend == "comfyui" and not args.video_only
+        else None
+    )
+    errors = validate_story(story, scene_model)
     if errors:
         for error in errors:
             print(f"ERROR: {error}")
@@ -90,7 +102,10 @@ def main() -> int:
 
     if args.image_backend == "comfyui":
         asset_image_gen = ComfyUIImageGenerator(args.comfyui_url, args.asset_image_workflow)
-        scene_image_gen = ComfyUIImageGenerator(args.comfyui_url, args.scene_image_workflow)
+        scene_workflow = args.scene_image_workflow or SCENE_WORKFLOWS[args.scene_model]
+        scene_image_gen = ComfyUIImageGenerator(
+            args.comfyui_url, scene_workflow, model=args.scene_model
+        )
 
     if args.video_backend == "comfyui_wan":
         video_gen = ComfyUIVideoGenerator(args.comfyui_url, args.video_workflow)
@@ -111,6 +126,7 @@ def main() -> int:
             scene_image_generator=scene_image_gen,
             video_generator=video_gen,
             asset_root=args.asset_root,
+            scene_model=args.scene_model,
         )
         records = pipeline.run(story, movie_dir)
 

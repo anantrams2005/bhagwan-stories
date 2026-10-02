@@ -3,10 +3,12 @@ from __future__ import annotations
 from typing import Any
 
 ASSET_CATEGORIES = {"characters", "people", "animals", "locations", "props"}
+SCENE_REF_LIMITS = {"qwen": (1, 3), "flux": (3, 3)}
 
-
-def validate_story(story: dict[str, Any]) -> list[str]:
+def validate_story(story: dict[str, Any], scene_model: str | None = None) -> list[str]:
     errors: list[str] = []
+    ref_limits = SCENE_REF_LIMITS[scene_model] if scene_model else None
+
     for key in ("id", "title", "scenes"):
         if not story.get(key): errors.append(f"Missing required field: {key}")
     for field in ("characters", "locations", "supporting_assets"):
@@ -32,8 +34,11 @@ def validate_story(story: dict[str, Any]) -> list[str]:
                 if key not in shot: errors.append(f"{p} missing {key}")
             if "duration" in shot and not isinstance(shot["duration"],(int,float)): errors.append(f"{p}.duration must be numeric")
             asset_ids = shot.get("assets", shot.get("characters", []))
-            if len(asset_ids) != 3:
-                errors.append(f"{p} must declare exactly 3 assets for the FLUX.2 Klein 4B scene workflow")
+            if ref_limits:
+                min_refs, max_refs = ref_limits
+                if not min_refs <= len(asset_ids) <= max_refs:
+                    need = str(max_refs) if min_refs == max_refs else f"{min_refs} to {max_refs}"
+                    errors.append(f"{p} must declare {need} assets for the {scene_model} scene workflow")
             for asset_id in shot.get("assets",shot.get("characters",[])):
                 if asset_id not in known_assets: errors.append(f"{p} references unknown asset: {asset_id}")
 

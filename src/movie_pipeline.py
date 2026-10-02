@@ -14,9 +14,10 @@ class MoviePipeline:
     """Production order: assets -> scenes -> optional local I2V."""
 
     def __init__(self, asset_image_generator: Any = None, scene_image_generator: Any = None,
-                 video_generator: Any = None, asset_root: Path = Path("assets")) -> None:
+                 video_generator: Any = None, asset_root: Path = Path("assets"),
+                 scene_model: str = "qwen") -> None:
         self.assets = AssetStage(AssetLibrary(asset_root), asset_image_generator)
-        self.scene_images = SceneImageStage(scene_image_generator)
+        self.scene_images = SceneImageStage(scene_image_generator, scene_model)
         self.video = VideoStage(video_generator) if video_generator else None
 
     @staticmethod
