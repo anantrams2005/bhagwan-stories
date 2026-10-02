@@ -16,7 +16,7 @@
 !mkdir -p /kaggle/tmp/models/vae
 
 !pip install --upgrade huggingface_hub
-!export HF_TOKEN="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"
+!export HF_TOKEN="hf_"
 
 !hf download Comfy-Org/Wan_2.2_ComfyUI_Repackaged split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors --local-dir /kaggle/tmp/models/diffusion_models/
 
