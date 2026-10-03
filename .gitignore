@@ -1,6 +1,6 @@
 *.pyc
 output/*
-assets/*
+assets*
 *.png
 .DS_Store
 movies/*
