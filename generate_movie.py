@@ -5,6 +5,8 @@ import argparse
 import json
 from pathlib import Path
 
+import requests
+
 from src.img.comfyui import ComfyUIImageGenerator
 from src.movie_pipeline import MoviePipeline
 from src.story import build_plan, load_story, validate_story
@@ -13,11 +15,26 @@ from src.vid.stage import VideoStage
 
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_ASSET_WORKFLOW = REPO_ROOT / "workflows" / "z_turbo_assets.json"
+# qwen scene images: ComfyUI servers to use, one worker per server (one per GPU).
+# Servers that don't answer are skipped, so this is safe on a single-GPU session.
+QWEN_SCENE_URLS = ["http://127.0.0.1:8188", "http://127.0.0.1:8189"]
+
 SCENE_WORKFLOWS = {
     "qwen": REPO_ROOT / "workflows" / "qwen_image_edit_2511_scene.json",
     "flux": REPO_ROOT / "workflows" / "flux2_klein_4b_scene.json",
 }
 DEFAULT_VIDEO_WORKFLOW = REPO_ROOT / "workflows" / "wan22_i2v_api.json"
+
+
+def reachable_servers(urls: list[str]) -> list[str]:
+    up = []
+    for url in urls:
+        try:
+            requests.get(f"{url.rstrip('/')}/system_stats", timeout=3).raise_for_status()
+            up.append(url)
+        except requests.RequestException:
+            print(f"[SCENE] ComfyUI not reachable, skipping: {url}")
+    return up
 
 
 def build_existing_video_records(story: dict, movie_dir: Path) -> list[dict]:
@@ -66,6 +83,9 @@ def main() -> int:
                    help="Which scene-image workflow to run (default: qwen).")
     p.add_argument("--scene-image-workflow", type=Path, default=None,
                    help="Override the workflow file for the selected --scene-model.")
+    p.add_argument("--scene-comfyui-urls", nargs="+", default=None, metavar="URL",
+                   help="qwen only: override QWEN_SCENE_URLS. With 2+ reachable URLs, shots run "
+                        "in parallel, one worker per server (e.g. one per GPU).")
     p.add_argument("--video-backend", choices=["none", "comfyui_wan"], default="none")
     p.add_argument("--video-workflow", type=Path, default=DEFAULT_VIDEO_WORKFLOW)
     p.add_argument("--comfyui-url", default="http://127.0.0.1:8188")
@@ -103,9 +123,17 @@ def main() -> int:
     if args.image_backend == "comfyui":
         asset_image_gen = ComfyUIImageGenerator(args.comfyui_url, args.asset_image_workflow)
         scene_workflow = args.scene_image_workflow or SCENE_WORKFLOWS[args.scene_model]
-        scene_image_gen = ComfyUIImageGenerator(
-            args.comfyui_url, scene_workflow, model=args.scene_model
-        )
+        scene_urls = [args.comfyui_url]
+        if args.scene_model == "qwen":
+            wanted = list(dict.fromkeys(args.scene_comfyui_urls or QWEN_SCENE_URLS))
+            scene_urls = (reachable_servers(wanted) if len(wanted) > 1 else wanted) or [args.comfyui_url]
+        elif args.scene_comfyui_urls:
+            print("[SCENE] --scene-comfyui-urls is qwen-only; ignoring it for --scene-model flux")
+        scene_gens = [
+            ComfyUIImageGenerator(url, scene_workflow, model=args.scene_model)
+            for url in scene_urls
+        ]
+        scene_image_gen = scene_gens if len(scene_gens) > 1 else scene_gens[0]
 
     if args.video_backend == "comfyui_wan":
         video_gen = ComfyUIVideoGenerator(args.comfyui_url, args.video_workflow)
